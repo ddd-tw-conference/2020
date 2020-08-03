@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './introStyle.css'
 
 const IntroductionComponent = (props) => {
   return (
     <div>
-      <div>
-        <h1>{props.title}</h1>
-      </div>
+      <div className="title">{props.title}</div>
       <div>
         <div>
           <img alt={props.imgAlt} src={props.imgSrc} />
