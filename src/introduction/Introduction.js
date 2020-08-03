@@ -8,13 +8,13 @@ const Introduction = (props) => {
       id: 0,
       title: '關於DDD年會',
       description: '<p>elm</p><p>elm2</p>',
-      imgSrc: 'https://dummyimage.com/600x400/000/fff',
+      imgSrc: 'https://dummyimage.com/300x200/000/fff',
     },
     {
       id: 1,
       title: '關於我們',
       description: 'elm',
-      imgSrc: 'https://dummyimage.com/600x400/000/fff',
+      imgSrc: 'https://dummyimage.com/300x200',
     },
   ]
 
