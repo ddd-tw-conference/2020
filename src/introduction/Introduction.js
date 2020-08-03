@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import IntroductionComponent from './components/IntroductionComponent'
 
-const MyComponent = (props) => {
+const Introduction = (props) => {
   const content = [
     {
       id: 0,
@@ -29,6 +29,6 @@ const MyComponent = (props) => {
   )
 }
 
-MyComponent.propTypes = {}
+Introduction.propTypes = {}
 
-export default MyComponent
+export default Introduction

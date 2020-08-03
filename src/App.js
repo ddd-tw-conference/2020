@@ -1,13 +1,13 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import IntroductionContainer from './introduction/IntroductionContainer'
+import Introduction from './introduction'
 
 function App() {
   return (
     <div className="App">
       <div>
-        <IntroductionContainer />
+        <Introduction />
       </div>
     </div>
   )
