@@ -1,4 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Docker
+### Production build
+Use the following command in terminal:
+
+`docker build -f Dockerfile.prod -t ddd-conference:prod .`
+
+Then run the image:
+
+`docker run -it --rm -p 1337:80 ddd-conference:prod`
+
+In your browser: 
+
+`http:localhost:1337`
+
 
 ## Available Scripts
 
