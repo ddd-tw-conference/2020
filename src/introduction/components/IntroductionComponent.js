@@ -3,17 +3,21 @@ import PropTypes from 'prop-types'
 import './introStyle.css'
 
 const IntroductionComponent = (props) => {
+  var divStyle = {
+    backgroundImage: 'url(' + process.env.PUBLIC_URL + props.imgSrc + ')',
+    backgroundRepeat: 'no-repeat',
+  }
   return (
     <div className="container-fluid">
-      <div className="title container-fluid">{props.title}</div>
+      <div className="title">{props.title}</div>
 
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-3">
-            <img alt={props.imgAlt} src={props.imgSrc} />
+          <div className="col-sm-5 introImg" style={divStyle}>
+            {/*<img alt={props.imgAlt} src={props.imgSrc} />*/}
           </div>
           <div
-            className="col-sm-9 introDescription"
+            className="col-sm-7 introDescription"
             dangerouslySetInnerHTML={{ __html: props.description }}
           />
         </div>
