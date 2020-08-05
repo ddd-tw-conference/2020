@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import IntroductionComponent from './components/IntroductionComponent'
 
 const Introduction = (props) => {
