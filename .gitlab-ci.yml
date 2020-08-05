@@ -5,5 +5,5 @@ build:
   stage: build
   image: node:13.12.0-alpine
   script:
-    - npm install
-    - npm build
+    - yarn install
+    - CI= yarn build
