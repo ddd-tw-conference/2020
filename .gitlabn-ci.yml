@@ -1,0 +1,7 @@
+variables:
+  CI_AWS_ECS_CLUSTER: default
+  CI_AWS_ECS_SERVICE: sample-app-service
+  CI_AWS_ECS_TASK_DEFINITION: first-run-task-definition:1
+
+include:
+  - template: AWS/Deploy-ECS.gitlab-ci.yml

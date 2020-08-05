@@ -4,12 +4,14 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Introduction from './introduction'
+import Instructor from './instructors/Instructor'
 
 function App() {
   return (
     <div className="App">
       <div>
-        <Introduction />
+        {/*<Introduction />*/}
+        <Instructor />
       </div>
     </div>
   )
