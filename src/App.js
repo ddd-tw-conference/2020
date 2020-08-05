@@ -9,7 +9,7 @@ import Instructor from './instructors/Instructor'
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className="container-padding">
         <Introduction />
         <Instructor />
       </div>
