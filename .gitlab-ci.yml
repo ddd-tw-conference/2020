@@ -3,8 +3,6 @@ stages:
   - deploy
 build:
   stage: build
-  tags:
-    - ddd-tw-conference-official
   script:
     - yarn install
     - yarn build
