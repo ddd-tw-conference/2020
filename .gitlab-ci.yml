@@ -1,7 +1,5 @@
-variables:
-  CI_AWS_ECS_CLUSTER: default
-  CI_AWS_ECS_SERVICE: sample-app-service
-  CI_AWS_ECS_TASK_DEFINITION: first-run-task-definition
-
-include:
-  - template: AWS/Deploy-ECS.gitlab-ci.yml
+build website:
+  image: node:13.12.0-alpine
+  script:
+    - npm install
+    - npm build
