@@ -4,14 +4,16 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Introduction from './introduction'
-import Instructor from './instructors/Instructor'
+import InstructorList from './instructors'
+import SponsorList from './sponsors'
 
 function App() {
   return (
     <div className="App">
       <div className="container-padding">
         <Introduction />
-        <Instructor />
+        <InstructorList />
+        <SponsorList />
       </div>
     </div>
   )

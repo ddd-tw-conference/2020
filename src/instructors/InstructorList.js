@@ -1,7 +1,7 @@
 import React from 'react'
 import InstructorSimple from './components/InstructorSimple'
 
-const Instructor = (props) => {
+const InstructorList = (props) => {
   return (
     <>
       <div className="container-fluid title">講師介紹</div>
@@ -53,9 +53,8 @@ const Instructor = (props) => {
           </div>
         </div>
       </div>
-      <div className="row"></div>
     </>
   )
 }
 
-export default Instructor
+export default InstructorList

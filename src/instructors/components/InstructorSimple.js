@@ -13,15 +13,7 @@ const InstructorSimple = (props) => {
       <div
         className="instructorImgContainer rounded-circle row"
         style={headImgStyle}
-      >
-        {/*<div className="container-fluid">*/}
-        {/*<img*/}
-        {/*  className="headShotImage"*/}
-        {/*  alt={props.imgAlt}*/}
-        {/*  src={process.env.PUBLIC_URL + props.imgSrc}*/}
-        {/*/>*/}
-        {/*</div>*/}
-      </div>
+      />
       <div className="instructorName row-cols-4">{props.name}</div>
       <div className="instructorTitle row-cols-4">{props.jobTitle}</div>
     </div>
