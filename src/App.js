@@ -3,8 +3,6 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import InstructorDetail from './instructors/components/InstructorDetail'
 
-import Introduction from './introduction'
-import Instructor from './instructors/Instructor'
 import Menubar from './menubar/Menubar'
 import { InstructorList } from './instructors'
 import SponsorList from './sponsors'
