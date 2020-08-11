@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './introStyle.css'
+import '../introStyle.css'
 
 const IntroductionComponent = (props) => {
   var divStyle = {
