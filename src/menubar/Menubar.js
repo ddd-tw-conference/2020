@@ -6,7 +6,7 @@ import languageIcon from '../img/language_icon.svg'
 const Menubar = () => {
     return (
         <div>
-            <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-ddd shadow">
+            <nav className="navbar navbar-expand-lg navbar-light bg-ddd shadow">
                 <a className="navbar-brand" href="#">
                     <img src={logo} width="40" height="40" alt="" />
                 </a>
@@ -45,9 +45,9 @@ const Menubar = () => {
                                     中文
                                 </a>
 
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a className="dropdown-item" style={{ width: "20px" }} href="#">中文</a>
-                                    <a className="dropdown-item" style={{ width: "20px" }} href="#">英文</a>
+                                <div className="dropdown-menu custom-menu" aria-labelledby="dropdownMenuLink">
+                                    <a className="dropdown-item custom-item" href="#">中文</a>
+                                    <a className="dropdown-item custom-item" href="#">英文</a>
                                 </div>
                             </div>
                         </li>

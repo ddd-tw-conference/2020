@@ -23,3 +23,11 @@
     padding: 0.5rem 1rem; */
     /* display: block; */
 /* } */
+
+.custom-menu {
+    min-width: 90px;
+}
+
+.custom-item {
+    text-align: center;
+}
