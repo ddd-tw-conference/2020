@@ -1,0 +1,33 @@
+.bg-ddd {
+    background-color: 'white';
+}
+
+.menu-link {
+    color: #27539D;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.menu-link:hover, .menu-link:focus {
+    text-decoration: none;
+    color: #0099ff;
+}
+
+.dropdown-text {
+    color: #27539D;
+    padding: 0.5rem 1rem;
+}
+
+/* .dropdown-menu { */
+    /* color: #27539D;
+    padding: 0.5rem 1rem; */
+    /* display: block; */
+/* } */
+
+.custom-menu {
+    min-width: 90px;
+}
+
+.custom-item {
+    text-align: center;
+}

@@ -1,10 +1,9 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import InstructorDetail from './instructors/components/InstructorDetail'
 
-import Introduction from './introduction'
+import Menubar from './menubar/Menubar'
 import { InstructorList } from './instructors'
 import SponsorList from './sponsors'
 
@@ -15,6 +14,7 @@ function App() {
   }
   return (
     <div className="App">
+      <Menubar />
       <div className="container-padding">
         {/*<Introduction />*/}
         {/*<InstructorList />*/}
