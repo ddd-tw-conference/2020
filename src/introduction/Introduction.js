@@ -1,8 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import IntroductionComponent from './components/IntroductionComponent'
 
-const Introduction = (props) => {
+const Introduction = () => {
   const content = [
     {
       id: 0,
@@ -39,7 +38,5 @@ const Introduction = (props) => {
     </div>
   )
 }
-
-Introduction.propTypes = {}
 
 export default Introduction
