@@ -18,18 +18,18 @@ function App() {
       <Menubar />
       <div className="container-scroll">
         <Landing />
-        <div className="container-padding">
-          {/*<Introduction />*/}
-          {/*<InstructorList />*/}
-          {/*<SponsorList />*/}
-          <InstructorDetail
-            name="Sean Lin"
-            jobTitle="Senior Engineer"
-            detail="<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus. Minima architecto impedit eaque molestiae dicta quam. Cum ducimus. Culpa distinctio aperiam.</p>"
-            imgSrc="/img/sean.png"
-            links={links}
-          />
-        </div>
+        {/*<div className="container-padding">*/}
+        {/*<Introduction />*/}
+        {/*<InstructorList />*/}
+        {/*<SponsorList />*/}
+        {/*<InstructorDetail*/}
+        {/*  name="Sean Lin"*/}
+        {/*  jobTitle="Senior Engineer"*/}
+        {/*  detail="<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus. Minima architecto impedit eaque molestiae dicta quam. Cum ducimus. Culpa distinctio aperiam.</p>"*/}
+        {/*  imgSrc="/img/sean.png"*/}
+        {/*  links={links}*/}
+        {/*/>*/}
+        {/*</div>*/}
       </div>
     </div>
   )
