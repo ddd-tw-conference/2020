@@ -6,7 +6,7 @@ import clock from '../img/clock.svg'
 import moment from 'moment'
 
 const Landing = () => {
-  const eventTime = moment('25-11-2020 09:00:00', 'DD-MM-YYYY HH:mm:ss')
+  const eventTime = moment('27-11-2020 09:00:00', 'DD-MM-YYYY HH:mm:ss')
 
   const getDuration = () => {
     const currentTime = moment()
