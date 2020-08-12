@@ -66,7 +66,9 @@ const Landing = () => {
               alt="clock"
               height="30"
             />
-            <p className="text-white list-inline-item">25 Nov 2020</p>
+            <p className="text-white list-inline-item">
+              {eventTime.format('D MMM YYYY')}
+            </p>
           </div>
           <div className="col-2">
             <div className="countdown-border">
