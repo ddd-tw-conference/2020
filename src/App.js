@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import InstructorDetail from './instructors/components/InstructorDetail'
 
 import Menubar from './menubar/Menubar'
+import Landing from './landing/Landing'
 import { InstructorList } from './instructors'
 import SponsorList from './sponsors'
 
@@ -15,17 +16,20 @@ function App() {
   return (
     <div className="App">
       <Menubar />
-      <div className="container-padding">
-        {/*<Introduction />*/}
-        {/*<InstructorList />*/}
-        {/*<SponsorList />*/}
-        <InstructorDetail
-          name="Sean Lin"
-          jobTitle="Senior Engineer"
-          detail="<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus. Minima architecto impedit eaque molestiae dicta quam. Cum ducimus. Culpa distinctio aperiam.</p>"
-          imgSrc="/img/sean.png"
-          links={links}
-        />
+      <div className="container-scroll">
+        <Landing />
+        <div className="container-padding">
+          {/*<Introduction />*/}
+          {/*<InstructorList />*/}
+          {/*<SponsorList />*/}
+          <InstructorDetail
+            name="Sean Lin"
+            jobTitle="Senior Engineer"
+            detail="<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus. Minima architecto impedit eaque molestiae dicta quam. Cum ducimus. Culpa distinctio aperiam.</p>"
+            imgSrc="/img/sean.png"
+            links={links}
+          />
+        </div>
       </div>
     </div>
   )
