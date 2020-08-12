@@ -7,6 +7,7 @@ import Menubar from './menubar/Menubar'
 import Landing from './landing/Landing'
 import { InstructorList } from './instructors'
 import SponsorList from './sponsors'
+import Introduction from './introduction'
 
 function App() {
   const links = {
@@ -19,7 +20,7 @@ function App() {
       <div className="container-scroll">
         <Landing />
         {/*<div className="container-padding">*/}
-        {/*<Introduction />*/}
+        <Introduction />
         {/*<InstructorList />*/}
         {/*<SponsorList />*/}
         {/*<InstructorDetail*/}
