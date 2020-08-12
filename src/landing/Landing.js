@@ -1,10 +1,31 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './landing.css'
 import whiteLogo from '../img/white_DDD_logo.jpg'
 import location from '../img/location.svg'
 import clock from '../img/clock.svg'
+import moment from 'moment'
 
 const Landing = () => {
+    const eventTime = moment('07-11-2020 09:00:00', 'DD-MM-YYYY HH:mm:ss').unix()
+
+    const getDuration = () => {
+        const currentTime = moment().unix()
+        const diffTime = eventTime - currentTime
+        const currentDuration = moment.duration(diffTime * 1000, 'milliseconds')
+        return currentDuration
+    }
+
+    const [duration, setduration] = useState(getDuration())
+
+    const Days = duration.days()
+    const Hours = duration.hours()
+    const Mins = duration.minutes()
+    const Secs = duration.seconds()
+
+    setInterval(function() {
+        setduration(getDuration())
+    }, 1000)
+    
     return (
         <div className="landing-container">
             <div className="container">
@@ -33,25 +54,25 @@ const Landing = () => {
                     </div>
                     <div className="col-2">
                         <div className="countdown-border">
-                            <h1 className="text-white mt-4">97</h1>
+                            <h1 className="text-white mt-4">{Days}</h1>
                             <p className="text-white">Days</p>
                         </div>
                     </div>
                     <div className="col-2">
                         <div className="countdown-border">
-                            <h1 className="text-white mt-4">09</h1>
+                            <h1 className="text-white mt-4">{Hours}</h1>
                             <p className="text-white">Hrs</p>
                         </div>
                     </div>
                     <div className="col-2">
                         <div className="countdown-border">
-                            <h1 className="text-white mt-4">20</h1>
+                            <h1 className="text-white mt-4">{Mins}</h1>
                             <p className="text-white">Mins</p>
                         </div>
                     </div>
                     <div className="col-2">
                         <div className="countdown-border">
-                            <h1 className="text-white mt-4">43</h1>
+                            <h1 className="text-white mt-4">{Secs}</h1>
                             <p className="text-white">Secs</p>
                         </div>
                     </div>
