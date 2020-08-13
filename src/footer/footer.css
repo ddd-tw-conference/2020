@@ -1,0 +1,23 @@
+.footer-container {
+    width: 100vw;
+    height: 150px;
+    background-color: #27539D;
+    margin-top: 100px;
+}
+
+.row-height {
+    height: 150px;
+    align-items: center;
+}
+
+.element-container {
+    display: inline-block;
+    height: 100px;
+}
+
+.copyright {
+    color: #fff;
+    background-color: #27539D;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
