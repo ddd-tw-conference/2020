@@ -49,10 +49,10 @@
 }
 
 .container-scroll {
-  height: 100vh;
+  height: calc(100vh - 66px);
   overflow-y: scroll;
 }
 
 .container-padding {
-  padding: 96px 150px 0;
+  padding: 0 150px;
 }
