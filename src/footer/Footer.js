@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="container">
         <div className="row row-height">
-          <div className="col-3 element-container">
+          <div className="col-2 element-container">
             <img alt="" src={whiteLogo} height="100" />
           </div>
           <div className="col-3 list-inline text-left element-container">
@@ -35,7 +35,7 @@ const Footer = () => {
             />
             <p className="text-white list-inline-item">2020/11/27 9:00-16:00</p>
           </div>
-          <div className="col-3 list-inline text-left element-container">
+          <div className="col-4 list-inline text-left element-container">
             <h6 className="text-white">聯絡資訊</h6>
             <img
               className="list-inline-item"
