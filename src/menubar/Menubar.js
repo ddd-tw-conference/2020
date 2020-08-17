@@ -16,6 +16,14 @@ const Menubar = () => {
                 <div className="collapse navbar-collapse link-color" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
+                            <button
+                                type="button"
+                                className="btn btn-outline-join float-left"
+                            >
+                                我要參加
+                            </button>
+                        </li>
+                        <li className="nav-item active">
                             <a className="menu-link" href="#">DDD年會</a>
                         </li>
                         <li className="nav-item active">
