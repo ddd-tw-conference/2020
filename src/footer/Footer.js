@@ -8,8 +8,10 @@ import messenger from '../img/messenger.svg'
 import facebook from '../img/facebook.svg'
 
 import './footer.css'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t, i18n } = useTranslation()
   return (
     <div className="footer-container">
       <div className="container">
@@ -18,7 +20,7 @@ const Footer = () => {
             <img alt="" src={whiteLogo} height="100" />
           </div>
           <div className="col-3 list-inline text-left element-container">
-            <h6 className="text-white">活動資訊</h6>
+            <h6 className="text-white">{t('menubar.info')}</h6>
             <img
               className="list-inline-item"
               src={location}
@@ -36,7 +38,7 @@ const Footer = () => {
             <p className="text-white list-inline-item">2020/11/27 9:00-16:00</p>
           </div>
           <div className="col-3 list-inline text-left element-container">
-            <h6 className="text-white">聯絡資訊</h6>
+            <h6 className="text-white">{t('menubar.contact')}</h6>
             <img
               className="list-inline-item"
               src={email}
@@ -63,7 +65,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="col-3 list-inline text-left element-container">
-            <h6 className="text-white">關於我們</h6>
+            <h6 className="text-white">{t('menubar.about-us')}</h6>
             <img
               className="list-inline-item"
               src={facebook}
