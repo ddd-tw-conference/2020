@@ -2,11 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
+import './i18n'
 // import * as serviceWorker from './serviceWorker';
+
+const Loader = () => <div>loading...</div>
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <React.Suspense fallback={<Loader />}>
+      <App />
+    </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root'),
 )
