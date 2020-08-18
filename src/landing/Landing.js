@@ -4,8 +4,10 @@ import whiteLogo from '../img/white_DDD_logo.jpg'
 import location from '../img/location.svg'
 import clock from '../img/clock.svg'
 import moment from 'moment'
+import { useTranslation } from 'react-i18next'
 
 const Landing = () => {
+  const { t, i18n } = useTranslation()
   const eventTime = moment('27-11-2020 09:00:00', 'DD-MM-YYYY HH:mm:ss')
 
   const getDuration = () => {
@@ -33,13 +35,13 @@ const Landing = () => {
             <h1 className="text-left text-white">
               Domain Driven Design Taiwan
             </h1>
-            <h1 className="text-left text-white">領域驅動設計年會</h1>
+            <h1 className="text-left text-white">{t('landing.title')}</h1>
             <div className="mt-4">
               <button
                 type="button"
                 className="btn btn-outline-light float-left"
               >
-                我要參加
+                {t('landing.join')}
               </button>
             </div>
           </div>

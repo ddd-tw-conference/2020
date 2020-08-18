@@ -6,15 +6,20 @@ import {
 } from 'react-router-dom'
 import './index.css'
 import App from './App'
+import './i18n'
 // import * as serviceWorker from './serviceWorker';
+
+const Loader = () => <div>loading...</div>
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Route path="/:anchor?">
-        <App />
-      </Route>
-    </Router>
+    <React.Suspense fallback={<Loader />}>
+      <Router>
+        <Route path="/:anchor?">
+          <App />
+        </Route>
+      </Router>
+    </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root'),
 )

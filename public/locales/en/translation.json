@@ -1,0 +1,15 @@
+{
+  "menubar": {
+    "ddd-conference": "DDD Conference",
+    "about-us": "About Us",
+    "speakers": "Speakers",
+    "agenda": "Agenda",
+    "sponsors": "Sponsors",
+    "contact": "Contact Us",
+    "info": "Information"
+  },
+  "landing": {
+    "title": "領域驅動設計年會",
+    "join": "Join Us"
+  }
+}
