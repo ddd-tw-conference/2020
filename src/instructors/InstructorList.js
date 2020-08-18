@@ -4,7 +4,7 @@ import InstructorSimple from './components/InstructorSimple'
 const InstructorList = (props) => {
   return (
     <>
-      <div className="container-fluid title">講師介紹</div>
+      <div className="container-fluid title" id="instructor">講師介紹</div>
       <div className="container-fluid instructors">
         <div className="row">
           <div className="col-4">

@@ -16,7 +16,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="container">
         <div className="row row-height">
-          <div className="col-3 element-container">
+          <div className="col-2 element-container">
             <img alt="" src={whiteLogo} height="100" />
           </div>
           <div className="col-3 list-inline text-left element-container">
@@ -59,6 +59,7 @@ const Footer = () => {
             <a
               href="http://m.me/DDDCommunity.tw"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-white list-inline-item"
             >
               m.me/DDDCommunity.tw
@@ -76,6 +77,7 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/DDDCommunity.tw/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-white list-inline-item"
             >
               DDD Taiwan

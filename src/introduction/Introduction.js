@@ -21,14 +21,14 @@ const Introduction = () => {
 
   return (
     <div>
-      <div className="container-fluid">
+      <div className="container-fluid" id="ddd-conference">
         <IntroductionComponent
           title={content[0].title}
           imgSrc={content[0].imgSrc}
           description={content[0].description}
         />
       </div>
-      <div className="container-fluid">
+      <div className="container-fluid" id="about-us">
         <IntroductionComponent
           title={content[1].title}
           imgSrc={content[1].imgSrc}
