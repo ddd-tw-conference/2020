@@ -4,7 +4,7 @@ import Sponsor from './components/Sponsor'
 const SponsorList = () => {
   return (
     <>
-      <div className="container-fluid title">贊助商</div>
+      <div className="container-fluid title" id="sponsor">贊助商</div>
       <div className="container-fluid">
         <div className="row">
           <div className="col-4">

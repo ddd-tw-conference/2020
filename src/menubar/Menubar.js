@@ -1,7 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import logo from '../img/DDD_logo.png'
 import './menubar.css'
 import languageIcon from '../img/language_icon.svg'
+import { scrollToElement } from '../App'
 
 const Menubar = () => {
     return (
@@ -24,19 +27,44 @@ const Menubar = () => {
                             </button>
                         </li>
                         <li className="nav-item active">
-                            <a className="menu-link" href="#">DDD年會</a>
+                            <Link
+                                className="menu-link"
+                                to="/ddd-conference"
+                                onClick={() => scrollToElement('ddd-conference')}
+                            >
+                                DDD年會
+                            </Link>
+                            {/* <a className="menu-link" href="#">DDD年會</a> */}
                         </li>
                         <li className="nav-item active">
-                            <a className="menu-link" href="#">關於我們</a>
+                            <Link
+                                className="menu-link"
+                                to="/about-us"
+                                onClick={() => scrollToElement('about-us')}
+                            >
+                                關於我們
+                            </Link>
                         </li>
                         <li className="nav-item active">
-                            <a className="menu-link" href="#">講師介紹</a>
+                            <Link
+                                className="menu-link"
+                                to="/instructor"
+                                onClick={() => scrollToElement('instructor')}
+                            >
+                                講師介紹
+                            </Link>
                         </li>
                         <li className="nav-item active">
                             <a className="menu-link" href="#">議程</a>
                         </li>
                         <li className="nav-item active">
-                            <a className="menu-link" href="#">贊助商</a>
+                            <Link
+                                className="menu-link"
+                                to="/sponsor"
+                                onClick={() => scrollToElement('sponsor')}
+                            >
+                                贊助商
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <div className="dropdown show" style={{ padding: '0.5rem 1rem' }}>

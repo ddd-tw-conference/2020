@@ -57,6 +57,7 @@ const Footer = () => {
             <a
               href="http://m.me/DDDCommunity.tw"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-white list-inline-item"
             >
               m.me/DDDCommunity.tw
@@ -74,6 +75,7 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/DDDCommunity.tw/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-white list-inline-item"
             >
               DDD Taiwan

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './landing.css'
 import whiteLogo from '../img/white_DDD_logo.jpg'
 import location from '../img/location.svg'
