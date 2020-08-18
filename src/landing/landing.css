@@ -5,6 +5,15 @@
     padding: 200px 0
 }
 
+@media (max-width: 960px) {
+    .landing-container {
+        /* width: 100vw;
+        height: 100vh;
+        background-color: #27539D; */
+        padding: 100px 0
+    }
+}
+
 .time-margin {
     margin-top: 100px;
 }

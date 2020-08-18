@@ -5,6 +5,7 @@ import location from '../img/location.svg'
 import clock from '../img/clock.svg'
 import moment from 'moment'
 import { useTranslation } from 'react-i18next'
+import Typography from '@material-ui/core/Typography'
 
 const Landing = () => {
   const { t, i18n } = useTranslation()
@@ -27,15 +28,22 @@ const Landing = () => {
     setDuration(getDuration())
   }, 1000)
 
+  const isMobile = window.innerWidth < 960
+
   return (
     <div className="landing-container">
       <div className="container">
-        <div className="row">
-          <div className="col-8">
-            <h1 className="text-left text-white">
+        <div className="row flex-row-reverse">
+          <div className="col-lg-4 col-12">
+            <img src={whiteLogo} alt="whiteLogo" height="200" />
+          </div>
+          <div className="col-lg-8 col-12">
+            <Typography variant={isMobile ? 'h6' : 'h3'} className="text-left text-white">
               Domain Driven Design Taiwan
-            </h1>
-            <h1 className="text-left text-white">{t('landing.title')}</h1>
+            </Typography>
+            <Typography variant={isMobile ? 'h6' : 'h3'} className="text-left text-white">
+              {t('landing.title')}
+            </Typography>
             <div className="mt-4">
               <button
                 type="button"
@@ -44,9 +52,6 @@ const Landing = () => {
                 {t('landing.join')}
               </button>
             </div>
-          </div>
-          <div className="col-4">
-            <img src={whiteLogo} alt="whiteLogo" height="200" />
           </div>
         </div>
       </div>
