@@ -9,14 +9,13 @@ const Sponsor = (props) => {
     backgroundPosition: 'center',
   }
   return (
-    <div className="sponsorLogo">
-      <img src={process.env.PUBLIC_URL + props.imgSrc} />
+    <div>
+      <img src={props.imgSrc} alt="sponsorLogo" width="200" />
     </div>
   )
 }
 
 Sponsor.propTypes = {
-  //
   imgSrc: PropTypes.string,
 }
 

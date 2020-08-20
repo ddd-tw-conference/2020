@@ -4,12 +4,7 @@
 }
 
 .instructorImgContainer {
-    padding: 0;
-    border-width: 20px;
-    border-style: solid;
-    border-color: #27539D;
-    height: 400px;
-    opacity: 1;
+    border: 10px solid #27539D;
 }
 
 .headShotImage {
@@ -19,21 +14,32 @@
 }
 
 .instructorName {
-    padding: 40px 0 0;
-    font-size: 25px;
+    padding: 20px 0 0;
+    font-size: 24px;
     font-weight: bolder;
     text-align: center;
+}
 
+@media (max-width: 960px) {
+    .instructorName {
+        font-size: 20px;
+    }
 }
 
 .instructorTitle {
-    padding: 30px 0 0;
+    padding: 10px 0 0;
     font-size: 20px;
     text-align: center;
 }
 
+@media (max-width: 960px) {
+    .instructorTitle {
+        font-size: 16px;
+    }
+}
+
 .instructors{
-    padding: 0 0 0 40px;
+    padding: 0 40px;
 }
 
 .instructorDetail{

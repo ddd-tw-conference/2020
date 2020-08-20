@@ -31,3 +31,14 @@
 .custom-item {
     text-align: center;
 }
+
+.btn-outline-join {
+    color: #27539D;
+    border-color: #27539D;
+}
+
+.btn-outline-join:hover {
+    color: #fff;
+    background-color: #27539D;
+    border-color: #27539D;
+  }

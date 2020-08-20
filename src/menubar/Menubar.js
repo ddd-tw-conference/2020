@@ -1,7 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import logo from '../img/DDD_logo.png'
 import './menubar.css'
 import languageIcon from '../img/language_icon.svg'
+import { scrollToElement } from '../App'
 import { useTranslation, withTranslation, Trans } from 'react-i18next'
 
 function Menubar() {
@@ -32,19 +35,39 @@ function Menubar() {
         >
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="menu-link" href="#">
-                {t('menubar.ddd-conference')}
-              </a>
+                <button
+                    type="button"
+                    className="btn btn-outline-join float-left"
+                >
+                  {t('menubar.join')}
+                </button>
             </li>
             <li className="nav-item active">
-              <a className="menu-link" href="#">
+							<Link
+								className="menu-link"
+								to="/ddd-conference"
+								onClick={() => scrollToElement('ddd-conference')}
+							>
+								{t('menubar.ddd-conference')}
+							</Link>
+            </li>
+            <li className="nav-item active">
+              <Link
+                className="menu-link"
+                to="/about-us"
+                onClick={() => scrollToElement('about-us')}
+              >
                 {t('menubar.about-us')}
-              </a>
+              </Link>
             </li>
             <li className="nav-item active">
-              <a className="menu-link" href="#">
+              <Link
+                className="menu-link"
+                to="/instructor"
+                onClick={() => scrollToElement('instructor')}
+              >
                 {t('menubar.speakers')}
-              </a>
+              </Link>
             </li>
             <li className="nav-item active">
               <a className="menu-link" href="#">
@@ -52,9 +75,13 @@ function Menubar() {
               </a>
             </li>
             <li className="nav-item active">
-              <a className="menu-link" href="#">
+              <Link
+                className="menu-link"
+                to="/sponsor"
+                onClick={() => scrollToElement('sponsor')}
+              >
                 {t('menubar.sponsors')}
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <div className="dropdown show" style={{ padding: '0.5rem 1rem' }}>
@@ -70,7 +97,6 @@ function Menubar() {
                 >
                   中文
                 </a>
-
                 <div
                   className="dropdown-menu custom-menu"
                   aria-labelledby="dropdownMenuLink"

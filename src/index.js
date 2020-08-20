@@ -1,5 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {
+  BrowserRouter as Router,
+  Route,
+} from 'react-router-dom'
 import './index.css'
 import App from './App'
 import './i18n'
@@ -10,7 +14,11 @@ const Loader = () => <div>loading...</div>
 ReactDOM.render(
   <React.StrictMode>
     <React.Suspense fallback={<Loader />}>
-      <App />
+      <Router>
+        <Route path="/:anchor?">
+          <App />
+        </Route>
+      </Router>
     </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root'),
