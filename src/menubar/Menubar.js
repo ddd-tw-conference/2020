@@ -35,6 +35,14 @@ function Menubar() {
         >
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
+                <button
+                    type="button"
+                    className="btn btn-outline-join float-left"
+                >
+                  {t('menubar.join')}
+                </button>
+            </li>
+            <li className="nav-item active">
 							<Link
 								className="menu-link"
 								to="/ddd-conference"
