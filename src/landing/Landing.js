@@ -57,7 +57,7 @@ const Landing = () => {
       </div>
       <div className="container time-margin">
         <div className="row">
-          <div className="col-2 list-inline mt-5">
+          <div className="col-lg-2 col-6 list-inline mt-5">
             <img
               className="list-inline-item"
               src={location}
@@ -66,7 +66,7 @@ const Landing = () => {
             />
             <p className="text-white list-inline-item">Taipei, Taiwan</p>
           </div>
-          <div className="col-2 list-inline mt-5">
+          <div className="col-lg-2 col-6 list-inline mt-5">
             <img
               className="list-inline-item"
               src={clock}
@@ -77,25 +77,25 @@ const Landing = () => {
               {eventTime.format('D MMM YYYY')}
             </p>
           </div>
-          <div className="col-2">
+          <div className="col-lg-2 col-6">
             <div className="countdown-border">
               <h1 className="text-white mt-4">{Days}</h1>
               <p className="text-white">Days</p>
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-lg-2 col-6">
             <div className="countdown-border">
               <h1 className="text-white mt-4">{Hours}</h1>
               <p className="text-white">Hrs</p>
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-lg-2 col-6">
             <div className="countdown-border">
               <h1 className="text-white mt-4">{Mins}</h1>
               <p className="text-white">Mins</p>
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-lg-2 col-6">
             <div className="countdown-border">
               <h1 className="text-white mt-4">{Secs}</h1>
               <p className="text-white">Secs</p>
