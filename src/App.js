@@ -11,10 +11,11 @@ import SponsorList from './sponsors'
 import Introduction from './introduction'
 import { useParams } from 'react-router'
 
-export const scrollToElement = anchor => {
+export const scrollToElement = (anchor) => {
   if (anchor) {
     const targetElement = document.getElementById(anchor)
-    if (targetElement) targetElement.scrollIntoView({behavior: "smooth", inline: "nearest"})
+    if (targetElement)
+      targetElement.scrollIntoView({ behavior: 'smooth', inline: 'nearest' })
   }
 }
 
@@ -34,8 +35,8 @@ function App() {
         <Landing />
         <div className="container-padding">
           <Introduction />
-          <InstructorList />
-          <SponsorList id="sponsorList" />
+          {/*<InstructorList />*/}
+          {/*<SponsorList id="sponsorList" />*/}
           {/* <InstructorDetail
             name="Sean Lin"
             jobTitle="Senior Engineer"
