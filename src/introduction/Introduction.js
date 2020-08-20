@@ -1,7 +1,9 @@
 import React from 'react'
 import IntroductionComponent from './components/IntroductionComponent'
+import { useTranslation } from 'react-i18next'
 
 const Introduction = () => {
+  const { t } = useTranslation()
   const content = [
     {
       id: 0,
@@ -12,9 +14,8 @@ const Introduction = () => {
     },
     {
       id: 1,
-      title: '關於我們',
-      description:
-        'Domain Driven Design Taiwan (DDD Taiwan)是一個鼓勵所有熱愛解決問題的大家一起群體共創的地方，在這裡我們將試著進行更多的交流活動，一起探索從Problem Domain去催生出 Solution Domain',
+      title: t('introduction.about-ddd.title'),
+      description: t('introduction.about-ddd.description'),
       imgSrc: '/img/ddd.png',
     },
   ]
