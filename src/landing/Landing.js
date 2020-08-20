@@ -37,11 +37,11 @@ const Landing = () => {
           <div className="col-lg-4 col-12">
             <img src={whiteLogo} alt="whiteLogo" height="200" />
           </div>
-          <div className="col-lg-8 col-12">
-            <Typography variant={isMobile ? 'h6' : 'h3'} className="text-left text-white">
+          <div className="col-lg-8 col-12 title-margin">
+            <Typography variant={isMobile ? 'h5' : 'h4'} className="text-left text-white">
               Domain Driven Design Taiwan
             </Typography>
-            <Typography variant={isMobile ? 'h6' : 'h3'} className="text-left text-white">
+            <Typography variant={isMobile ? 'h5' : 'h4'} className="text-left text-white">
               {t('landing.title')}
             </Typography>
             <div className="mt-4">
@@ -89,13 +89,13 @@ const Landing = () => {
               <p className="text-white">Hrs</p>
             </div>
           </div>
-          <div className="col-lg-2 col-6">
+          <div className="col-lg-2 col-6 countdown-margin">
             <div className="countdown-border">
               <h1 className="text-white mt-4">{Mins}</h1>
               <p className="text-white">Mins</p>
             </div>
           </div>
-          <div className="col-lg-2 col-6">
+          <div className="col-lg-2 col-6 countdown-margin">
             <div className="countdown-border">
               <h1 className="text-white mt-4">{Secs}</h1>
               <p className="text-white">Secs</p>

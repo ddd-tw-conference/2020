@@ -7,13 +7,31 @@
 
 @media (max-width: 960px) {
     .landing-container {
-        height: 1000px;
+        height: 880px;
         padding: 50px 0
     }
 }
 
 .time-margin {
     margin-top: 100px;
+}
+
+@media (max-width: 960px) {
+    .time-margin {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .countdown-margin {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 960px) {
+    .title-margin {
+        padding-top: 30px;
+    }
 }
 
 .countdown-border {
