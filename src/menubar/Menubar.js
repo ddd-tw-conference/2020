@@ -35,21 +35,23 @@ function Menubar() {
         >
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-                <button
-                    type="button"
-                    className="btn btn-outline-join float-left"
-                >
-                  {t('menubar.join')}
-                </button>
+              <a
+                type="button"
+                className="btn btn-outline-join float-left"
+                href="https://dddtaiwan.kktix.cc/events/dddtw-conf-2020"
+                target="_blank"
+              >
+                {t('menubar.join')}
+              </a>
             </li>
             <li className="nav-item active">
-							<Link
-								className="menu-link"
-								to="/ddd-conference"
-								onClick={() => scrollToElement('ddd-conference')}
-							>
-								{t('menubar.ddd-conference')}
-							</Link>
+              <Link
+                className="menu-link"
+                to="/ddd-conference"
+                onClick={() => scrollToElement('ddd-conference')}
+              >
+                {t('menubar.ddd-conference')}
+              </Link>
             </li>
             <li className="nav-item active">
               <Link

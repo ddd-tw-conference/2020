@@ -38,19 +38,27 @@ const Landing = () => {
             <img src={whiteLogo} alt="whiteLogo" height="200" />
           </div>
           <div className="col-lg-8 col-12 title-margin">
-            <Typography variant={isMobile ? 'h5' : 'h4'} className="text-left text-white">
+            <Typography
+              variant={isMobile ? 'h5' : 'h4'}
+              className="text-left text-white"
+            >
               Domain Driven Design Taiwan
             </Typography>
-            <Typography variant={isMobile ? 'h5' : 'h4'} className="text-left text-white">
+            <Typography
+              variant={isMobile ? 'h5' : 'h4'}
+              className="text-left text-white"
+            >
               {t('landing.title')}
             </Typography>
             <div className="mt-4">
-              <button
+              <a
                 type="button"
                 className="btn btn-outline-light float-left"
+                href="https://dddtaiwan.kktix.cc/events/dddtw-conf-2020"
+                target="_blank"
               >
                 {t('landing.join')}
-              </button>
+              </a>
             </div>
           </div>
         </div>
