@@ -8,12 +8,14 @@ const InstructorSimple = (props) => {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
   }
+
+  const isMobile = window.innerWidth < 960
+
   return (
     <div className="container-fluid instructorSimple">
-      <div
-        className="instructorImgContainer rounded-circle row"
-        style={headImgStyle}
-      />
+      <div>
+        <img src={props.imgSrc} alt="instructor" className="rounded-circle instructorImgContainer" width={isMobile ? 200 : 250}/>
+      </div>
       <div className="instructorName row-cols-4">{props.name}</div>
       <div className="instructorTitle row-cols-4">{props.jobTitle}</div>
     </div>
@@ -21,7 +23,6 @@ const InstructorSimple = (props) => {
 }
 
 InstructorSimple.propTypes = {
-  //
   name: PropTypes.string,
   jobTitle: PropTypes.string,
   imgSrc: PropTypes.string,

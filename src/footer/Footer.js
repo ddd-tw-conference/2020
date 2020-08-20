@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Typography from '@material-ui/core/Typography'
+
 import whiteLogo from '../img/white_DDD_logo.jpg'
 import location from '../img/location-solid.svg'
 import clock from '../img/clock-solid.svg'
@@ -12,14 +14,15 @@ import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
   const { t, i18n } = useTranslation()
+  const isMobile = window.innerWidth < 960
   return (
     <div className="footer-container">
       <div className="container">
         <div className="row row-height">
-          <div className="col-2 element-container">
-            <img alt="" src={whiteLogo} height="100" />
+          <div className="col-lg-2 col-12 element-container">
+            <img alt="whiteLogo" src={whiteLogo} height={isMobile ? 80 : 100} />
           </div>
-          <div className="col-3 list-inline text-left element-container">
+          <div className="col-lg-3 col-12 list-inline text-left element-container">
             <h6 className="text-white">{t('menubar.info')}</h6>
             <img
               className="list-inline-item"
@@ -37,7 +40,7 @@ const Footer = () => {
             />
             <p className="text-white list-inline-item">2020/11/27 9:00-16:00</p>
           </div>
-          <div className="col-3 list-inline text-left element-container">
+          <div className="col-lg-4 col-12 list-inline text-left element-container">
             <h6 className="text-white">{t('menubar.contact')}</h6>
             <img
               className="list-inline-item"
@@ -65,7 +68,7 @@ const Footer = () => {
               m.me/DDDCommunity.tw
             </a>
           </div>
-          <div className="col-3 list-inline text-left element-container">
+          <div className="col-lg-3 col-12 list-inline text-left element-container">
             <h6 className="text-white">{t('menubar.about-us')}</h6>
             <img
               className="list-inline-item"
@@ -83,11 +86,17 @@ const Footer = () => {
               DDD Taiwan
             </a>
           </div>
+          <div className="row">
+            <div className="col-12">
+              <h6 className="text-white text-center">
+                &copy; Copyright 2020 DDD Taiwan
+              </h6>
+            </div>
+          </div>
         </div>
+        
       </div>
-      <footer>
-        <p className="copyright">&copy; Copyright 2020 DDD Taiwan</p>
-      </footer>
+      
     </div>
   )
 }

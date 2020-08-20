@@ -1,9 +1,16 @@
 .introDescription {
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Helvetica Neue;
     color: #707070;
     opacity: 1;
+}
+
+@media (max-width: 960px) {
+    .introDescription {
+        font-size: 16px;
+        margin-top: 30px;
+    }
 }
 
 .introImg {
