@@ -7,9 +7,8 @@ const Introduction = () => {
   const content = [
     {
       id: 0,
-      title: '關於DDD年會',
-      description:
-        '第一屆的年會，我們的主軸會希望能讓更多人知道何謂領域驅動設計(DDD)，以及讓更多人意識到其實 DDD 真的不是只是一票技術人員寫寫程式，關注程式碼本身結構性的問題而已，所以預計會有演講與工作坊並進的方式來進行。今年我們預計有機會邀請到來自 DDD_Eu 、中國等地的講者，並且同時結合台灣對於領域驅動設計長年有研究並且有意願與大家分享的老朋友們，一起與大家共同探討這個已經出生了10多年的老方法能給大家帶來的新體驗與感受。',
+      title: t('introduction.about-ddd-conf.title'),
+      description: t('introduction.about-ddd-conf.description'),
       imgSrc: '/img/conference.png',
     },
     {
