@@ -35,7 +35,7 @@ function App() {
         <Landing />
         <div className="container-padding">
           <Introduction />
-          {/*<InstructorList />*/}
+          <InstructorList />
           {/*<SponsorList id="sponsorList" />*/}
           {/* <InstructorDetail
             name="Sean Lin"
