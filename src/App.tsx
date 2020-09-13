@@ -14,6 +14,11 @@ import NavBar from "layout/NavBar";
 import React, { memo, StrictMode, Suspense } from "react";
 import Theme from "./Theme";
 
+const cssOuter = css`
+  label: outer;
+  overflow: hidden;
+`;
+
 const cssContainer = css`
   label: container;
   --vertical-padding: calc(142rem / 16);
@@ -32,56 +37,58 @@ function App() {
       <Theme>
         <ErrorBoundary fallback={<ErrorMessage />}>
           <Suspense fallback={<Loader />}>
-            <NavBar />
-            <div id="top" />
-            <Grid
-              container
-              direction="column"
-              wrap="nowrap"
-              alignItems="stretch"
-            >
-              <Grid item>
-                <Landing />
+            <div className={cssOuter}>
+              <NavBar />
+              <div id="top" />
+              <Grid
+                container
+                direction="column"
+                wrap="nowrap"
+                alignItems="stretch"
+              >
+                <Grid item>
+                  <Landing />
+                </Grid>
+                <Grid item>
+                  <Container className={cssContainer}>
+                    <Grid
+                      container
+                      direction="column"
+                      wrap="nowrap"
+                      alignItems="stretch"
+                      spacing={5}
+                    >
+                      <Grid item>
+                        <div id="dddConf">
+                          <DddConf />
+                        </div>
+                      </Grid>
+                      <Grid item>
+                        <div id="aboutUs">
+                          <AboutUs />
+                        </div>
+                      </Grid>
+                      <Grid item>
+                        <div id="speakers">
+                          <Speakers />
+                        </div>
+                      </Grid>
+                      <Grid item>
+                        <div id="agenda">
+                          <Agenda />
+                        </div>
+                      </Grid>
+                      <Grid item>
+                        <div id="sponsors">
+                          <Sponsors />
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </Container>
+                </Grid>
               </Grid>
-              <Grid item>
-                <Container className={cssContainer}>
-                  <Grid
-                    container
-                    direction="column"
-                    wrap="nowrap"
-                    alignItems="stretch"
-                    spacing={5}
-                  >
-                    <Grid item>
-                      <div id="dddConf">
-                        <DddConf />
-                      </div>
-                    </Grid>
-                    <Grid item>
-                      <div id="aboutUs">
-                        <AboutUs />
-                      </div>
-                    </Grid>
-                    <Grid item>
-                      <div id="speakers">
-                        <Speakers />
-                      </div>
-                    </Grid>
-                    <Grid item>
-                      <div id="agenda">
-                        <Agenda />
-                      </div>
-                    </Grid>
-                    <Grid item>
-                      <div id="sponsors">
-                        <Sponsors />
-                      </div>
-                    </Grid>
-                  </Grid>
-                </Container>
-              </Grid>
-            </Grid>
-            <Footer />
+              <Footer />
+            </div>
           </Suspense>
         </ErrorBoundary>
       </Theme>

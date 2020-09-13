@@ -6,7 +6,8 @@ import React, { memo } from "react";
 
 const cssImg = css`
   label: img;
-  max-width: 400px;
+  max-width: 100%;
+  width: 400px;
 `;
 
 const Introduction = ({
