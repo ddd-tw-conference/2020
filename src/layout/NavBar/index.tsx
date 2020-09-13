@@ -7,17 +7,34 @@ import {
   List,
   ListItem,
   Toolbar,
+  useTheme,
 } from "@material-ui/core";
 import { Menu as MenuIcon } from "@material-ui/icons";
+import usePrevious from "@react-hook/previous";
+import useScrollPosition from "@react-hook/window-scroll";
 import A from "components/A";
 import Button from "components/Button";
-import React, { Fragment, memo, useCallback, useState } from "react";
+import { css, cx } from "emotion";
+import React, {
+  Fragment,
+  memo,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import { useTranslation } from "react-i18next";
 import LngSelector from "./LngSelector";
 import logo from "./logo.png";
 import MyListItem from "./MyListItem";
 
+const cssHide = css`
+  label: hide;
+  transform: translateY(-100%);
+`;
+
 function NavBar() {
+  const theme = useTheme();
   const { t } = useTranslation();
   const [opened, setOpened] = useState(false);
   const open = useCallback(() => {
@@ -26,9 +43,32 @@ function NavBar() {
   const close = useCallback(() => {
     setOpened(false);
   }, []);
+  const [hide, setHide] = useState(false);
+  const scrollY = useScrollPosition();
+  const previousScrollY = usePrevious(scrollY, scrollY);
+  useEffect(() => {
+    if (scrollY > previousScrollY && !hide) {
+      setHide(true);
+      return;
+    }
+    if (scrollY < previousScrollY && hide) {
+      setHide(false);
+    }
+  }, [hide, previousScrollY, scrollY]);
+  const cssAppBarBase = useMemo(
+    () =>
+      css({
+        label: "appBarBase",
+        transitionProperty: "transform",
+        transitionDuration: `${theme.transitions.duration.standard}ms`,
+        transitionTimingFunction: theme.transitions.easing.easeOut,
+      }),
+    [theme.transitions.duration.standard, theme.transitions.easing.easeOut]
+  );
+  const cssAppBar = useMemo(() => cx(cssAppBarBase, hide && cssHide), [hide]);
   return (
     <Fragment>
-      <AppBar position="fixed" color="default">
+      <AppBar position="fixed" color="default" className={cssAppBar}>
         <Toolbar>
           <Grid
             container
