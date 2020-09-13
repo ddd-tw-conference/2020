@@ -65,7 +65,10 @@ function NavBar() {
       }),
     [theme.transitions.duration.standard, theme.transitions.easing.easeOut]
   );
-  const cssAppBar = useMemo(() => cx(cssAppBarBase, hide && cssHide), [hide]);
+  const cssAppBar = useMemo(() => cx(cssAppBarBase, hide && cssHide), [
+    cssAppBarBase,
+    hide,
+  ]);
   return (
     <Fragment>
       <AppBar position="fixed" color="default" className={cssAppBar}>
