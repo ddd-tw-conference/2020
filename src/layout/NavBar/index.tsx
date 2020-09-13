@@ -15,6 +15,7 @@ import React, { Fragment, memo, useCallback, useState } from "react";
 import { useTranslation } from "react-i18next";
 import LngSelector from "./LngSelector";
 import logo from "./logo.png";
+import MyListItem from "./MyListItem";
 
 function NavBar() {
   const { t } = useTranslation();
@@ -103,53 +104,24 @@ function NavBar() {
                     <ListItem>
                       <LngSelector />
                     </ListItem>
-                    <ListItem
-                      button
-                      component={A}
-                      href="https://dddtaiwan.kktix.cc/events/dddtw-conf-2020"
-                    >
+                    <MyListItem href="https://dddtaiwan.kktix.cc/events/dddtw-conf-2020">
                       {t("layout.navbar.join")}
-                    </ListItem>
-                    <ListItem
-                      button
-                      component={A}
-                      onClick={close}
-                      href="#dddConf"
-                    >
+                    </MyListItem>
+                    <MyListItem onClick={close} href="#dddConf">
                       {t("layout.navbar.dddConference")}
-                    </ListItem>
-                    <ListItem
-                      button
-                      component={A}
-                      onClick={close}
-                      href="#aboutUs"
-                    >
+                    </MyListItem>
+                    <MyListItem onClick={close} href="#aboutUs">
                       {t("layout.navbar.aboutUs")}
-                    </ListItem>
-                    <ListItem
-                      button
-                      component={A}
-                      onClick={close}
-                      href="#speakers"
-                    >
+                    </MyListItem>
+                    <MyListItem onClick={close} href="#speakers">
                       {t("layout.navbar.speakers")}
-                    </ListItem>
-                    <ListItem
-                      button
-                      component={A}
-                      onClick={close}
-                      href="#agenda"
-                    >
+                    </MyListItem>
+                    <MyListItem onClick={close} href="#agenda">
                       {t("layout.navbar.agenda")}
-                    </ListItem>
-                    <ListItem
-                      button
-                      component={A}
-                      onClick={close}
-                      href="#sponsors"
-                    >
+                    </MyListItem>
+                    <MyListItem onClick={close} href="#sponsors">
                       {t("layout.navbar.sponsors")}
-                    </ListItem>
+                    </MyListItem>
                   </List>
                 </Drawer>
               </Hidden>
