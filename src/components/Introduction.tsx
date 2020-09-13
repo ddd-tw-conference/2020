@@ -6,8 +6,6 @@ import React, { memo } from "react";
 
 const cssImg = css`
   label: img;
-  max-width: 100%;
-  width: 400px;
 `;
 
 const Introduction = ({
@@ -25,6 +23,12 @@ const Introduction = ({
     flexDirection: "column",
     [theme.breakpoints.up("md")]: {
       flexDirection: "row",
+    },
+    [`& .${cssImg}`]: {
+      width: "100%",
+      [theme.breakpoints.up("md")]: {
+        width: "400px",
+      },
     },
   });
   return (
