@@ -16,9 +16,9 @@ import {
   format,
 } from "date-fns";
 import { css } from "emotion";
+import { useIntl } from "gatsby-plugin-intl";
 import whiteLogo from "img/white_DDD_logo.jpg";
 import React, { useEffect, useMemo, useState } from "react";
-import { useTranslation } from "react-i18next";
 import { navBarHeight } from "Theme";
 import TimeRenderBlock from "./TimeRenderBlock";
 
@@ -34,7 +34,7 @@ const cssLanding = css`
 const getNow = () => new Date();
 
 const Landing = () => {
-  const { t } = useTranslation();
+  const intl = useIntl();
   const [now, setNow] = useState(getNow());
   useEffect(() => {
     const updateNow = () => {
@@ -72,7 +72,7 @@ const Landing = () => {
                   </RwdGrid>
                   <RwdGrid item>
                     <Typography variant="h5">
-                      {t("blocks.landing.title")}
+                      {intl.formatMessage({ id: "blocks.landing.title" })}
                     </Typography>
                   </RwdGrid>
                   <RwdGrid item>
@@ -81,7 +81,7 @@ const Landing = () => {
                       component={A}
                       href="https://dddtaiwan.kktix.cc/events/dddtw-conf-2020"
                     >
-                      {t("blocks.landing.join")}
+                      {intl.formatMessage({ id: "blocks.landing.join" })}
                     </Button>
                   </RwdGrid>
                 </RwdGrid>

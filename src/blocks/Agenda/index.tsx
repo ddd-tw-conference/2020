@@ -1,13 +1,13 @@
 import { Grid } from "@material-ui/core";
 import Block from "components/Block";
+import { useIntl } from "gatsby-plugin-intl";
 import React, { memo, useMemo } from "react";
-import { useTranslation } from "react-i18next";
 import { MyEvent } from "./Event";
 import imgSean from "./img/sean.png";
 import Room from "./Room";
 
 const Agenda = () => {
-  const { t } = useTranslation();
+  const intl = useIntl();
   const room241Events: MyEvent[] = useMemo(
     () => [
       {
@@ -96,7 +96,7 @@ const Agenda = () => {
     []
   );
   return (
-    <Block title={t("blocks.agenda.title")}>
+    <Block title={intl.formatMessage({ id: "blocks.agenda.title" })}>
       <Grid container alignItems="stretch" spacing={2}>
         <Grid item xs={12} md={4}>
           <Room title="Room 241" events={room241Events} />

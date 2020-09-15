@@ -1,8 +1,8 @@
 import { InputAdornment, MenuItem, Select, useTheme } from "@material-ui/core";
 import { Translate as TranslateIcon } from "@material-ui/icons";
 import { css } from "emotion";
+import { changeLocale, useIntl } from "gatsby-plugin-intl";
 import React, { ChangeEvent, memo, useCallback, useMemo } from "react";
-import { useTranslation } from "react-i18next";
 
 const languages: {
   [key: string]: string | undefined;
@@ -28,14 +28,11 @@ const LngSelector = () => {
     }),
     [cssColor]
   );
-  const { i18n } = useTranslation();
-  const value = useMemo(() => i18n.language, [i18n.language]);
-  const changeHandler = useCallback(
-    (e: ChangeEvent<{ value: unknown }>) => {
-      i18n.changeLanguage(String(e.target.value));
-    },
-    [i18n]
-  );
+  const intl = useIntl();
+  const value = useMemo(() => intl.locale, [intl.locale]);
+  const changeHandler = useCallback((e: ChangeEvent<{ value: unknown }>) => {
+    changeLocale(String(e.target.value));
+  }, []);
   return (
     <Select
       classes={classesSelect}

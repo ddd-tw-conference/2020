@@ -21,11 +21,11 @@
   "files.trimFinalNewlines": true,
   "i18n-ally.keepFulfilled": true,
   "i18n-ally.keystyle": "nested",
-  "i18n-ally.localesPaths": "public/locales",
+  "i18n-ally.localesPaths": "src/locales",
   "i18n-ally.sortKeys": true,
   "prettier.disableLanguages": [],
   "search.exclude": {
-    "/build": true,
+    "/public": true,
     "/yarn.lock": true,
     "**/node_modules": true,
     "**/bower_components": true,

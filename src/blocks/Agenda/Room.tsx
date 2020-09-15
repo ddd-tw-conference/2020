@@ -2,9 +2,9 @@ import { Grid, Typography, useTheme } from "@material-ui/core";
 import Calendar from "components/Calendar";
 import { eventTime } from "constant";
 import { css, cx } from "emotion";
+import { useIntl } from "gatsby-plugin-intl";
 import React, { memo, ReactNode, useCallback, useMemo } from "react";
 import { stringOrDate } from "react-big-calendar";
-import { useTranslation } from "react-i18next";
 import muiToEmotion from "utils/css/muiToEmotion";
 import Event, { MyEvent } from "./Event";
 
@@ -24,7 +24,7 @@ const components = {
 };
 
 const Room = ({ title, events }: { title: ReactNode; events: MyEvent[] }) => {
-  const { t } = useTranslation();
+  const intl = useIntl();
   const theme = useTheme();
   const mergedEvents = useMemo(
     () => [
@@ -32,10 +32,10 @@ const Room = ({ title, events }: { title: ReactNode; events: MyEvent[] }) => {
       {
         start: new Date("2020-11-27T12:00:00+08:00"),
         end: new Date("2020-11-27T13:00:00+08:00"),
-        title: t("blocks.agenda.room.breakTime"),
+        title: intl.formatMessage({ id: "blocks.agenda.room.breakTime" }),
       },
     ],
-    [events, t]
+    [events, intl]
   );
   const eventPropGetter = useCallback(
     (
@@ -56,7 +56,8 @@ const Room = ({ title, events }: { title: ReactNode; events: MyEvent[] }) => {
           }
         `
       );
-      return event.title === t("blocks.agenda.room.breakTime")
+      return event.title ===
+        intl.formatMessage({ id: "blocks.agenda.room.breakTime" })
         ? {
             className: cx(
               init,
@@ -84,7 +85,14 @@ const Room = ({ title, events }: { title: ReactNode; events: MyEvent[] }) => {
             ),
           };
     },
-    [t, theme]
+    [
+      intl,
+      theme.palette.primary.light,
+      theme.palette.primary.main,
+      theme.palette.secondary.contrastText,
+      theme.palette.secondary.main,
+      theme.typography.body1,
+    ]
   );
   return (
     <Grid

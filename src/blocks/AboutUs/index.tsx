@@ -1,14 +1,14 @@
 import Introduction from "components/Introduction";
+import { useIntl } from "gatsby-plugin-intl";
 import React, { memo } from "react";
-import { useTranslation } from "react-i18next";
 import imgSrc from "./ddd.png";
 
 const AboutUs = () => {
-  const { t } = useTranslation();
+  const intl = useIntl();
   return (
     <Introduction
-      title={t("blocks.aboutUs.title")}
-      description={t("blocks.aboutUs.description")}
+      title={intl.formatMessage({ id: "blocks.aboutUs.title" })}
+      description={intl.formatMessage({ id: "blocks.aboutUs.description" })}
       imgSrc={imgSrc}
     />
   );

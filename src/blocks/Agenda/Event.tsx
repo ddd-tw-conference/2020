@@ -21,7 +21,6 @@ const cssImg = css`
 `;
 
 const EventRenderer = ({ event, title }: { event: MyEvent; title: string }) => {
-  console.log(event);
   return (
     <Grid container direction="column" wrap="nowrap" spacing={1}>
       <Grid item>

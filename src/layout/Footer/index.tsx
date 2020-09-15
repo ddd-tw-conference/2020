@@ -10,9 +10,9 @@ import Container from "components/Container";
 import InvertTheme from "components/InvertTheme";
 import Grid from "components/RwdGrid";
 import { css } from "emotion";
+import { useIntl } from "gatsby-plugin-intl";
 import whiteLogo from "img/white_DDD_logo.jpg";
 import React, { ElementType, memo } from "react";
-import { useTranslation } from "react-i18next";
 import Item from "./Item";
 import MessengerIcon from "./MessengerIcon";
 
@@ -38,7 +38,7 @@ const RwdGrid = (() => {
 })();
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const intl = useIntl();
   return (
     <InvertTheme>
       <Container className={cssContainer}>
@@ -49,7 +49,9 @@ const Footer = () => {
           <RwdGrid item lg={3} xs={12}>
             <RwdGrid container direction="column" wrap="nowrap" spacing={2}>
               <RwdGrid item>
-                <Typography variant="h6">{t("layout.navbar.info")}</Typography>
+                <Typography variant="h6">
+                  {intl.formatMessage({ id: "layout.navbar.info" })}
+                </Typography>
               </RwdGrid>
               <RwdGrid item>
                 <Item icon={<LocationOnIcon />}>Taipei, Taiwan</Item>
@@ -65,7 +67,7 @@ const Footer = () => {
             <RwdGrid container direction="column" wrap="nowrap" spacing={2}>
               <RwdGrid item>
                 <Typography variant="h6">
-                  {t("layout.navbar.contact")}
+                  {intl.formatMessage({ id: "layout.navbar.contact" })}
                 </Typography>
               </RwdGrid>
               <RwdGrid item>
@@ -86,7 +88,7 @@ const Footer = () => {
             <RwdGrid container direction="column" wrap="nowrap" spacing={2}>
               <RwdGrid item>
                 <Typography variant="h6">
-                  {t("layout.navbar.aboutUs")}
+                  {intl.formatMessage({ id: "layout.navbar.aboutUs" })}
                 </Typography>
               </RwdGrid>
               <RwdGrid item>
