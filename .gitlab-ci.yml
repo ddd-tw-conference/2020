@@ -13,12 +13,13 @@ build:
   stage: build
 
   script:
-    - yarn install
+    - yarn
     - CI= yarn build
+    - mv public build # gatsby path
   artifacts:
     expire_in: 1 hour
     paths:
-      - public/
+      - build/
 
 deploy_production:
   stage: deploy
