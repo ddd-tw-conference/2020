@@ -19,6 +19,7 @@
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
+  "i18n-ally.enabledFrameworks": ["react"],
   "i18n-ally.keepFulfilled": true,
   "i18n-ally.keystyle": "nested",
   "i18n-ally.localesPaths": "src/locales",

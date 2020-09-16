@@ -6,6 +6,8 @@ import DddConf from "blocks/DddConf";
 import Landing from "blocks/Landing";
 import Speakers from "blocks/Speakers";
 import Sponsors from "blocks/Sponsors";
+import Topics from "blocks/Topics";
+import Workshops from "blocks/Workshops";
 import ErrorBoundary from "components/ErrorBoundary";
 import { css } from "emotion";
 import Footer from "layout/Footer";
@@ -73,6 +75,16 @@ function App() {
                     <Grid item>
                       <div id="agenda">
                         <Agenda />
+                      </div>
+                    </Grid>
+                    <Grid item>
+                      <div id="topics">
+                        <Topics />
+                      </div>
+                    </Grid>
+                    <Grid item>
+                      <div id="workshops">
+                        <Workshops />
                       </div>
                     </Grid>
                     <Grid item>

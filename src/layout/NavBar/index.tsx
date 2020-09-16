@@ -126,6 +126,16 @@ function NavBar() {
                     </Button>
                   </Grid>
                   <Grid item>
+                    <Button component={A} href="#topics">
+                      {intl.formatMessage({ id: "layout.navbar.topics" })}
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button component={A} href="#workshops">
+                      {intl.formatMessage({ id: "layout.navbar.workshops" })}
+                    </Button>
+                  </Grid>
+                  <Grid item>
                     <Button component={A} href="#sponsors">
                       {intl.formatMessage({ id: "layout.navbar.sponsors" })}
                     </Button>
@@ -165,6 +175,12 @@ function NavBar() {
                     </MyListItem>
                     <MyListItem onClick={close} href="#agenda">
                       {intl.formatMessage({ id: "layout.navbar.agenda" })}
+                    </MyListItem>
+                    <MyListItem onClick={close} href="#topics">
+                      {intl.formatMessage({ id: "layout.navbar.topics" })}
+                    </MyListItem>
+                    <MyListItem onClick={close} href="#workshops">
+                      {intl.formatMessage({ id: "layout.navbar.workshops" })}
                     </MyListItem>
                     <MyListItem onClick={close} href="#sponsors">
                       {intl.formatMessage({ id: "layout.navbar.sponsors" })}

@@ -23,6 +23,12 @@
     },
     "sponsors": {
       "title": "Sponsors"
+    },
+    "topics": {
+      "title": "Topics"
+    },
+    "workshops": {
+      "title": "Workshops"
     }
   },
   "layout": {
@@ -34,7 +40,9 @@
       "info": "Information",
       "join": "Get Tickets",
       "speakers": "Speakers",
-      "sponsors": "Sponsors"
+      "sponsors": "Sponsors",
+      "topics": "Topics",
+      "workshops": "Workshops"
     }
   }
 }

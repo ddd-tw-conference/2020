@@ -23,6 +23,12 @@
     },
     "sponsors": {
       "title": "贊助商"
+    },
+    "topics": {
+      "title": "議程介紹"
+    },
+    "workshops": {
+      "title": "工作坊"
     }
   },
   "layout": {
@@ -34,7 +40,9 @@
       "info": "活動資訊",
       "join": "我要參加",
       "speakers": "講師介紹",
-      "sponsors": "贊助商"
+      "sponsors": "贊助商",
+      "topics": "議程介紹",
+      "workshops": "工作坊"
     }
   }
 }
