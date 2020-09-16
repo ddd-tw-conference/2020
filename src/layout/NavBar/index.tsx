@@ -24,6 +24,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
+import { navBarHeight } from "Theme";
 import LngSelector from "./LngSelector";
 import logo from "./logo.png";
 import MyListItem from "./MyListItem";
@@ -47,12 +48,11 @@ function NavBar() {
   const scrollY = useScrollPosition();
   const previousScrollY = usePrevious(scrollY, scrollY);
   useEffect(() => {
-    if (scrollY > previousScrollY && !hide) {
-      setHide(true);
+    if (scrollY > previousScrollY && scrollY > navBarHeight) {
+      if (!hide) setHide(true);
       return;
-    }
-    if (scrollY < previousScrollY && hide) {
-      setHide(false);
+    } else if (scrollY < previousScrollY) {
+      if (hide) setHide(false);
     }
   }, [hide, previousScrollY, scrollY]);
   const cssAppBarBase = useMemo(
