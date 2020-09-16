@@ -1,13 +1,9 @@
 import { useTheme } from "@material-ui/core";
+import Markdown from "components/Markdown";
 import { css, cx } from "emotion";
-import marked, { MarkedOptions } from "marked";
-import React, { forwardRef, memo, useCallback, useMemo } from "react";
+import React, { forwardRef, memo, useMemo } from "react";
 import CommonProps from "types/CommonProps";
 import muiToEmotion from "utils/css/muiToEmotion";
-
-const markedOptions: MarkedOptions = {
-  headerIds: false,
-};
 
 const Topic = forwardRef<
   HTMLDivElement,
@@ -38,15 +34,10 @@ const Topic = forwardRef<
     [theme.typography.body1, theme.typography.h6]
   );
   const cls = useMemo(() => cx(cssRoot, className), [className, cssRoot]);
-  const html = useMemo(() => marked(markdown, markedOptions), [markdown]);
-  const createMarkup = useCallback(() => ({ __html: html }), [html]);
   return (
-    <div
-      className={cls}
-      {...props}
-      ref={ref}
-      dangerouslySetInnerHTML={createMarkup()}
-    />
+    <div className={cls} {...props} ref={ref}>
+      <Markdown markdown={markdown} />
+    </div>
   );
 });
 

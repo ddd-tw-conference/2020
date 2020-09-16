@@ -1,6 +1,7 @@
-import { Grid, Typography, useTheme } from "@material-ui/core";
+import { Grid, IconButton, Typography, useTheme } from "@material-ui/core";
 import { css } from "emotion";
-import React, { memo, ReactNode, useMemo } from "react";
+import React, { memo, useCallback, useMemo, useState } from "react";
+import SpeakerDialog from "./SpeakerDialog";
 
 const cssName = css`
   label: name;
@@ -11,10 +12,12 @@ const Speak = ({
   name,
   title,
   imgSrc,
+  article,
 }: {
-  name?: ReactNode;
-  title?: ReactNode;
-  imgSrc?: string;
+  name: string;
+  title: string;
+  imgSrc: string;
+  article: string;
 }) => {
   const theme = useTheme();
   const cssImg = useMemo(
@@ -35,6 +38,9 @@ const Speak = ({
       }),
     [imgSrc, theme.palette.primary.main]
   );
+  const [openedDetail, setOpenedDetail] = useState(false);
+  const openDetail = useCallback(() => setOpenedDetail(true), []);
+  const closeDetail = useCallback(() => setOpenedDetail(false), []);
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Grid
@@ -45,7 +51,7 @@ const Speak = ({
         spacing={3}
       >
         <Grid item>
-          <div className={cssImg} />
+          <IconButton className={cssImg} onClick={openDetail} />
         </Grid>
         <Grid item>
           <Typography variant="h4" className={cssName}>
@@ -56,6 +62,14 @@ const Speak = ({
           <Typography>{title}</Typography>
         </Grid>
       </Grid>
+      <SpeakerDialog
+        open={openedDetail}
+        onClose={closeDetail}
+        name={name}
+        title={title}
+        imgSrc={imgSrc}
+        article={article}
+      />
     </Grid>
   );
 };
