@@ -11,7 +11,8 @@ stages:
   - deploy
 build:
   stage: build
-
+  variables:
+    ALLOW_ROBOTS: "true"
   script:
     - yarn
     - CI= yarn build

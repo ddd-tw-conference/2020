@@ -16,6 +16,7 @@ import A from "components/A";
 import Button from "components/Button";
 import { css, cx } from "emotion";
 import { useIntl } from "gatsby-plugin-intl";
+import logo from "logo.png";
 import React, {
   Fragment,
   memo,
@@ -26,7 +27,6 @@ import React, {
 } from "react";
 import { navBarHeight } from "Theme";
 import LngSelector from "./LngSelector";
-import logo from "./logo.png";
 import MyListItem from "./MyListItem";
 
 const cssHide = css`
