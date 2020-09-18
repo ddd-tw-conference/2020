@@ -1,2 +1,2 @@
-export const showAgenda = true;
-export const showSponsors = true;
+export const showAgenda = false;
+export const showSponsors = false;
