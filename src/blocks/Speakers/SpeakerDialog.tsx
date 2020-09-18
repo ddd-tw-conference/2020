@@ -52,7 +52,7 @@ const SpeakerDialog = ({
       css({
         label: "img",
         backgroundImage: `url(${imgSrc})`,
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         border: "1px solid #707070",
