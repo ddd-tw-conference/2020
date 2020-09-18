@@ -11,22 +11,34 @@ const Speakers = () => {
     <Block title={intl.formatMessage({ id: "blocks.speakers.title" })}>
       <Grid container spacing={5}>
         {[
-          "01",
-          "02",
+          // step 1
+          "12",
+          "08",
+
+          // step 2
+          "15",
+          "13",
+
+          // step 3
+          "16",
           "03",
+
+          // step 4
+
+          // step 5
+
+          // step6
+          "01",
           "04",
+
+          "02",
           "05",
           "06",
           "07",
-          "08",
           "09",
           "10",
           "11",
-          "12",
-          "13",
           "14",
-          "15",
-          "16",
         ].map((id) => (
           <Speaker
             key={id}

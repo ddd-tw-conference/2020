@@ -25,7 +25,7 @@ const Speak = ({
       css({
         label: "img",
         backgroundImage: `url(${imgSrc})`,
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         borderWidth: "24px",
