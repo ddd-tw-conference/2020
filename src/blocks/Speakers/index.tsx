@@ -2,7 +2,7 @@ import { Grid } from "@material-ui/core";
 import Block from "components/Block";
 import { useIntl } from "gatsby-plugin-intl";
 import React, { memo } from "react";
-import imgSean from "./img/sean.png";
+import fallbackImg from "./img/fallback.png";
 import Speaker from "./Speaker";
 
 const Speakers = () => {
@@ -34,7 +34,7 @@ const Speakers = () => {
             title={intl.formatMessage({ id: `speakers.s${id}.title` })}
             article={require(`!!raw-loader!speakers/s${id}/Article.${intl.locale}.md`)}
             imgSrc={
-              require(`speakers/s${id}/speaker`).default?.imgSrc ?? imgSean
+              require(`speakers/s${id}/speaker`).default?.imgSrc ?? fallbackImg
             }
           />
         ))}
