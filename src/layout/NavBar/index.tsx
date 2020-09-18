@@ -12,6 +12,7 @@ import {
 import { Menu as MenuIcon } from "@material-ui/icons";
 import usePrevious from "@react-hook/previous";
 import useScrollPosition from "@react-hook/window-scroll";
+import { showAgenda, showSponsors } from "blockToggle";
 import A from "components/A";
 import Button from "components/Button";
 import { css, cx } from "emotion";
@@ -120,11 +121,13 @@ function NavBar() {
                       {intl.formatMessage({ id: "layout.navbar.speakers" })}
                     </Button>
                   </Grid>
-                  <Grid item>
-                    <Button component={A} href="#agenda">
-                      {intl.formatMessage({ id: "layout.navbar.agenda" })}
-                    </Button>
-                  </Grid>
+                  {showAgenda && (
+                    <Grid item>
+                      <Button component={A} href="#agenda">
+                        {intl.formatMessage({ id: "layout.navbar.agenda" })}
+                      </Button>
+                    </Grid>
+                  )}
                   <Grid item>
                     <Button component={A} href="#topics">
                       {intl.formatMessage({ id: "layout.navbar.topics" })}
@@ -135,11 +138,13 @@ function NavBar() {
                       {intl.formatMessage({ id: "layout.navbar.workshops" })}
                     </Button>
                   </Grid>
-                  <Grid item>
-                    <Button component={A} href="#sponsors">
-                      {intl.formatMessage({ id: "layout.navbar.sponsors" })}
-                    </Button>
-                  </Grid>
+                  {showSponsors && (
+                    <Grid item>
+                      <Button component={A} href="#sponsors">
+                        {intl.formatMessage({ id: "layout.navbar.sponsors" })}
+                      </Button>
+                    </Grid>
+                  )}
                   <Grid item>
                     <LngSelector />
                   </Grid>
@@ -173,18 +178,22 @@ function NavBar() {
                     <MyListItem onClick={close} href="#speakers">
                       {intl.formatMessage({ id: "layout.navbar.speakers" })}
                     </MyListItem>
-                    <MyListItem onClick={close} href="#agenda">
-                      {intl.formatMessage({ id: "layout.navbar.agenda" })}
-                    </MyListItem>
+                    {showAgenda && (
+                      <MyListItem onClick={close} href="#agenda">
+                        {intl.formatMessage({ id: "layout.navbar.agenda" })}
+                      </MyListItem>
+                    )}
                     <MyListItem onClick={close} href="#topics">
                       {intl.formatMessage({ id: "layout.navbar.topics" })}
                     </MyListItem>
                     <MyListItem onClick={close} href="#workshops">
                       {intl.formatMessage({ id: "layout.navbar.workshops" })}
                     </MyListItem>
-                    <MyListItem onClick={close} href="#sponsors">
-                      {intl.formatMessage({ id: "layout.navbar.sponsors" })}
-                    </MyListItem>
+                    {showSponsors && (
+                      <MyListItem onClick={close} href="#sponsors">
+                        {intl.formatMessage({ id: "layout.navbar.sponsors" })}
+                      </MyListItem>
+                    )}
                   </List>
                 </Drawer>
               </Hidden>
