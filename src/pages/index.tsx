@@ -7,6 +7,7 @@ import Speakers from "blocks/Speakers";
 import Sponsors from "blocks/Sponsors";
 import Topics from "blocks/Topics";
 import Workshops from "blocks/Workshops";
+import { showAgenda, showSponsors } from "blockToggle";
 import { css } from "emotion";
 import Footer from "layout/Footer";
 import NavBar from "layout/NavBar";
@@ -57,11 +58,13 @@ function App() {
                   <Speakers />
                 </div>
               </Grid>
-              <Grid item>
-                <div id="agenda">
-                  <Agenda />
-                </div>
-              </Grid>
+              {showAgenda && (
+                <Grid item>
+                  <div id="agenda">
+                    <Agenda />
+                  </div>
+                </Grid>
+              )}
               <Grid item>
                 <div id="topics">
                   <Topics />
@@ -72,11 +75,13 @@ function App() {
                   <Workshops />
                 </div>
               </Grid>
-              <Grid item>
-                <div id="sponsors">
-                  <Sponsors />
-                </div>
-              </Grid>
+              {showSponsors && (
+                <Grid item>
+                  <div id="sponsors">
+                    <Sponsors />
+                  </div>
+                </Grid>
+              )}
             </Grid>
           </Container>
         </Grid>

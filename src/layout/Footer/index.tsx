@@ -13,8 +13,11 @@ import { css } from "emotion";
 import { useIntl } from "gatsby-plugin-intl";
 import whiteLogo from "img/white_DDD_logo.jpg";
 import React, { ElementType, memo } from "react";
+import FacebookSocialIcon from "./icons/FacebookSocialIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import MessengerIcon from "./icons/MessengerIcon";
+import TwitterIcon from "./icons/TwitterIcon";
 import Item from "./Item";
-import MessengerIcon from "./MessengerIcon";
 
 const cssContainer = css`
   label: footerContainer;
@@ -92,8 +95,23 @@ const Footer = () => {
                 </Typography>
               </RwdGrid>
               <RwdGrid item>
-                <A href="https://www.facebook.com/DDDCommunity.tw/">
-                  <Item icon={<FacebookIcon />}>DDD Taiwan</Item>
+                <A href="https://twitter.com/DddTaiwan">
+                  <Item icon={<TwitterIcon />}>DddTaiwan</Item>
+                </A>
+              </RwdGrid>
+              <RwdGrid item>
+                <A href="https://www.instagram.com/ddd_twig">
+                  <Item icon={<InstagramIcon />}>ddd_twig</Item>
+                </A>
+              </RwdGrid>
+              <RwdGrid item>
+                <A href="https://www.facebook.com/DDDCommunity.tw">
+                  <Item icon={<FacebookIcon />}>DDDCommunity.tw</Item>
+                </A>
+              </RwdGrid>
+              <RwdGrid item>
+                <A href="https://www.facebook.com/groups/dddtaiwan">
+                  <Item icon={<FacebookSocialIcon />}>dddtaiwan</Item>
                 </A>
               </RwdGrid>
             </RwdGrid>
