@@ -1,0 +1,114 @@
+{
+  "blocks": {
+    "aboutUs": {
+      "description": "Domain Driven Design Taiwan (DDD Taiwan)是一個鼓勵所有熱愛解決問題的大家一起群體共創的地方，在這裡我們將試著進行更多的交流活動，一起探索從Problem Domain去催生出 Solution Domain",
+      "title": "About DDD TW"
+    },
+    "agenda": {
+      "room": {
+        "breakTime": "Break Time"
+      },
+      "title": "Agenda"
+    },
+    "dddConf": {
+      "description": "第一屆的年會，我們的主軸會希望能讓更多人知道何謂領域驅動設計(DDD)，以及讓更多人意識到其實 DDD 真的不是只是一票技術人員寫寫程式，關注程式碼本身結構性的問題而已，所以預計會有演講與工作坊並進的方式來進行。今年我們預計有機會邀請到來自 DDD_Eu 、中國等地的講者，並且同時結合台灣對於領域驅動設計長年有研究並且有意願與大家分享的老朋友們，一起與大家共同探討這個已經出生了10多年的老方法能給大家帶來的新體驗與感受。",
+      "title": "About DDD Conf"
+    },
+    "landing": {
+      "join": "Get Tickets",
+      "title": "領域驅動設計年會"
+    },
+    "speakers": {
+      "title": "Speakers"
+    },
+    "sponsors": {
+      "title": "Sponsors"
+    },
+    "topics": {
+      "title": "Topics"
+    },
+    "workshops": {
+      "title": "Workshops"
+    }
+  },
+  "layout": {
+    "navbar": {
+      "aboutUs": "About Us",
+      "agenda": "Agenda",
+      "contact": "Contact Us",
+      "dddConference": "DDD Conference",
+      "info": "Information",
+      "join": "Get Tickets",
+      "speakers": "Speakers",
+      "sponsors": "Sponsors",
+      "topics": "Topics",
+      "workshops": "Workshops"
+    }
+  },
+  "speakers": {
+    "s01": {
+      "name": "Kenny Baas-Schwegler",
+      "title": "Socio-technical organisation designer and software architect. Facilitating change using Domain-Driven Design, Deep Democracy and visual collaboration"
+    },
+    "s02": {
+      "name": "João Rosa",
+      "title": "Strategic Software Delivery Consultant at Xebia"
+    },
+    "s03": {
+      "name": "張逸",
+      "title": "高質量Coder、領域驅動設計佈道師、微服務系統架構師，大資料平台架構師，敏捷轉型諮詢師"
+    },
+    "s04": {
+      "name": "Kacper Gunia",
+      "title": "Trainer, Consultant & DDD London Organiser."
+    },
+    "s05": {
+      "name": "Clark",
+      "title": "富邦人壽 經理"
+    },
+    "s06": {
+      "name": "黃冠融",
+      "title": "Octalysis Prime/Software Engineer"
+    },
+    "s07": {
+      "name": "林世鵬",
+      "title": "街口電子支付技術團隊負責人"
+    },
+    "s08": {
+      "name": "Teddy Chen",
+      "title": "泰迪軟體創辦人，部落格「搞笑談軟工」版主"
+    },
+    "s09": {
+      "name": "鄭棋文",
+      "title": "愛碼市智能科技股份有限公司 專案經理"
+    },
+    "s10": {
+      "name": "張昀煒",
+      "title": "台灣敏捷協會"
+    },
+    "s11": {
+      "name": "Paul Shih 施政源",
+      "title": "Fable CEO"
+    },
+    "s12": {
+      "name": "陳啟彰 Nor",
+      "title": "領潮創意設計企業社 / 社長"
+    },
+    "s13": {
+      "name": "Sam Huang 黃世銘",
+      "title": "鈦坦科技 ScrumMaster"
+    },
+    "s14": {
+      "name": "林德政",
+      "title": "趨勢科技股份有限公司 / 使用者體驗設計部 / 資深專案經理"
+    },
+    "s15": {
+      "name": "Gelis",
+      "title": "集英信誠 資深 .NET 技術顧問"
+    },
+    "s16": {
+      "name": "王威",
+      "title": "ThoughtWorks 中國區諮詢團隊數位技術戰略諮詢師和首席企業架構師"
+    }
+  }
+}

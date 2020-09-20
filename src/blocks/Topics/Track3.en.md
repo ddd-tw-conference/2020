@@ -1,0 +1,12 @@
+# Track 3: Product & Software design
+
+"Production code, the place we embed our product's value in."
+
+- Why do our codes go against our products? Where are user stories in our source code...?
+- New user requirements arrive! Wait, what? Our codes cannot accommodate the new features?
+- MUST need an effective way to model user requirements, so our code can grow as our product grows in order to receive faster feedback from our market.
+- MUST NOT compromise the value of your product! Many mature methodologies like DDD and agile development have come out for years to solve problems about both product design and software architecture. It's time to make a difference!
+- Including:
+  1. Product's requirement refinement.
+  2. Product's value stream and design.
+  3. Product codes modularization using DDD tactics
