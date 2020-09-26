@@ -6,7 +6,7 @@ import {
 import { eventTime } from "constant";
 import { format } from "date-fns";
 import { css } from "emotion";
-import React, { memo, useMemo } from "react";
+import React, { Fragment, memo, useMemo } from "react";
 import Item from "./Item";
 
 const Info = () => {
@@ -33,7 +33,16 @@ const Info = () => {
   );
   return (
     <div className={cssInfo}>
-      <Item icon={<LocationOnOutlinedIcon />} title="Taipei, Taiwan" />
+      <Item
+        icon={<LocationOnOutlinedIcon />}
+        title={
+          <Fragment>
+            {"Taipei, Taiwan"}
+            <br />
+            {"北投會館"}
+          </Fragment>
+        }
+      />
       <Item icon={<ScheduleIcon />} title={format(eventTime, "d MMM yyyy")} />
     </div>
   );

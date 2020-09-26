@@ -2,6 +2,15 @@ import { Grid, Typography, useTheme } from "@material-ui/core";
 import { css } from "emotion";
 import React, { memo, useMemo } from "react";
 
+const cssNum = css`
+  label: num;
+  font-size: 4rem;
+`;
+
+const cssUnit = css`
+  label: unit;
+`;
+
 const TimeRenderBlock = ({ num, unit }: { num: number; unit: string }) => {
   const theme = useTheme();
   const cssBlock = useMemo(
@@ -9,8 +18,8 @@ const TimeRenderBlock = ({ num, unit }: { num: number; unit: string }) => {
       css({
         label: "block",
         border: `3px solid ${theme.palette.primary.contrastText}`,
-        "--size": "150px",
-        width: "var(--size)",
+        "--size": "8rem",
+        minWidth: "var(--size)",
         height: "var(--size)",
       }),
     [theme.palette.primary.contrastText]
@@ -18,7 +27,6 @@ const TimeRenderBlock = ({ num, unit }: { num: number; unit: string }) => {
   return (
     <Grid
       container
-      spacing={2}
       className={cssBlock}
       direction="column"
       wrap="nowrap"
@@ -26,10 +34,10 @@ const TimeRenderBlock = ({ num, unit }: { num: number; unit: string }) => {
       alignItems="center"
     >
       <Grid item>
-        <Typography variant="h5">{num}</Typography>
+        <Typography className={cssNum}>{num}</Typography>
       </Grid>
       <Grid item>
-        <Typography>{unit}</Typography>
+        <Typography className={cssUnit}>{unit}</Typography>
       </Grid>
     </Grid>
   );
