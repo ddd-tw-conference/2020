@@ -1,4 +1,5 @@
-import { GatsbyLinkProps, Link } from "gatsby";
+import { GatsbyLinkProps } from "gatsby";
+import { Link } from "gatsby-plugin-intl";
 import React, { forwardRef, memo, useMemo } from "react";
 import CommonProps from "types/CommonProps";
 import isExternal from "utils/url/isExternal";

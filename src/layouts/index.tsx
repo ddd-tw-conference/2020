@@ -1,22 +1,29 @@
-import { Container } from "@material-ui/core";
-import { Alert } from "@material-ui/lab";
-import ErrorBoundary from "components/ErrorBoundary";
+import { css } from "emotion";
 import React, { memo, ReactNode, StrictMode } from "react";
-import Theme from "Theme";
+import ErrorHandler from "./ErrorHandler";
+import Footer from "./Footer";
 import Helmet from "./Helmet";
+import NavBar from "./NavBar";
+import Theme from "./Theme";
 
-const ErrorMessage = () => (
-  <Container>
-    <Alert severity="error">Something went wrong.</Alert>
-  </Container>
-);
+const cssOuter = css`
+  label: outer;
+  overflow: hidden;
+`;
 
 const Layout = ({ children }: { children?: ReactNode }) => {
   return (
     <StrictMode>
       <Helmet />
       <Theme>
-        <ErrorBoundary fallback={<ErrorMessage />}>{children}</ErrorBoundary>
+        <ErrorHandler>
+          <div className={cssOuter}>
+            <NavBar />
+            <div id="top" />
+            {children}
+            <Footer />
+          </div>
+        </ErrorHandler>
       </Theme>
     </StrictMode>
   );

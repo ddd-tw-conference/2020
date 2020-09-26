@@ -11,6 +11,7 @@ export const navBarHeight = 64;
 
 const styles = css({
   html: {
+    background: "#27539D",
     WebkitFontSmoothing: "antialiased",
     MozOsxFontSmoothing: "grayscale",
     scrollPaddingTop: `${navBarHeight}px`,

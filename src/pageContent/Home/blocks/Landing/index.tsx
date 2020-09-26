@@ -18,8 +18,8 @@ import {
 import { css } from "emotion";
 import { useIntl } from "gatsby-plugin-intl";
 import whiteLogo from "img/white_DDD_logo.jpg";
+import { navBarHeight } from "layouts/Theme";
 import React, { useEffect, useMemo, useState } from "react";
-import { navBarHeight } from "Theme";
 import TimeRenderBlock from "./TimeRenderBlock";
 
 const cssLanding = css`
