@@ -2,7 +2,7 @@
   "name": "2020-ddd-conference",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ddd-tw.com/",
+  "homepage": "https://ddd-tw.com",
   "repository": {
     "type": "git",
     "url": "https://gitlab.com/ddd-tw-community/2020-ddd-conference.git"
