@@ -16,17 +16,12 @@ const Info = () => {
       css({
         label: "info",
         "&>*": {
-          marginBottom: "0.5em",
+          margin: "0.5em 2em",
         },
         display: "flex",
-        flexDirection: "column",
+        flexWrap: "wrap",
         [theme.breakpoints.down("md")]: {
-          flexDirection: "row",
-          flexWrap: "wrap",
           justifyContent: "center",
-          "&>*": {
-            margin: "0.5em 2em",
-          },
         },
       }),
     [theme.breakpoints]
