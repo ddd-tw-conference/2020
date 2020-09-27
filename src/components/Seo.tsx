@@ -26,7 +26,7 @@ const Seo = ({
   title?: string;
   description?: string;
   image?: string;
-  article?: string;
+  article?: boolean;
 }) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
