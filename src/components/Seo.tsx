@@ -1,7 +1,7 @@
 import { useLocation } from "@reach/router";
 import { graphql, useStaticQuery } from "gatsby";
 import defaultImage from "img/white_DDD_logo.jpg";
-import React from "react";
+import React, { memo, useMemo } from "react";
 import { Helmet } from "react-helmet";
 
 const query = graphql`
@@ -14,7 +14,10 @@ const query = graphql`
   }
 `;
 
-const SEO = ({
+const defaultTitle = "DDD TW Conference 2020";
+const defaultDescription = "Domain-Driven Design Taiwan Conference 2020";
+
+const Seo = ({
   title,
   description,
   image,
@@ -27,21 +30,19 @@ const SEO = ({
 }) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
-  const {
-    defaultTitle,
-    titleTemplate,
-    defaultDescription,
-    siteUrl,
-  } = site.siteMetadata;
-  const seo = {
-    title: title || defaultTitle,
-    description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname}`,
-  };
+  const { siteUrl } = site.siteMetadata;
+  const seo = useMemo(
+    () => ({
+      title: title || defaultTitle,
+      description: description || defaultDescription,
+      image: `${siteUrl}${image || defaultImage}`,
+      url: `${siteUrl}${pathname}`,
+    }),
+    [description, image, pathname, siteUrl, title]
+  );
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
-      <title>{seo.title}</title>
+    <Helmet defaultTitle={defaultTitle} titleTemplate={`%s | ${defaultTitle}`}>
+      {(title ? true : null) && <title>{seo.title}</title>}
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
@@ -63,4 +64,4 @@ const SEO = ({
   );
 };
 
-export default SEO;
+export default memo(Seo);
