@@ -6,29 +6,35 @@ import React, { memo, useMemo } from "react";
 
 const Topics = () => {
   const intl = useIntl();
-  const markdown1 = useMemo(
-    () => require(`!!raw-loader!./Track1.${intl.locale}.md`),
+  const Markdown1 = useMemo(
+    () => require(`./Track1.${intl.locale}.mdx`).default,
     [intl.locale]
   );
-  const markdown2 = useMemo(
-    () => require(`!!raw-loader!./Track2.${intl.locale}.md`),
+  const Markdown2 = useMemo(
+    () => require(`./Track2.${intl.locale}.mdx`).default,
     [intl.locale]
   );
-  const markdown3 = useMemo(
-    () => require(`!!raw-loader!./Track3.${intl.locale}.md`),
+  const Markdown3 = useMemo(
+    () => require(`./Track3.${intl.locale}.mdx`).default,
     [intl.locale]
   );
   return (
     <Block title={intl.formatMessage({ id: "blocks.topics.title" })}>
       <Grid container direction="column" wrap="nowrap" spacing={2}>
         <Grid item>
-          <Topic markdown={markdown1} />
+          <Topic>
+            <Markdown1 />
+          </Topic>
         </Grid>
         <Grid item>
-          <Topic markdown={markdown2} />
+          <Topic>
+            <Markdown2 />
+          </Topic>
         </Grid>
         <Grid item>
-          <Topic markdown={markdown3} />
+          <Topic>
+            <Markdown3 />
+          </Topic>
         </Grid>
       </Grid>
     </Block>

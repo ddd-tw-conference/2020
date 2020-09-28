@@ -1,8 +1,14 @@
+import Seo from "components/Seo";
 import Home from "pageContent/Home";
-import React, { memo } from "react";
+import React, { Fragment, memo } from "react";
 
 function App() {
-  return <Home />;
+  return (
+    <Fragment>
+      <Seo />
+      <Home />
+    </Fragment>
+  );
 }
 
 export default memo(App);

@@ -5,13 +5,15 @@ import React, { memo, useMemo } from "react";
 
 const Workshops = () => {
   const intl = useIntl();
-  const article = useMemo(
-    () => require(`!!raw-loader!./Article.${intl.locale}.md`),
+  const Article = useMemo(
+    () => require(`./Article.${intl.locale}.mdx`).default,
     [intl.locale]
   );
   return (
     <Block title={intl.formatMessage({ id: "blocks.workshops.title" })}>
-      <Topic markdown={article} />
+      <Topic>
+        <Article />
+      </Topic>
     </Block>
   );
 };

@@ -1,77 +1,59 @@
-import { Grid, IconButton, Typography, useTheme } from "@material-ui/core";
+import { Button, Grid, Typography } from "@material-ui/core";
+import Image from "components/speaker/Image";
 import { css } from "emotion";
-import React, { memo, useCallback, useMemo, useState } from "react";
-import SpeakerDialog from "./SpeakerDialog";
+import { Link } from "gatsby-plugin-intl";
+import React, { memo } from "react";
+
+const cssButton = css`
+  label: btn;
+  width: 280px;
+  text-transform: none;
+`;
 
 const cssName = css`
   label: name;
   font-weight: bold;
 `;
 
-const Speak = ({
+const Speaker = ({
+  id,
   name,
   title,
   imgSrc,
-  article,
 }: {
-  name: string;
-  title: string;
-  imgSrc: string;
-  article: string;
+  id: string;
+  name?: string;
+  title?: string;
+  imgSrc?: string;
 }) => {
-  const theme = useTheme();
-  const cssImg = useMemo(
-    () =>
-      css({
-        label: "img",
-        backgroundImage: `url(${imgSrc})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        borderWidth: "24px",
-        borderColor: theme.palette.primary.main,
-        borderStyle: "solid",
-        borderRadius: "50%",
-        "--size": "280px",
-        width: "var(--size)",
-        height: "var(--size)",
-      }),
-    [imgSrc, theme.palette.primary.main]
-  );
-  const [openedDetail, setOpenedDetail] = useState(false);
-  const openDetail = useCallback(() => setOpenedDetail(true), []);
-  const closeDetail = useCallback(() => setOpenedDetail(false), []);
   return (
-    <Grid item xs={12} sm={6} md={4}>
-      <Grid
-        container
-        direction="column"
-        wrap="nowrap"
-        alignItems="center"
-        spacing={3}
-      >
-        <Grid item>
-          <IconButton className={cssImg} onClick={openDetail} />
+    <Grid item>
+      <Button component={Link} to={`/speakers/${id}`} className={cssButton}>
+        <Grid
+          container
+          direction="column"
+          wrap="nowrap"
+          justifyContent="center"
+          alignItems="center"
+          spacing={1}
+        >
+          <Grid item>
+            <Image src={imgSrc} />
+          </Grid>
+          <Grid item>
+            <Typography variant="h4" className={cssName} align="center">
+              {name}
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography align="center" color="textPrimary">
+              {title}
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Typography variant="h4" className={cssName}>
-            {name}
-          </Typography>
-        </Grid>
-        <Grid item>
-          <Typography>{title}</Typography>
-        </Grid>
-      </Grid>
-      <SpeakerDialog
-        open={openedDetail}
-        onClose={closeDetail}
-        name={name}
-        title={title}
-        imgSrc={imgSrc}
-        article={article}
-      />
+      </Button>
     </Grid>
   );
 };
 
-export default memo(Speak);
+export default memo(Speaker);

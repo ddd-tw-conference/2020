@@ -3,7 +3,6 @@ import Block from "components/Block";
 import { css } from "emotion";
 import { useIntl } from "gatsby-plugin-intl";
 import React, { memo } from "react";
-import fallbackImg from "./img/fallback.png";
 import Speaker from "./Speaker";
 
 const hasMoreSpeakers = true;
@@ -21,46 +20,43 @@ const Speakers = () => {
   return (
     <Block title={intl.formatMessage({ id: "blocks.speakers.title" })}>
       <div>
-        <Grid container spacing={5}>
+        <Grid container justifyContent="center" spacing={5}>
           {[
             // step 1
-            "12",
-            "08",
+            "nor",
+            "teddy-chen",
 
-            // // step 2
-            // "15",
-            // "13",
+            // step 2
+            "clark",
+            "sam-huang",
 
-            // // step 3
-            // "16",
-            // "03",
+            // step 3
+            "wang-wei",
+            "zhang-yi",
 
-            // // step 4
+            // step 4
 
-            // // step 5
+            // step 5
 
-            // // step 6
-            // "01",
-            // "04",
+            // step 6
+            "kenny-baas-schwegler",
+            "kacper-gunia",
 
-            // "02",
-            // "05",
-            // "06",
-            // "07",
-            // "09",
-            // "10",
-            // "11",
-            // "14",
+            "gelis",
+            "joao-rosa",
+            "huang-guan-rong",
+            "lin-shi-pong",
+            "zheng-qi-wen",
+            "zhang-yun-wei",
+            "paul-shih",
+            "lin-de-zheng",
           ].map((id) => (
             <Speaker
               key={id}
-              name={intl.formatMessage({ id: `speakers.s${id}.name` })}
-              title={intl.formatMessage({ id: `speakers.s${id}.title` })}
-              article={require(`!!raw-loader!speakers/s${id}/Article.${intl.locale}.md`)}
-              imgSrc={
-                require(`speakers/s${id}/speaker`).default?.imgSrc ??
-                fallbackImg
-              }
+              id={id}
+              name={intl.formatMessage({ id: `speakers.${id}.name` })}
+              title={intl.formatMessage({ id: `speakers.${id}.title` })}
+              imgSrc={require(`speakers/${id}/profile`).default}
             />
           ))}
         </Grid>
