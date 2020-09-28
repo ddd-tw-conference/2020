@@ -27,7 +27,7 @@ const Speakers = () => {
             "teddy-chen",
 
             // step 2
-            "gelis",
+            "clark",
             "sam-huang",
 
             // step 3
@@ -42,8 +42,8 @@ const Speakers = () => {
             "kenny-baas-schwegler",
             "kacper-gunia",
 
+            "gelis",
             "joao-rosa",
-            "clark",
             "huang-guan-rong",
             "lin-shi-pong",
             "zheng-qi-wen",
