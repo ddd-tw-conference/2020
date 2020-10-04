@@ -1,100 +1,63 @@
 import { Grid } from "@material-ui/core";
 import Block from "components/Block";
 import { useIntl } from "gatsby-plugin-intl";
-import React, { memo, useMemo } from "react";
+import React, { memo } from "react";
 import { MyEvent } from "./Event";
-import imgSean from "./img/sean.png";
 import Room from "./Room";
+
+const room241Events: MyEvent[] = [
+  {
+    start: new Date("2020-11-27T09:00:00+08:00"),
+    end: new Date("2020-11-27T11:00:00+08:00"),
+    resource: {
+      speaker: "anonymous",
+    },
+  },
+  {
+    start: new Date("2020-11-27T13:00:00+08:00"),
+    end: new Date("2020-11-27T16:00:00+08:00"),
+    resource: {
+      speaker: "anonymous",
+    },
+  },
+];
+
+const room228Events: MyEvent[] = [
+  {
+    start: new Date("2020-11-27T09:00:00+08:00"),
+    end: new Date("2020-11-27T12:00:00+08:00"),
+    resource: {
+      speaker: "anonymous",
+    },
+  },
+  {
+    start: new Date("2020-11-27T14:00:00+08:00"),
+    end: new Date("2020-11-27T16:00:00+08:00"),
+    resource: {
+      speaker: "anonymous",
+    },
+  },
+];
+
+const room371Events: MyEvent[] = [
+  {
+    start: new Date("2020-11-27T10:00:00+08:00"),
+    end: new Date("2020-11-27T12:00:00+08:00"),
+    resource: {
+      speaker: "anonymous",
+    },
+  },
+  {
+    start: new Date("2020-11-27T13:00:00+08:00"),
+    end: new Date("2020-11-27T16:00:00+08:00"),
+    resource: {
+      speaker: "anonymous",
+    },
+  },
+];
 
 const Agenda = () => {
   const intl = useIntl();
-  const room241Events: MyEvent[] = useMemo(
-    () => [
-      {
-        start: new Date("2020-11-27T09:00:00+08:00"),
-        end: new Date("2020-11-27T11:00:00+08:00"),
-        title: "DDD Topic",
-        resource: {
-          speaker: {
-            name: "Sean Lin",
-            title: "Senior Engineer",
-            imgSrc: imgSean,
-          },
-        },
-      },
-      {
-        start: new Date("2020-11-27T13:00:00+08:00"),
-        end: new Date("2020-11-27T16:00:00+08:00"),
-        title: "DDD Topic",
-        resource: {
-          speaker: {
-            name: "Sean Lin",
-            title: "Senior Engineer",
-            imgSrc: imgSean,
-          },
-        },
-      },
-    ],
-    []
-  );
-  const room228Events: MyEvent[] = useMemo(
-    () => [
-      {
-        start: new Date("2020-11-27T09:00:00+08:00"),
-        end: new Date("2020-11-27T12:00:00+08:00"),
-        title: "DDD Topic",
-        resource: {
-          speaker: {
-            name: "Sean Lin",
-            title: "Senior Engineer",
-            imgSrc: imgSean,
-          },
-        },
-      },
-      {
-        start: new Date("2020-11-27T14:00:00+08:00"),
-        end: new Date("2020-11-27T16:00:00+08:00"),
-        title: "DDD Topic",
-        resource: {
-          speaker: {
-            name: "Sean Lin",
-            title: "Senior Engineer",
-            imgSrc: imgSean,
-          },
-        },
-      },
-    ],
-    []
-  );
-  const room371Events: MyEvent[] = useMemo(
-    () => [
-      {
-        start: new Date("2020-11-27T10:00:00+08:00"),
-        end: new Date("2020-11-27T12:00:00+08:00"),
-        title: "DDD Topic",
-        resource: {
-          speaker: {
-            name: "Sean Lin",
-            title: "Senior Engineer",
-            imgSrc: imgSean,
-          },
-        },
-      },
-      {
-        start: new Date("2020-11-27T13:00:00+08:00"),
-        end: new Date("2020-11-27T16:00:00+08:00"),
-        title: "DDD Topic",
-        resource: {
-          speaker: {
-            name: "Sean Lin",
-            title: "Senior Engineer",
-            imgSrc: imgSean,
-          },
-        },
-      },
-    ],
-    []
-  );
   return (
     <Block title={intl.formatMessage({ id: "blocks.agenda.title" })}>
       <Grid container alignItems="stretch" spacing={2}>
