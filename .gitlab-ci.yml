@@ -1,6 +1,7 @@
 image: node:14.11.0
 
 cache:
+  key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules/
 
@@ -9,8 +10,9 @@ stages:
 
 build:
   stage: build
-  script:
+  before_script:
     - yarn
+  script:
     - yarn build
   artifacts:
     expire_in: 1 hour
