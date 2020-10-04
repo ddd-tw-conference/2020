@@ -2,7 +2,7 @@ import { Grid, Typography, useTheme } from "@material-ui/core";
 import Calendar from "components/Calendar";
 import { eventTime } from "constant";
 import { css, cx } from "emotion";
-import { useIntl } from "gatsby-plugin-intl";
+import { navigate, useIntl } from "gatsby-plugin-intl";
 import React, { memo, ReactNode, useCallback, useMemo } from "react";
 import { stringOrDate } from "react-big-calendar";
 import muiToEmotion from "utils/css/muiToEmotion";
@@ -23,16 +23,23 @@ const components = {
   event: Event,
 };
 
+const selectEventHandler = (event: MyEvent) => {
+  if (!event.resource?.speaker) return;
+  navigate(`/speakers/${event.resource.speaker}`);
+};
+
 const Room = ({ title, events }: { title: ReactNode; events: MyEvent[] }) => {
   const intl = useIntl();
   const theme = useTheme();
-  const mergedEvents = useMemo(
+  const mergedEvents: MyEvent[] = useMemo(
     () => [
       ...events,
       {
         start: new Date("2020-11-27T12:00:00+08:00"),
         end: new Date("2020-11-27T13:00:00+08:00"),
-        title: intl.formatMessage({ id: "blocks.agenda.room.breakTime" }),
+        resource: {
+          topic: intl.formatMessage({ id: "blocks.agenda.room.breakTime" }),
+        },
       },
     ],
     [events, intl]
@@ -56,8 +63,8 @@ const Room = ({ title, events }: { title: ReactNode; events: MyEvent[] }) => {
           }
         `
       );
-      return event.title ===
-        intl.formatMessage({ id: "blocks.agenda.room.breakTime" })
+      const isSpeaker = !event.resource?.topic;
+      return !isSpeaker
         ? {
             className: cx(
               init,
@@ -86,7 +93,6 @@ const Room = ({ title, events }: { title: ReactNode; events: MyEvent[] }) => {
           };
     },
     [
-      intl,
       theme.palette.primary.light,
       theme.palette.primary.main,
       theme.palette.secondary.contrastText,
@@ -112,6 +118,7 @@ const Room = ({ title, events }: { title: ReactNode; events: MyEvent[] }) => {
           components={components}
           eventPropGetter={eventPropGetter}
           events={mergedEvents}
+          onSelectEvent={selectEventHandler}
           min={new Date("2020-11-27T09:00:00+08:00")}
           max={new Date("2020-11-27T16:00:00+08:00")}
           date={eventTime}
