@@ -30,26 +30,26 @@ const Speakers = () => {
             "clark",
             "sam-huang",
 
-            // // step 3
-            // "wang-wei",
-            // "zhang-yi",
+            // step 3
+            "wang-wei",
+            "zhang-yi",
 
-            // // step 4
+            // step 4
 
-            // // step 5
+            // step 5
 
-            // // step 6
-            // "kenny-baas-schwegler",
-            // "kacper-gunia",
+            // step 6
+            "kenny-baas-schwegler",
+            "kacper-gunia",
 
-            // "gelis",
-            // "joao-rosa",
-            // "huang-guan-rong",
-            // "lin-shi-pong",
-            // "zheng-qi-wen",
-            // "zhang-yun-wei",
-            // "paul-shih",
-            // "lin-de-zheng",
+            "gelis",
+            "joao-rosa",
+            "huang-guan-rong",
+            "lin-shi-pong",
+            "zheng-qi-wen",
+            "zhang-yun-wei",
+            "paul-shih",
+            "lin-de-zheng",
           ].map((id) => (
             <Speaker
               key={id}
