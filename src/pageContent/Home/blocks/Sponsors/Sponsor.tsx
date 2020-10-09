@@ -13,7 +13,7 @@ import React, { memo, useCallback, useMemo, useState } from "react";
 const cssImgInInfo = css`
   label: imgInInfo;
   max-height: 200px;
-  max-width: 150%;
+  max-width: 100%;
   margin-bottom: 1rem;
 `;
 
