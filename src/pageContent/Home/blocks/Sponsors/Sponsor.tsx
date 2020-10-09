@@ -17,6 +17,11 @@ const cssImgInInfo = css`
   margin-bottom: 1rem;
 `;
 
+const cssContent = css`
+  label: content;
+  padding-bottom: 24px;
+`;
+
 const Sponsor = ({ id }: { id: string }) => {
   const imgSrc = useMemo(() => require(`./${id}/logo.png`), [id]);
   const intl = useIntl();
@@ -75,7 +80,7 @@ const Sponsor = ({ id }: { id: string }) => {
       </Tooltip>
       <Dialog open={infoOpened} onClick={infoClose}>
         <DialogTitle>{name}</DialogTitle>
-        <DialogContent>
+        <DialogContent className={cssContent}>
           <img src={imgSrc} alt={name} className={cssImgInInfo} />
           <Content />
         </DialogContent>
