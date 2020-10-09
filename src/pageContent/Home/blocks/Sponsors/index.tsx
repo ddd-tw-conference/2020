@@ -2,9 +2,6 @@ import { Grid } from "@material-ui/core";
 import Block from "components/Block";
 import { useIntl } from "gatsby-plugin-intl";
 import React, { memo } from "react";
-import imgAmazon from "./img/amazon.png";
-import imgIbm from "./img/ibm.png";
-import imgMicrosoft from "./img/microsoft.png";
 import Sponsor from "./Sponsor";
 
 const Sponsors = () => {
@@ -17,21 +14,10 @@ const Sponsors = () => {
         alignItems="flex-start"
         justifyContent="center"
       >
-        <Sponsor imgSrc={imgIbm} alt="IBM" />
-        <Sponsor imgSrc={imgAmazon} alt="Amazon" />
-        <Sponsor imgSrc={imgMicrosoft} alt="Microsoft" />
-        <Sponsor imgSrc={imgIbm} alt="IBM" />
-        <Sponsor imgSrc={imgAmazon} alt="Amazon" />
-        <Sponsor imgSrc={imgMicrosoft} alt="Microsoft" />
-        <Sponsor imgSrc={imgIbm} alt="IBM" />
-        <Sponsor imgSrc={imgAmazon} alt="Amazon" />
-        <Sponsor imgSrc={imgMicrosoft} alt="Microsoft" />
-        <Sponsor imgSrc={imgIbm} alt="IBM" />
-        <Sponsor imgSrc={imgAmazon} alt="Amazon" />
-        <Sponsor imgSrc={imgMicrosoft} alt="Microsoft" />
-        <Sponsor imgSrc={imgIbm} alt="IBM" />
-        <Sponsor imgSrc={imgAmazon} alt="Amazon" />
-        <Sponsor imgSrc={imgMicrosoft} alt="Microsoft" />
+        <Sponsor id="aws" />
+        <Sponsor id="jet-brains" />
+        <Sponsor id="fable" />
+        <Sponsor id="soft-leader" />
       </Grid>
     </Block>
   );

@@ -7,6 +7,13 @@ Requirements:
 - [node@^14.10.1](https://nodejs.org/)
 - [yarn@^1.22.5](https://yarnpkg.com/)
 
+Recommend IDE:
+
+- [Visual Studio Code](https://code.visualstudio.com/) with followed extensions
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+
 Install the dependencies to develop:
 
 ```sh

@@ -12,7 +12,7 @@ import {
 import { Menu as MenuIcon } from "@material-ui/icons";
 import usePrevious from "@react-hook/previous";
 import useScrollPosition from "@react-hook/window-scroll";
-import { showAgenda, showSponsors } from "blockToggle";
+import { showAgenda } from "blockToggle";
 import A from "components/A";
 import Button from "components/Button";
 import { css, cx } from "emotion";
@@ -138,13 +138,11 @@ function NavBar() {
                       {intl.formatMessage({ id: "layout.navbar.workshops" })}
                     </Button>
                   </Grid>
-                  {showSponsors && (
-                    <Grid item>
-                      <Button component={A} href="/#sponsors">
-                        {intl.formatMessage({ id: "layout.navbar.sponsors" })}
-                      </Button>
-                    </Grid>
-                  )}
+                  <Grid item>
+                    <Button component={A} href="/#sponsors">
+                      {intl.formatMessage({ id: "layout.navbar.sponsors" })}
+                    </Button>
+                  </Grid>
                   <Grid item>
                     <LngSelector />
                   </Grid>
@@ -189,11 +187,9 @@ function NavBar() {
                     <MyListItem onClick={close} href="/#workshops">
                       {intl.formatMessage({ id: "layout.navbar.workshops" })}
                     </MyListItem>
-                    {showSponsors && (
-                      <MyListItem onClick={close} href="/#sponsors">
-                        {intl.formatMessage({ id: "layout.navbar.sponsors" })}
-                      </MyListItem>
-                    )}
+                    <MyListItem onClick={close} href="/#sponsors">
+                      {intl.formatMessage({ id: "layout.navbar.sponsors" })}
+                    </MyListItem>
                   </List>
                 </Drawer>
               </Hidden>
