@@ -1,19 +1,8 @@
 import { Grid } from "@material-ui/core";
 import Block from "components/Block";
-import { css } from "emotion";
 import { useIntl } from "gatsby-plugin-intl";
 import React, { memo } from "react";
 import Speaker from "./Speaker";
-
-const hasMoreSpeakers = true;
-
-const cssMore = css`
-  label: more;
-  font-size: 2rem;
-  color: #707070;
-  text-align: right;
-  margin-top: 0.5em;
-`;
 
 const Speakers = () => {
   const intl = useIntl();
@@ -22,26 +11,14 @@ const Speakers = () => {
       <div>
         <Grid container justifyContent="center" spacing={5}>
           {[
-            // step 1
             "nor",
             "teddy-chen",
-
-            // step 2
             "clark",
             "sam-huang",
-
-            // step 3
             "wang-wei",
             "zhang-yi",
-
-            // step 4
-
-            // step 5
-
-            // step 6
             "kenny-baas-schwegler",
             "kacper-gunia",
-
             "gelis",
             "joao-rosa",
             "huang-guan-rong",
@@ -60,11 +37,6 @@ const Speakers = () => {
             />
           ))}
         </Grid>
-        {hasMoreSpeakers && (
-          <div className={cssMore}>
-            ...{intl.formatMessage({ id: "blocks.speaks.more" })}
-          </div>
-        )}
       </div>
     </Block>
   );
