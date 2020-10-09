@@ -1,5 +1,5 @@
 import { Container, Grid } from "@material-ui/core";
-import { showAgenda, showSponsors } from "blockToggle";
+import { showAgenda } from "blockToggle";
 import { css } from "emotion";
 import React, { memo } from "react";
 import AboutUs from "./blocks/AboutUs";
@@ -65,13 +65,11 @@ function Home() {
                 <Workshops />
               </div>
             </Grid>
-            {showSponsors && (
-              <Grid item>
-                <div id="sponsors">
-                  <Sponsors />
-                </div>
-              </Grid>
-            )}
+            <Grid item>
+              <div id="sponsors">
+                <Sponsors />
+              </div>
+            </Grid>
           </Grid>
         </Container>
       </Grid>

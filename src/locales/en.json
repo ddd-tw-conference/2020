@@ -168,5 +168,19 @@
       "title": "愛碼市智能科技股份有限公司 專案經理",
       "topic": "."
     }
+  },
+  "sponsors": {
+    "aws": {
+      "name": "AWS (黃金級贊助)"
+    },
+    "fable": {
+      "name": "寓意科技 (黃金級贊助)"
+    },
+    "jet-brains": {
+      "name": "JetBrains (特別贊助)"
+    },
+    "soft-leader": {
+      "name": "松凌科技 (鑽石級贊助)"
+    }
   }
 }
