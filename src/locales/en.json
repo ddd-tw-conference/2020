@@ -25,6 +25,11 @@
       "more": "more speakers coming"
     },
     "sponsors": {
+      "class": {
+        "diamond": "Diamond Sponsorship",
+        "gold": "Gold Sponsorship",
+        "special": "Special Thanks"
+      },
       "title": "Sponsors"
     },
     "topics": {
@@ -171,16 +176,16 @@
   },
   "sponsors": {
     "aws": {
-      "name": "AWS (黃金級贊助)"
+      "name": "AWS"
     },
     "fable": {
-      "name": "寓意科技 (黃金級贊助)"
+      "name": "Fable"
     },
     "jet-brains": {
-      "name": "JetBrains (特別贊助)"
+      "name": "JetBrains"
     },
     "soft-leader": {
-      "name": "松凌科技 (鑽石級贊助)"
+      "name": "SoftLeader"
     }
   }
 }

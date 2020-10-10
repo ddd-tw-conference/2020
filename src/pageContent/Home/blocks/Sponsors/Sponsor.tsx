@@ -64,19 +64,20 @@ const Sponsor = ({ id }: { id: string }) => {
   return (
     <Grid item>
       <Tooltip
+        arrow
         title={name}
         open={tooltipOpened}
         onClose={tooltipClose}
         onOpen={tooltipOpen}
         onClick={tooltipClose}
       >
-        <span>
+        <div>
           <Button
             className={cssSponsor}
             onClick={infoOpen}
             disabled={infoOpened}
           />
-        </span>
+        </div>
       </Tooltip>
       <Dialog open={infoOpened} onClick={infoClose}>
         <DialogTitle>{name}</DialogTitle>
