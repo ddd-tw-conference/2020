@@ -47,6 +47,7 @@
       "dddConference": "DDD 年會",
       "info": "活動資訊",
       "join": "我要參加",
+      "speakerInterviews": "講師專訪",
       "speakers": "講師介紹",
       "sponsors": "贊助商",
       "topics": "議程介紹",
@@ -173,6 +174,14 @@
       "title": "愛碼市智能科技股份有限公司 專案經理",
       "topic": "."
     }
+  },
+  "speakersInterviews": {
+    "items": {
+      "bryan": {
+        "title": "專人訪談 - Bryan"
+      }
+    },
+    "title": "Speaker Interviews"
   },
   "sponsors": {
     "aws": {

@@ -1,6 +1,6 @@
-import { Typography } from "@material-ui/core";
-import RwdGrid from "components/RwdGrid";
-import React, { memo, ReactNode } from "react";
+import { Typography, useTheme } from "@material-ui/core";
+import { css } from "emotion";
+import React, { memo, ReactNode, useMemo } from "react";
 
 const Block = ({
   title,
@@ -9,21 +9,33 @@ const Block = ({
   title?: ReactNode;
   children?: ReactNode;
 }) => {
+  const theme = useTheme();
+  const cssWrapper = useMemo(
+    () =>
+      css({
+        label: "wrapper",
+        display: "grid",
+        gap: "1.5rem",
+      }),
+    []
+  );
+  const cssTitle = useMemo(
+    () =>
+      css({
+        label: "title",
+        [theme.breakpoints.down("sm")]: {
+          textAlign: "center",
+        },
+      }),
+    [theme.breakpoints]
+  );
   return (
-    <RwdGrid
-      container
-      direction="column"
-      spacing={3}
-      wrap="nowrap"
-      alignItems="stretch"
-    >
-      <RwdGrid item>
-        <Typography variant="h4" color="primary">
-          {title}
-        </Typography>
-      </RwdGrid>
-      <RwdGrid item>{children}</RwdGrid>
-    </RwdGrid>
+    <div className={cssWrapper}>
+      <Typography className={cssTitle} variant="h4" color="primary">
+        {title}
+      </Typography>
+      <div>{children}</div>
+    </div>
   );
 };
 
