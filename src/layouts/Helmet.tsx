@@ -7,8 +7,6 @@ const MyHelmet = () => {
   return (
     <Helmet>
       <html lang={intl.locale} />
-      <meta charSet="utf-8" />
-      <title>DDD TW Conference 2020</title>
     </Helmet>
   );
 };

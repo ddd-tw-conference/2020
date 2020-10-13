@@ -1,12 +1,13 @@
 const pkg = require("./package.json");
 
 const allowRobots = process.env.ALLOW_ROBOTS === "true";
+const siteUrl = process.env.SITE_URL || pkg.homepage;
 
 const exists = (a) => Boolean(a);
 
 module.exports = {
   siteMetadata: {
-    siteUrl: pkg.homepage,
+    siteUrl,
   },
   plugins: [
     `gatsby-alias-imports`,
@@ -48,8 +49,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: pkg.homepage,
-        sitemap: `${pkg.homepage}sitemap.xml`,
+        host: siteUrl,
+        sitemap: `${siteUrl}/sitemap.xml`,
         policy: [
           allowRobots
             ? { userAgent: "*", allow: "/" }
@@ -58,5 +59,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-mdx",
   ].filter(exists),
 };

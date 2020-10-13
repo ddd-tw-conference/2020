@@ -25,6 +25,11 @@
       "more": "講者持續更新中"
     },
     "sponsors": {
+      "class": {
+        "diamond": "鑽石級贊助",
+        "gold": "黃金級贊助",
+        "special": "特別贊助"
+      },
       "title": "贊助商"
     },
     "topics": {
@@ -42,6 +47,7 @@
       "dddConference": "DDD 年會",
       "info": "活動資訊",
       "join": "我要參加",
+      "speakerInterviews": "講師專訪",
       "speakers": "講師介紹",
       "sponsors": "贊助商",
       "topics": "議程介紹",
@@ -49,69 +55,146 @@
     }
   },
   "speakers": {
-    "s01": {
-      "name": "肯尼 巴斯-斯威格勒",
-      "title": "社會技術組織設計師和軟體架構師。促進變革，使用領域驅動設計，深度民主和視覺化協作"
+    "anonymous": {
+      "name": "匿名者",
+      "ogDescription": "喵喵喵：喵喵喵喵，喵喵喵喵喵喵喵喵喵喵喵喵，喵喵喵喵喵喵喵。喵喵喵。喵喵喵喵喵喵喵，喵喵喵喵喵喵喵喵，喵喵喵喵喵喵喵喵喵喵喵，喵喵喵喵喵喵喵。喵喵喵喵喵喵喵喵喵 ⋯ 喵喵喵，喵喵喵喵喵喵喵喵喵喵喵喵，喵喵喵喵喵喵喵喵喵喵喵喵。",
+      "ogTitle": "Hello, World!",
+      "title": "駭客",
+      "topic": "Hello, World!"
     },
-    "s02": {
-      "name": "若昂 羅沙",
-      "title": "策略軟體交付顧問"
-    },
-    "s03": {
-      "name": "張逸",
-      "title": "高質量Coder、領域驅動設計佈道師、微服務系統架構師，大資料平台架構師，敏捷轉型諮詢師"
-    },
-    "s04": {
-      "name": "卡珀・古尼亞",
-      "title": "講師, 顧問以及DDD倫敦組織者"
-    },
-    "s05": {
+    "clark": {
       "name": "Clark",
-      "title": "富邦人壽 經理"
+      "ogDescription": "富邦人壽 經理",
+      "ogTitle": "Clark",
+      "title": "富邦人壽 經理",
+      "topic": "."
     },
-    "s06": {
-      "name": "黃冠融",
-      "title": "Octalysis Prime/Software Engineer"
-    },
-    "s07": {
-      "name": "林世鵬",
-      "title": "街口電子支付技術團隊負責人"
-    },
-    "s08": {
-      "name": "Teddy Chen",
-      "title": "泰迪軟體創辦人，部落格「搞笑談軟工」版主"
-    },
-    "s09": {
-      "name": "鄭棋文",
-      "title": "愛碼市智能科技股份有限公司 專案經理"
-    },
-    "s10": {
-      "name": "張昀煒",
-      "title": "台灣敏捷協會"
-    },
-    "s11": {
-      "name": "Paul Shih 施政源",
-      "title": "Fable CEO"
-    },
-    "s12": {
-      "name": "陳啟彰 Nor",
-      "title": "領潮創意設計企業社 / 社長"
-    },
-    "s13": {
-      "name": "Sam Huang 黃世銘",
-      "title": "鈦坦科技 ScrumMaster"
-    },
-    "s14": {
-      "name": "林德政",
-      "title": "趨勢科技股份有限公司 / 使用者體驗設計部 / 資深專案經理"
-    },
-    "s15": {
+    "gelis": {
       "name": "Gelis",
-      "title": "集英信誠 資深 .NET 技術顧問"
+      "ogDescription": "集英信誠 資深 .NET 技術顧問",
+      "ogTitle": "Gelis",
+      "title": "集英信誠 資深 .NET 技術顧問",
+      "topic": "."
     },
-    "s16": {
+    "huang-guan-rong": {
+      "name": "黃冠融",
+      "ogDescription": "Octalysis Prime/Software Engineer",
+      "ogTitle": "黃冠融",
+      "title": "Octalysis Prime/Software Engineer",
+      "topic": "."
+    },
+    "joao-rosa": {
+      "name": "若昂 羅沙",
+      "ogDescription": "策略軟體交付顧問",
+      "ogTitle": "若昂 羅沙",
+      "title": "策略軟體交付顧問",
+      "topic": "."
+    },
+    "kacper-gunia": {
+      "name": "卡珀・古尼亞",
+      "ogDescription": "講師, 顧問以及DDD倫敦組織者",
+      "ogTitle": "卡珀・古尼亞",
+      "title": "講師, 顧問以及DDD倫敦組織者",
+      "topic": "."
+    },
+    "kenny-baas-schwegler": {
+      "name": "肯尼 巴斯-斯威格勒",
+      "ogDescription": "社會技術組織設計師和軟體架構師。促進變革，使用領域驅動設計，深度民主和視覺化協作",
+      "ogTitle": "肯尼 巴斯-斯威格勒",
+      "title": "社會技術組織設計師和軟體架構師。促進變革，使用領域驅動設計，深度民主和視覺化協作",
+      "topic": "."
+    },
+    "lin-de-zheng": {
+      "name": "林德政",
+      "ogDescription": "趨勢科技股份有限公司 / 使用者體驗設計部 / 資深專案經理",
+      "ogTitle": "林德政",
+      "title": "趨勢科技股份有限公司 / 使用者體驗設計部 / 資深專案經理",
+      "topic": "."
+    },
+    "lin-shi-pong": {
+      "name": "林世鵬",
+      "ogDescription": "街口電子支付技術團隊負責人",
+      "ogTitle": "林世鵬",
+      "title": "街口電子支付技術團隊負責人",
+      "topic": "."
+    },
+    "nor": {
+      "name": "陳啟彰 Nor",
+      "ogDescription": "領潮創意設計企業社 / 社長",
+      "ogTitle": "陳啟彰 Nor",
+      "title": "領潮創意設計企業社 / 社長",
+      "topic": "."
+    },
+    "paul-shih": {
+      "name": "Paul Shih 施政源",
+      "ogDescription": "Fable CEO",
+      "ogTitle": "Paul Shih 施政源",
+      "title": "Fable CEO",
+      "topic": "."
+    },
+    "sam-huang": {
+      "name": "Sam Huang 黃世銘",
+      "ogDescription": "鈦坦科技 ScrumMaster",
+      "ogTitle": "Sam Huang 黃世銘",
+      "title": "鈦坦科技 ScrumMaster",
+      "topic": "."
+    },
+    "teddy-chen": {
+      "name": "Teddy Chen",
+      "ogDescription": "泰迪軟體創辦人，部落格「搞笑談軟工」版主",
+      "ogTitle": "Teddy Chen",
+      "title": "泰迪軟體創辦人，部落格「搞笑談軟工」版主",
+      "topic": "."
+    },
+    "wang-wei": {
       "name": "王威",
-      "title": "ThoughtWorks 中國區諮詢團隊數位技術戰略諮詢師和首席企業架構師"
+      "ogDescription": "ThoughtWorks 中國區諮詢團隊數位技術戰略諮詢師和首席企業架構師",
+      "ogTitle": "王威",
+      "title": "ThoughtWorks 中國區諮詢團隊數位技術戰略諮詢師和首席企業架構師",
+      "topic": "."
+    },
+    "zhang-yi": {
+      "name": "張逸",
+      "ogDescription": "高質量Coder、領域驅動設計佈道師、微服務系統架構師，大資料平台架構師，敏捷轉型諮詢師",
+      "ogTitle": "張逸",
+      "title": "高質量Coder、領域驅動設計佈道師、微服務系統架構師，大資料平台架構師，敏捷轉型諮詢師",
+      "topic": "."
+    },
+    "zhang-yun-wei": {
+      "name": "張昀煒",
+      "ogDescription": "台灣敏捷協會",
+      "ogTitle": "張昀煒",
+      "title": "台灣敏捷協會",
+      "topic": "."
+    },
+    "zheng-qi-wen": {
+      "name": "鄭棋文",
+      "ogDescription": "愛碼市智能科技股份有限公司 專案經理",
+      "ogTitle": "鄭棋文",
+      "title": "愛碼市智能科技股份有限公司 專案經理",
+      "topic": "."
+    }
+  },
+  "speakersInterviews": {
+    "items": {
+      "bryan": {
+        "title": "專人訪談 - Bryan"
+      }
+    },
+    "title": "講師專訪"
+  },
+  "sponsors": {
+    "aws": {
+      "name": "AWS"
+    },
+    "fable": {
+      "name": "寓意科技"
+    },
+    "jet-brains": {
+      "name": "JetBrains"
+    },
+    "soft-leader": {
+      "name": "松凌科技"
     }
   }
 }

@@ -1,82 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-## Docker
-### Production build
-Use the following command in terminal:
+# 2020 DDD Conference Event Page
 
-`docker build -f Dockerfile.prod -t ddd-conference:prod .`
+## Development
 
-Then run the image:
+Requirements:
 
-`docker run -it --rm -p 1337:80 ddd-conference:prod`
+- [node@^14.10.1](https://nodejs.org/)
+- [yarn@^1.22.5](https://yarnpkg.com/)
 
-In your browser: 
+Recommend IDE:
 
-`http:localhost:1337`
+- [Visual Studio Code](https://code.visualstudio.com/) with followed extensions
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 
+Install the dependencies to develop:
 
-## Available Scripts
+```sh
+yarn
+```
 
-In the project directory, you can run:
+and start development:
 
-### `yarn start`
+```sh
+yarn develop
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For more information, check out the [Gatsby](https://www.gatsbyjs.com/) official site.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Once you complete the changes, use this command instead of `git commit`:
 
-### `yarn test`
+```sh
+yarn cz
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+More about [commitlint](https://github.com/conventional-changelog/commitlint).
 
-### `yarn build`
+You can build the distribution with:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+yarn build
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Environment Variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ALLOW_ROBOTS
 
-### `yarn eject`
+- Default: `undefined`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Set to `'true'` to allow web crawler crawl the site.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### SITE_URL
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Default: `pkg.homepage`(`'https://ddd-tw.com'`)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Depends on where to deploy. This is required.
