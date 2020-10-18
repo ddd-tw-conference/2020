@@ -1,1 +1,1 @@
-export default undefined;
+export { default } from "./profile.png";
