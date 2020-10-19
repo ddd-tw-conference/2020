@@ -2,6 +2,7 @@ import {
   Button,
   Dialog,
   DialogContent,
+  DialogContentText,
   DialogTitle,
   Grid,
   Tooltip,
@@ -15,11 +16,6 @@ const cssImgInInfo = css`
   max-height: 200px;
   max-width: 100%;
   margin-bottom: 1rem;
-`;
-
-const cssContent = css`
-  label: content;
-  padding-bottom: 24px;
 `;
 
 const Sponsor = ({ id }: { id: string }) => {
@@ -81,9 +77,11 @@ const Sponsor = ({ id }: { id: string }) => {
       </Tooltip>
       <Dialog open={infoOpened} onClick={infoClose}>
         <DialogTitle>{name}</DialogTitle>
-        <DialogContent className={cssContent}>
-          <img src={imgSrc} alt={name} className={cssImgInInfo} />
-          <Content />
+        <DialogContent>
+          <DialogContentText>
+            <img src={imgSrc} alt={name} className={cssImgInInfo} />
+            <Content />
+          </DialogContentText>
         </DialogContent>
       </Dialog>
     </Grid>
