@@ -9,12 +9,18 @@ import React, { memo, useMemo } from "react";
 const cls = css`
   label: container;
   min-height: 320px;
+  display: grid;
+  gap: 2rem;
 `;
 
 const App = () => {
   const intl = useIntl();
   const bryanTitle = useMemo(
     () => intl.formatMessage({ id: "speakersInterviews.items.bryan.title" }),
+    [intl]
+  );
+  const rexTitle = useMemo(
+    () => intl.formatMessage({ id: "speakersInterviews.items.rex.title" }),
     [intl]
   );
   return (
@@ -25,6 +31,16 @@ const App = () => {
           ratio="56.25%"
           title={bryanTitle}
           src="https://www.youtube.com/embed/l0MCCDkOoNs"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </Block>
+      <Block title={rexTitle}>
+        <FixRatioIframe
+          ratio="56.25%"
+          title={rexTitle}
+          src="https://www.youtube.com/embed/ZLcQn8EeuiA"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
