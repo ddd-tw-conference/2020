@@ -30,6 +30,7 @@ const Sponsors = () => {
           titleIcon={<GoldIcon />}
         >
           <Sponsor id="aws" />
+          <Sponsor id="conquer-tech" />
           <Sponsor id="fable" />
         </SponsorClassBlock>
         <SponsorClassBlock
