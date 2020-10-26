@@ -23,6 +23,10 @@ const App = () => {
     () => intl.formatMessage({ id: "speakersInterviews.items.rex.title" }),
     [intl]
   );
+  const samTitle = useMemo(
+    () => intl.formatMessage({ id: "speakersInterviews.items.sam.title" }),
+    [intl]
+  );
   return (
     <Container className={cls}>
       <Seo title={intl.formatMessage({ id: "speakersInterviews.title" })} />
@@ -41,6 +45,16 @@ const App = () => {
           ratio="56.25%"
           title={rexTitle}
           src="https://www.youtube.com/embed/ZLcQn8EeuiA"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </Block>
+      <Block title={samTitle}>
+        <FixRatioIframe
+          ratio="56.25%"
+          title={samTitle}
+          src="https://www.youtube.com/embed/jcMAt-bfEso"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
