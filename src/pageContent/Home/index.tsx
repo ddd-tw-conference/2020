@@ -1,5 +1,4 @@
 import { Container, Grid } from "@material-ui/core";
-import { showAgenda } from "blockToggle";
 import { css } from "emotion";
 import React, { memo } from "react";
 import AboutUs from "./blocks/AboutUs";
@@ -48,13 +47,11 @@ function Home() {
                 <Speakers />
               </div>
             </Grid>
-            {showAgenda && (
-              <Grid item>
-                <div id="agenda">
-                  <Agenda />
-                </div>
-              </Grid>
-            )}
+            <Grid item>
+              <div id="agenda">
+                <Agenda />
+              </div>
+            </Grid>
             <Grid item>
               <div id="topics">
                 <Topics />

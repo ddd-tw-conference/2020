@@ -3,48 +3,25 @@ import Container from "components/Container";
 import Seo from "components/Seo";
 import Image from "components/speaker/Image";
 import { css } from "emotion";
-import React, { memo, ReactNode, useMemo } from "react";
+import { useIntl } from "gatsby-plugin-intl";
+import React, { memo, useMemo } from "react";
 
-const cssContainer = css`
-  label: container;
-  & > * {
-    margin-bottom: 3em;
-  }
-`;
-
-const Speaker = ({
-  topic,
-  content,
-  name,
-  title,
-  introduce,
-  image,
-  ogTitle,
-  ogDescription,
-}: {
-  topic?: string;
-  content?: ReactNode;
-  name?: string;
-  title?: string;
-  introduce?: ReactNode;
-  image?: string;
-  ogTitle?: string;
-  ogDescription?: string;
-}) => {
-  const theme = useTheme();
-  const cssTopic = useMemo(
-    () =>
-      css({
-        label: "topic",
-        fontSize: "3rem",
-        marginBottom: "0.5em",
-        [theme.breakpoints.down("xs")]: {
-          textAlign: "center",
-        },
-      }),
-    [theme.breakpoints]
+const Speaker = ({ id }: { id: string }) => {
+  const intl = useIntl();
+  const name = useMemo(
+    () => intl.formatMessage({ id: `speakers.${id}.name` }),
+    [id, intl]
   );
-
+  const title = useMemo(
+    () => intl.formatMessage({ id: `speakers.${id}.title` }),
+    [id, intl]
+  );
+  const Content = useMemo(() => require(`speakers/${id}/Content`).default, [
+    id,
+  ]);
+  const introduce = useMemo(() => <Content />, []);
+  const image = useMemo(() => require(`speakers/${id}/profile`).default, [id]);
+  const theme = useTheme();
   const cssSpeaker = useMemo(
     () =>
       css({
@@ -94,16 +71,8 @@ const Speaker = ({
     [theme.breakpoints]
   );
   return (
-    <Container className={cssContainer}>
-      <Seo article image={image} title={ogTitle} description={ogDescription} />
-      {topic !== "." && (
-        <div>
-          <Typography variant="h1" className={cssTopic}>
-            {topic}
-          </Typography>
-          <div>{content}</div>
-        </div>
-      )}
+    <Container>
+      <Seo article image={image} title={name} description={title} />
       <div className={cssSpeaker}>
         <div>
           <Image src={image} className={cssImage} />
