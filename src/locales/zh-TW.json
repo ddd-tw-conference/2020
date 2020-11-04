@@ -40,6 +40,7 @@
       "class": {
         "diamond": "鑽石級贊助",
         "gold": "黃金級贊助",
+        "silver": "銀級贊助",
         "special": "特別贊助"
       },
       "title": "贊助商"
@@ -244,6 +245,12 @@
     },
     "conquer-tech": {
       "name": "康格科技"
+    },
+    "ctbc-bank": {
+      "name": "中國信託銀行"
+    },
+    "e-cloud-valley": {
+      "name": "伊雲谷"
     },
     "fable": {
       "name": "寓意科技"

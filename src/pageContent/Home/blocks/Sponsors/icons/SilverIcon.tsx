@@ -3,15 +3,15 @@ import { css } from "emotion";
 import React, { memo } from "react";
 
 const cls = css`
-  label: gold;
+  label: silver;
 `;
 
-const GoldIcon = (props: SvgIconProps) => {
+const SilverIcon = (props: SvgIconProps) => {
   return (
     <SvgIcon viewBox="0 0 36 36" {...props}>
       <defs>
         <linearGradient x1="100%" x2="0" y1="0" y2="100%" id={cls}>
-          <stop stopColor="#FFAC33">
+          <stop stopColor="#CCD6DD">
             <animate
               attributeName="offset"
               values="4.3;-5.7"
@@ -27,7 +27,7 @@ const GoldIcon = (props: SvgIconProps) => {
               repeatCount="indefinite"
             />
           </stop>
-          <stop stopColor="#FFAC33">
+          <stop stopColor="#CCD6DD">
             <animate
               attributeName="offset"
               values="5.7;-4.3"
@@ -47,4 +47,4 @@ const GoldIcon = (props: SvgIconProps) => {
   );
 };
 
-export default memo(GoldIcon);
+export default memo(SilverIcon);

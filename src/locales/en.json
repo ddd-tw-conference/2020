@@ -40,6 +40,7 @@
       "class": {
         "diamond": "Diamond Sponsorship",
         "gold": "Gold Sponsorship",
+        "silver": "Silver Sponsorship",
         "special": "Special Thanks"
       },
       "title": "Sponsors"
@@ -244,6 +245,12 @@
     },
     "conquer-tech": {
       "name": "Conquer Technology"
+    },
+    "ctbc-bank": {
+      "name": "CTBC BANK"
+    },
+    "e-cloud-valley": {
+      "name": "eCloud Valley"
     },
     "fable": {
       "name": "Fable"
