@@ -5,6 +5,7 @@ import React, { memo } from "react";
 import DiamondIcon from "./icons/DiamondIcon";
 import GoldIcon from "./icons/GoldIcon";
 import MedalIcon from "./icons/MedalIcon";
+import SilverIcon from "./icons/SilverIcon";
 import Sponsor from "./Sponsor";
 import SponsorClassBlock from "./SponsorClassBlock";
 
@@ -31,7 +32,14 @@ const Sponsors = () => {
         >
           <Sponsor id="aws" />
           <Sponsor id="conquer-tech" />
+          <Sponsor id="e-cloud-valley" />
           <Sponsor id="fable" />
+        </SponsorClassBlock>
+        <SponsorClassBlock
+          title={intl.formatMessage({ id: "blocks.sponsors.class.silver" })}
+          titleIcon={<SilverIcon />}
+        >
+          <Sponsor id="ctbc-bank" />
         </SponsorClassBlock>
         <SponsorClassBlock
           title={intl.formatMessage({ id: "blocks.sponsors.class.special" })}

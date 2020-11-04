@@ -61,7 +61,9 @@ const Footer = () => {
               </RwdGrid>
               <RwdGrid item>
                 <Item icon={<WatchLaterIcon />}>
-                  2020/11/27 9:00-16:00(+8:00)
+                  {"2020/11/27 9:00-18:00(+8:00)"}
+                  <br />
+                  {"2020/11/28 9:00-16:00(+8:00)"}
                 </Item>
               </RwdGrid>
             </RwdGrid>

@@ -12,7 +12,6 @@ import {
 import { Menu as MenuIcon } from "@material-ui/icons";
 import usePrevious from "@react-hook/previous";
 import useScrollPosition from "@react-hook/window-scroll";
-import { showAgenda } from "blockToggle";
 import A from "components/A";
 import Button from "components/Button";
 import { css, cx } from "emotion";
@@ -121,13 +120,11 @@ function NavBar() {
                       {intl.formatMessage({ id: "layout.navbar.speakers" })}
                     </Button>
                   </Grid>
-                  {showAgenda && (
-                    <Grid item>
-                      <Button component={A} href="/#agenda">
-                        {intl.formatMessage({ id: "layout.navbar.agenda" })}
-                      </Button>
-                    </Grid>
-                  )}
+                  <Grid item>
+                    <Button component={A} href="/#agenda">
+                      {intl.formatMessage({ id: "layout.navbar.agenda" })}
+                    </Button>
+                  </Grid>
                   <Grid item>
                     <Button component={A} href="/#topics">
                       {intl.formatMessage({ id: "layout.navbar.topics" })}
@@ -183,11 +180,9 @@ function NavBar() {
                     <MyListItem onClick={close} href="/#speakers">
                       {intl.formatMessage({ id: "layout.navbar.speakers" })}
                     </MyListItem>
-                    {showAgenda && (
-                      <MyListItem onClick={close} href="/#agenda">
-                        {intl.formatMessage({ id: "layout.navbar.agenda" })}
-                      </MyListItem>
-                    )}
+                    <MyListItem onClick={close} href="/#agenda">
+                      {intl.formatMessage({ id: "layout.navbar.agenda" })}
+                    </MyListItem>
                     <MyListItem onClick={close} href="/#topics">
                       {intl.formatMessage({ id: "layout.navbar.topics" })}
                     </MyListItem>
