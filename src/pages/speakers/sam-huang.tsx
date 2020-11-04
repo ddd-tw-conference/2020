@@ -1,30 +1,8 @@
 import Speaker from "pageContent/Speaker";
 import React, { memo } from "react";
-import useSpeak from "speakers/sam-huang/useSpeaker";
 
 function App() {
-  const {
-    topic,
-    content,
-    name,
-    title,
-    introduce,
-    image,
-    ogTitle,
-    ogDescription,
-  } = useSpeak();
-  return (
-    <Speaker
-      topic={topic}
-      content={content}
-      name={name}
-      title={title}
-      introduce={introduce}
-      image={image}
-      ogTitle={ogTitle}
-      ogDescription={ogDescription}
-    />
-  );
+  return <Speaker id="sam-huang" />;
 }
 
 export default memo(App);

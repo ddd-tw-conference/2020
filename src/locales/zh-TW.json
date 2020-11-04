@@ -5,10 +5,22 @@
       "title": "關於我們"
     },
     "agenda": {
-      "room": {
-        "breakTime": "午休時間"
+      "table": {
+        "breakTime": "中場休息",
+        "lunchBreak": " Lunch Break + 贊助 Talk",
+        "teaTime": "中場休息（下午茶時間）",
+        "time": "時間"
       },
-      "title": "議程"
+      "tabs": {
+        "day1": "11/27(五) 第一天演講",
+        "day2": "11/28(六) 第二天工作坊"
+      },
+      "title": "議程",
+      "tracks": {
+        "a": "A 軌",
+        "b": "B 軌",
+        "c": "C 軌"
+      }
     },
     "dddConf": {
       "description": "第一屆的年會，我們的主軸會希望能讓更多人知道何謂領域驅動設計(DDD)，以及讓更多人意識到其實 DDD 真的不是只是一票技術人員寫寫程式，關注程式碼本身結構性的問題而已，所以預計會有演講與工作坊並進的方式來進行。今年我們預計有機會邀請到來自 DDD_Eu 、中國等地的講者，並且同時結合台灣對於領域驅動設計長年有研究並且有意願與大家分享的老朋友們，一起與大家共同探討這個已經出生了10多年的老方法能給大家帶來的新體驗與感受。",
@@ -28,6 +40,7 @@
       "class": {
         "diamond": "鑽石級贊助",
         "gold": "黃金級贊助",
+        "silver": "銀級贊助",
         "special": "特別贊助"
       },
       "title": "贊助商"
@@ -55,124 +68,93 @@
     }
   },
   "speakers": {
-    "anonymous": {
-      "name": "匿名者",
-      "ogDescription": "喵喵喵：喵喵喵喵，喵喵喵喵喵喵喵喵喵喵喵喵，喵喵喵喵喵喵喵。喵喵喵。喵喵喵喵喵喵喵，喵喵喵喵喵喵喵喵，喵喵喵喵喵喵喵喵喵喵喵，喵喵喵喵喵喵喵。喵喵喵喵喵喵喵喵喵 ⋯ 喵喵喵，喵喵喵喵喵喵喵喵喵喵喵喵，喵喵喵喵喵喵喵喵喵喵喵喵。",
-      "ogTitle": "Hello, World!",
-      "title": "駭客",
-      "topic": "Hello, World!"
-    },
     "clark": {
       "name": "Clark",
-      "ogDescription": "富邦人壽 經理",
-      "ogTitle": "Clark",
-      "title": "富邦人壽 經理",
-      "topic": "."
+      "title": "富邦人壽 經理"
     },
     "gelis": {
-      "name": "Gelis",
-      "ogDescription": "集英信誠 資深 .NET 技術顧問",
-      "ogTitle": "Gelis",
-      "title": "集英信誠 資深 .NET 技術顧問",
-      "topic": "."
+      "name": "Gelis (吳俊毅)",
+      "title": "集英信誠 資深 .NET 技術顧問"
     },
     "huang-guan-rong": {
       "name": "黃冠融",
-      "ogDescription": "Octalysis Prime/Software Engineer",
-      "ogTitle": "黃冠融",
-      "title": "Octalysis Prime/Software Engineer",
-      "topic": "."
+      "title": "Octalysis Prime/Software Engineer"
     },
     "joao-rosa": {
       "name": "若昂 羅沙",
-      "ogDescription": "策略軟體交付顧問",
-      "ogTitle": "若昂 羅沙",
-      "title": "策略軟體交付顧問",
-      "topic": "."
+      "title": "策略軟體交付顧問"
     },
     "kacper-gunia": {
       "name": "卡珀・古尼亞",
-      "ogDescription": "講師, 顧問以及DDD倫敦組織者",
-      "ogTitle": "卡珀・古尼亞",
-      "title": "講師, 顧問以及DDD倫敦組織者",
-      "topic": "."
+      "title": "講師, 顧問以及DDD倫敦組織者"
     },
     "kenny-baas-schwegler": {
       "name": "肯尼 巴斯-斯威格勒",
-      "ogDescription": "社會技術組織設計師和軟體架構師。促進變革，使用領域驅動設計，深度民主和視覺化協作",
-      "ogTitle": "肯尼 巴斯-斯威格勒",
-      "title": "社會技術組織設計師和軟體架構師。促進變革，使用領域驅動設計，深度民主和視覺化協作",
-      "topic": "."
+      "title": "社會技術組織設計師和軟體架構師。促進變革，使用領域驅動設計，深度民主和視覺化協作"
+    },
+    "lee-meng-xuan": {
+      "name": "李孟萱",
+      "title": " "
     },
     "lin-de-zheng": {
       "name": "林德政",
-      "ogDescription": "趨勢科技股份有限公司 / 使用者經驗設計部 / 資深專案經理",
-      "ogTitle": "林德政",
-      "title": "趨勢科技股份有限公司 / 使用者經驗設計部 / 資深專案經理",
-      "topic": "."
+      "title": "趨勢科技股份有限公司 / 使用者經驗設計部 / 資深專案經理"
     },
     "lin-shi-pong": {
       "name": "林世鵬",
-      "ogDescription": "街口電子支付技術團隊負責人",
-      "ogTitle": "林世鵬",
-      "title": "街口電子支付技術團隊負責人",
-      "topic": "."
+      "title": "街口電子支付技術團隊負責人"
+    },
+    "michael-suen": {
+      "name": "孫翊軒(Michael Suen)",
+      "title": " "
     },
     "nor": {
       "name": "陳啟彰 Nor",
-      "ogDescription": "領潮創意設計企業社 / 社長",
-      "ogTitle": "陳啟彰 Nor",
-      "title": "領潮創意設計企業社 / 社長",
-      "topic": "."
+      "title": "領潮創意設計企業社 / 社長"
+    },
+    "otto": {
+      "name": "顏勝豪 Otto",
+      "title": " "
     },
     "paul-shih": {
       "name": "Paul Shih 施政源",
-      "ogDescription": "Fable CEO",
-      "ogTitle": "Paul Shih 施政源",
-      "title": "Fable CEO",
-      "topic": "."
+      "title": "Fable CEO"
+    },
+    "rex-wang": {
+      "name": "Rex Wang",
+      "title": " "
+    },
+    "richard": {
+      "name": "蘇立群 Richard",
+      "title": " "
     },
     "sam-huang": {
       "name": "Sam Huang 黃世銘",
-      "ogDescription": "鈦坦科技 ScrumMaster",
-      "ogTitle": "Sam Huang 黃世銘",
-      "title": "鈦坦科技 ScrumMaster",
-      "topic": "."
+      "title": "鈦坦科技 ScrumMaster"
+    },
+    "sylvia": {
+      "name": "楊孟真 (Sylvia)",
+      "title": " "
     },
     "teddy-chen": {
       "name": "Teddy Chen",
-      "ogDescription": "泰迪軟體創辦人，部落格「搞笑談軟工」版主",
-      "ogTitle": "Teddy Chen",
-      "title": "泰迪軟體創辦人，部落格「搞笑談軟工」版主",
-      "topic": "."
+      "title": "泰迪軟體創辦人，部落格「搞笑談軟工」版主"
     },
     "wang-wei": {
       "name": "王威",
-      "ogDescription": "ThoughtWorks 中國區諮詢團隊數位技術戰略諮詢師和首席企業架構師",
-      "ogTitle": "王威",
-      "title": "ThoughtWorks 中國區諮詢團隊數位技術戰略諮詢師和首席企業架構師",
-      "topic": "."
+      "title": "ThoughtWorks 中國區諮詢團隊數位技術戰略諮詢師和首席企業架構師"
     },
     "zhang-yi": {
       "name": "張逸",
-      "ogDescription": "高質量Coder、領域驅動設計佈道師、微服務系統架構師，大資料平台架構師，敏捷轉型諮詢師",
-      "ogTitle": "張逸",
-      "title": "高質量Coder、領域驅動設計佈道師、微服務系統架構師，大資料平台架構師，敏捷轉型諮詢師",
-      "topic": "."
+      "title": "高質量Coder、領域驅動設計佈道師、微服務系統架構師，大資料平台架構師，敏捷轉型諮詢師"
     },
     "zhang-yun-wei": {
       "name": "張昀煒",
-      "ogDescription": "台灣敏捷協會",
-      "ogTitle": "張昀煒",
-      "title": "台灣敏捷協會",
-      "topic": "."
+      "title": "台灣敏捷協會"
     },
     "zheng-qi-wen": {
       "name": "鄭棋文",
-      "ogDescription": "愛碼市智能科技股份有限公司 專案經理",
-      "ogTitle": "鄭棋文",
-      "title": "愛碼市智能科技股份有限公司 專案經理",
-      "topic": "."
+      "title": "愛碼市智能科技股份有限公司 專案經理"
     }
   },
   "speakersInterviews": {
@@ -189,12 +171,86 @@
     },
     "title": "講師專訪"
   },
+  "speaks": {
+    "a0900": {
+      "title": "利用外包資源強化內部開發流程，善用微服務特性進行工作切割"
+    },
+    "a1000": {
+      "title": "將管理的需求規格落地"
+    },
+    "a1100": {
+      "title": "從使用者研究的幕後花絮談起"
+    },
+    "a1300": {
+      "title": "領域驅動的平台架構設計"
+    },
+    "a1400": {
+      "title": "跟著 RD 一起跳坑 DDD"
+    },
+    "a1450": {
+      "title": "非技術背景的PM該如何做好需求訪談？"
+    },
+    "a1530": {
+      "title": "如何逐步導入敏捷精神，創造願意接受失敗的開發團隊。"
+    },
+    "b0900": {
+      "title": "返璞歸真：街口的\"唯服務\"之路"
+    },
+    "b1000": {
+      "title": "DDD X Architecture"
+    },
+    "b1100": {
+      "title": "領域驅動設計參考過程模型"
+    },
+    "b1300": {
+      "title": "CQRS與SAGA解決微服務什麼問題？"
+    },
+    "b1400": {
+      "title": "From EventStorming to CoDDDing with the model exploration whirpool"
+    },
+    "b1450": {
+      "title": "金融業導入領域驅動設計之應用實例"
+    },
+    "b1530": {
+      "title": "DDD + Clean Architecture：從需求到實作"
+    },
+    "b1710": {
+      "title": "國泰延長賽？"
+    },
+    "c0900": {
+      "title": "一年66萬公里的敏捷實踐 - 南台灣的敏捷實踐"
+    },
+    "c1000": {
+      "title": "團隊工作流程的迭代與改善"
+    },
+    "c1100": {
+      "title": "邊界劃分的藝術－實踐事件驅動的微服務"
+    },
+    "c1300": {
+      "title": "實踐 Clean Architecture（實作高可用性的軟件架構）"
+    },
+    "c1400": {
+      "title": "Domain-Driven Design Modelling Process"
+    },
+    "c1450": {
+      "title": "DDD 15年文章導讀與相關案例介紹"
+    },
+    "c1530": {
+      "title": "趨勢科技星際奇航2020 – 加速DevOps文化轉型的遊戲化專案"
+    }
+  },
   "sponsors": {
     "aws": {
       "name": "AWS"
     },
     "conquer-tech": {
       "name": "康格科技"
+    },
+    "ctbc-bank": {
+      "name": "中國信託銀行"
+    },
+    "e-cloud-valley": {
+      "name": "伊雲谷"
     },
     "fable": {
       "name": "寓意科技"

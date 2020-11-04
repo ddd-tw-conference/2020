@@ -4,7 +4,7 @@ import {
   Schedule as ScheduleIcon,
 } from "@material-ui/icons";
 import { eventTime } from "constant";
-import { format } from "date-fns";
+import { add, format } from "date-fns";
 import { css } from "emotion";
 import React, { Fragment, memo, useMemo } from "react";
 import Item from "./Item";
@@ -38,7 +38,16 @@ const Info = () => {
           </Fragment>
         }
       />
-      <Item icon={<ScheduleIcon />} title={format(eventTime, "d MMM yyyy")} />
+      <Item
+        icon={<ScheduleIcon />}
+        title={
+          <Fragment>
+            {format(eventTime, "d MMM yyyy")}
+            <br />
+            {format(add(eventTime, { days: 1 }), "d MMM yyyy")}
+          </Fragment>
+        }
+      />
     </div>
   );
 };
