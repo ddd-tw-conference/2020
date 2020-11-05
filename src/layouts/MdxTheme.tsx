@@ -1,7 +1,7 @@
-import { Typography } from "@material-ui/core";
+import { Paper, Typography, useTheme } from "@material-ui/core";
 import { MDXProvider, MDXProviderComponents } from "@mdx-js/react";
-import { css } from "emotion";
-import React, { memo, ReactNode } from "react";
+import { css, cx } from "emotion";
+import React, { memo, ReactNode, useMemo } from "react";
 
 const cssH1 = css`
   label: h1;
@@ -37,7 +37,7 @@ const Wrapper = (() => {
   const cssWrapper = css`
     label: wrapper;
     & > * {
-      margin-top: 0.5em;
+      margin-top: 1em;
     }
   `;
   const cssHeading = css`
@@ -58,8 +58,69 @@ const Wrapper = (() => {
   return memo(Wrapper);
 })();
 
+const A = memo(function A({
+  className,
+  href,
+  children,
+}: {
+  className?: string;
+  href: string;
+  children: ReactNode;
+}) {
+  const theme = useTheme();
+  const cls = useMemo(
+    () =>
+      cx(
+        className,
+        css({
+          label: "a",
+          color: theme.palette.primary.main,
+        })
+      ),
+    [className, theme.palette.primary.main]
+  );
+  return (
+    <a className={cls} href={href} rel="noopener noreferrer" target="_blank">
+      {children}
+    </a>
+  );
+});
+
+const Blockquote = memo(function Blockquote({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  const theme = useTheme();
+  const cls = useMemo(
+    () =>
+      cx(
+        className,
+        css({
+          label: "blockquote",
+          color: theme.palette.grey[700],
+          paddingLeft: "2em",
+          paddingTop: "1em",
+          paddingBottom: "1em",
+          borderStyle: "solid",
+          borderTopWidth: "0",
+          borderRightWidth: "0",
+          borderBottomWidth: "0",
+          borderLeftWidth: "8px",
+          borderColor: theme.palette.grey[700],
+        })
+      ),
+    [className, theme.palette.grey]
+  );
+  return <Paper className={cls}>{children}</Paper>;
+});
+
 const components: MDXProviderComponents = {
   wrapper: Wrapper,
+  a: A,
+  blockquote: Blockquote,
   h1: ({ children }: { children: ReactNode }) => (
     <Typography variant="h1" className={cssH1}>
       {children}

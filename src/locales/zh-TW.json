@@ -243,6 +243,9 @@
     "aws": {
       "name": "AWS"
     },
+    "cathay-united-bank": {
+      "name": "國泰世華商業銀行"
+    },
     "conquer-tech": {
       "name": "康格科技"
     },
@@ -257,6 +260,9 @@
     },
     "jet-brains": {
       "name": "JetBrains"
+    },
+    "red-hat": {
+      "name": "Red Hat x Sysage"
     },
     "soft-leader": {
       "name": "松凌科技"

@@ -24,6 +24,8 @@ const Sponsors = () => {
           title={intl.formatMessage({ id: "blocks.sponsors.class.diamond" })}
           titleIcon={<DiamondIcon />}
         >
+          <Sponsor id="cathay-united-bank" />
+          <Sponsor id="red-hat" />
           <Sponsor id="soft-leader" />
         </SponsorClassBlock>
         <SponsorClassBlock
