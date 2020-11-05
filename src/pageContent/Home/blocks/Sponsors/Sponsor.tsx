@@ -75,7 +75,7 @@ const Sponsor = ({ id }: { id: string }) => {
           />
         </div>
       </Tooltip>
-      <Dialog open={infoOpened} onClick={infoClose}>
+      <Dialog open={infoOpened} onClose={infoClose}>
         <DialogTitle>{name}</DialogTitle>
         <DialogContent>
           <DialogContentText>
