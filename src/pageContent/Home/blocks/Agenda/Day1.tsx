@@ -127,7 +127,7 @@ export default memo(function Day1() {
                   14:00 ~ 14:50
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
-                  <Item id="a1400" />
+                  <Item id="a1400" href="/speaks/a1400" />
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -508,7 +508,7 @@ export default memo(function Day1() {
                 14:00 ~ 14:50
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
-                <Item id="a1400" />
+                <Item id="a1400" href="/speaks/a1400" />
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
                 <Item id="b1400" />
