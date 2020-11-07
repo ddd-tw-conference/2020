@@ -6,7 +6,7 @@ import {
   TableCell,
   TableHead,
   TableRow,
-  Tabs,
+  Tabs
 } from "@material-ui/core";
 import { css } from "emotion";
 import { useIntl } from "gatsby-plugin-intl";
@@ -79,7 +79,7 @@ export default memo(function Day1() {
                   10:00 ~ 10:50
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
-                  <Item id="a1000" />
+                  <Item id="a1000" href="/speaks/a1000" />
                 </TableCell>
               </TableRow>
               <TableRow className={cssBreakTime}>
@@ -127,7 +127,7 @@ export default memo(function Day1() {
                   14:00 ~ 14:50
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
-                  <Item id="a1400" />
+                  <Item id="a1400" href="/speaks/a1400" />
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -151,7 +151,7 @@ export default memo(function Day1() {
                   15:30 ~ 17:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
-                  <Item id="a1530" />
+                  <Item id="a1530" href="/speaks/a1530" />
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -442,7 +442,7 @@ export default memo(function Day1() {
                 10:00 ~ 10:50
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
-                <Item id="a1000" />
+                <Item id="a1000" href="/speaks/a1000" />
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
                 <Item id="b1000" href="/speaks/b1000" />
@@ -508,7 +508,7 @@ export default memo(function Day1() {
                 14:00 ~ 14:50
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
-                <Item id="a1400" />
+                <Item id="a1400" href="/speaks/a1400" />
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
                 <Item id="b1400" />
@@ -544,7 +544,7 @@ export default memo(function Day1() {
                 15:30 ~ 17:00
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
-                <Item id="a1530" />
+                <Item id="a1530" href="/speaks/a1530" />
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
                 <Item id="b1530" />
