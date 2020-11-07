@@ -76,6 +76,10 @@
       "name": "Gelis",
       "title": "集英信誠 資深 .NET 技術顧問"
     },
+    "guo-de-xiang": {
+      "name": "郭德祥",
+      "title": " "
+    },
     "huang-guan-rong": {
       "name": "黃冠融",
       "title": "Octalysis Prime/Software Engineer"
@@ -143,6 +147,10 @@
     "wang-wei": {
       "name": "王威",
       "title": "ThoughtWorks 中國區諮詢團隊數位技術戰略諮詢師和首席企業架構師"
+    },
+    "zeng-qi-da": {
+      "name": "曾棨達",
+      "title": " "
     },
     "zhang-yi": {
       "name": "張逸",
@@ -215,7 +223,7 @@
       "title": "DDD + Clean Architecture：從需求到實作"
     },
     "b1710": {
-      "title": "國泰延長賽？"
+      "title": "金融業 DDD 落地探索之路"
     },
     "c0900": {
       "title": "一年66萬公里的敏捷實踐 - 南台灣的敏捷實踐"
@@ -262,7 +270,7 @@
       "name": "JetBrains"
     },
     "red-hat": {
-      "name": "Red Hat x Sysage"
+      "name": "Red Hat"
     },
     "soft-leader": {
       "name": "SoftLeader"
