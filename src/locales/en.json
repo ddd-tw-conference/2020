@@ -17,9 +17,9 @@
       },
       "title": "Agenda",
       "tracks": {
-        "a": "Track A",
-        "b": "Track B",
-        "c": "Track C"
+        "a": "產品軌",
+        "b": "技術軌",
+        "c": "流程軌"
       }
     },
     "dddConf": {
@@ -68,9 +68,25 @@
     }
   },
   "speakers": {
+    "arthur": {
+      "name": "Authur",
+      "title": " "
+    },
     "clark": {
-      "name": "Clark",
+      "name": "Clark 周忠慶",
       "title": "富邦人壽 經理"
+    },
+    "ean": {
+      "name": "Ean",
+      "title": " "
+    },
+    "eason": {
+      "name": "Eason Kuo",
+      "title": "Backend Engineer"
+    },
+    "fong": {
+      "name": "Fong Liou",
+      "title": "Backend Engineer"
     },
     "gelis": {
       "name": "Gelis",
@@ -81,12 +97,16 @@
       "title": " "
     },
     "huang-guan-rong": {
-      "name": "黃冠融 Kevin",
+      "name": "Kevin 黃冠融",
       "title": "Octalysis Prime/Software Engineer"
     },
     "joao-rosa": {
       "name": "João Rosa",
       "title": "Strategic Software Delivery Consultant at Xebia"
+    },
+    "juggernaut": {
+      "name": "Juggernaut",
+      "title": " "
     },
     "kacper-gunia": {
       "name": "Kacper Gunia",
@@ -96,52 +116,64 @@
       "name": "Kenny Baas-Schwegler",
       "title": "Socio-technical organisation designer and software architect. Facilitating change using Domain-Driven Design, Deep Democracy and visual collaboration"
     },
+    "kim": {
+      "name": "Kim Kao",
+      "title": "Senior Solutions Architect"
+    },
     "lee-meng-xuan": {
-      "name": "李孟萱",
-      "title": " "
+      "name": "Mia 李孟萱",
+      "title": "Fable寓意科技 - 執行長特助"
     },
     "lin-de-zheng": {
       "name": "林德政",
       "title": "趨勢科技股份有限公司 / 使用者經驗設計部 / 資深專案經理"
     },
     "lin-shi-pong": {
-      "name": "林世鵬",
+      "name": "Shihpeng 林世鵬",
       "title": "街口電子支付技術團隊負責人"
+    },
+    "michael": {
+      "name": "Michael",
+      "title": " "
     },
     "michael-suen": {
       "name": "孫翊軒(Michael Suen)",
       "title": " "
     },
     "nor": {
-      "name": "陳啟彰 Nor",
+      "name": "Nor 陳啟彰",
       "title": "領潮創意設計企業社 / 社長"
     },
     "otto": {
-      "name": "顏勝豪 Otto",
-      "title": " "
+      "name": "Otto 顏勝豪",
+      "title": "國泰金控數數發中心 - 雲端技術架構師"
     },
     "paul-shih": {
       "name": "Paul Shih 施政源",
       "title": "Fable CEO"
     },
     "rex-wang": {
-      "name": "Rex Wang",
-      "title": " "
+      "name": "Rex Wang 王鈞平",
+      "title": "Red Hat - Senior Solution Architect"
     },
     "richard": {
-      "name": "蘇立群 Richard",
+      "name": "Richard 蘇立群",
       "title": " "
+    },
+    "river": {
+      "name": "River Lin",
+      "title": "Dept. Lead"
     },
     "sam-huang": {
       "name": "Sam Huang 黃世銘",
       "title": "鈦坦科技 ScrumMaster"
     },
     "sylvia": {
-      "name": "楊孟真 (Sylv!a)",
-      "title": " "
+      "name": "Sylvia 楊孟真",
+      "title": "泰爾科技 / 產品經理"
     },
     "teddy-chen": {
-      "name": "Teddy Chen",
+      "name": "Teddy Chen 陳建村",
       "title": "泰迪軟體創辦人，部落格「搞笑談軟工」版主"
     },
     "wang-wei": {
@@ -157,11 +189,11 @@
       "title": "高質量Coder、領域驅動設計佈道師、微服務系統架構師，大資料平台架構師，敏捷轉型諮詢師"
     },
     "zhang-yun-wei": {
-      "name": "張昀煒",
-      "title": "台灣敏捷協會"
+      "name": "Hermes Chang 張昀煒",
+      "title": "台灣敏捷協會 總舵主"
     },
     "zheng-qi-wen": {
-      "name": "鄭棋文 Steven",
+      "name": "Steven 鄭棋文",
       "title": "愛碼市智能科技股份有限公司 專案經理"
     }
   },
@@ -274,6 +306,20 @@
     },
     "soft-leader": {
       "name": "SoftLeader"
+    }
+  },
+  "workshops": {
+    "a0900": {
+      "title": "Product design with system modeling by DDD"
+    },
+    "b0900": {
+      "title": "DDD 深度歷險：從戰略到戰術"
+    },
+    "c0900": {
+      "title": "Scrum 問題解決遊戲 (Problem Solving Game) 工作坊"
+    },
+    "c1300": {
+      "title": "Problem Solving Sprint - 解決方案團隊共創工作坊"
     }
   }
 }

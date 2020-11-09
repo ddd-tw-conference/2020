@@ -2,8 +2,7 @@ import { Grid, Typography } from "@material-ui/core";
 import Button from "components/Button";
 import Image from "components/speaker/Image";
 import { css } from "emotion";
-import { Link } from "gatsby";
-import { useIntl } from "gatsby-plugin-intl";
+import { Link, useIntl } from "gatsby-plugin-intl";
 import React, { memo, useMemo } from "react";
 
 const classesButton = {
