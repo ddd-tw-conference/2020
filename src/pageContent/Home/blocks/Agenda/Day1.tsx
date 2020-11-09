@@ -289,7 +289,7 @@ export default memo(function Day1() {
                   09:00 ~ 09:50
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
-                  <Item id="c0900" />
+                  <Item id="c0900" href="/speaks/c0900" />
                 </TableCell>
               </TableRow>
               <TableRow className={cssBreakTime}>
@@ -361,7 +361,7 @@ export default memo(function Day1() {
                   14:50 ~ 15:10
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
-                  <Item id="c1450" />
+                  <Item id="c1450" href="/speaks/c1450" />
                 </TableCell>
               </TableRow>
               <TableRow className={cssBreakTime}>
@@ -414,7 +414,7 @@ export default memo(function Day1() {
                 <Item id="b0900" href="/speaks/b0900" />
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
-                <Item id="c0900" />
+                <Item id="c0900" href="/speaks/c0900" />
               </TableCell>
             </TableRow>
             <TableRow className={cssBreakTime}>
@@ -516,7 +516,7 @@ export default memo(function Day1() {
                 <Item id="b1450" />
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
-                <Item id="c1450" />
+                <Item id="c1450" href="/speaks/c1450" />
               </TableCell>
             </TableRow>
             <TableRow className={cssBreakTime}>
