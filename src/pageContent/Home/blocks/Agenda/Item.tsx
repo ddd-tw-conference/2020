@@ -49,9 +49,13 @@ export default memo(function Item({
     () => intl.formatMessage({ id: `${type}.${id}.title` }),
     [id, intl, type]
   );
-  const speakers = useMemo(() => require(`speaks/${id}/speakers`).default, [
-    id,
-  ]);
+  const speakers = useMemo(
+    () =>
+      type === "speaks"
+        ? require(`speaks/${id}/speakers`).default
+        : require(`workshops/${id}/speakers`).default,
+    [id, type]
+  );
 
   const content = useMemo(
     () => (

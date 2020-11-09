@@ -20,16 +20,26 @@ export default memo(function Agenda({
 }) {
   const intl = useIntl();
   const title = useMemo(
-    () => intl.formatMessage({ id: `speaks.${id}.title` }),
-    [id, intl]
+    () =>
+      type === "speaks"
+        ? intl.formatMessage({ id: `speaks.${id}.title` })
+        : intl.formatMessage({ id: `workshops.${id}.title` }),
+    [id, intl, type]
   );
   const content = useMemo(() => {
-    const Content = require(`speaks/${id}/Content`).default;
+    const Content =
+      type === "speaks"
+        ? require(`speaks/${id}/Content`).default
+        : require(`workshops/${id}/Content`).default;
     return <Content />;
-  }, [id]);
-  const speakers = useMemo(() => require(`speaks/${id}/speakers`).default, [
-    id,
-  ]);
+  }, [id, type]);
+  const speakers = useMemo(
+    () =>
+      type === "speaks"
+        ? require(`speaks/${id}/speakers`).default
+        : require(`workshops/${id}/speakers`).default,
+    [id, type]
+  );
   const theme = useTheme();
   const cssTopic = useMemo(
     () =>

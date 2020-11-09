@@ -8,22 +8,10 @@ import {
   TableRow,
   Tabs
 } from "@material-ui/core";
-import { css } from "emotion";
 import { useIntl } from "gatsby-plugin-intl";
 import React, { Fragment, memo, useState } from "react";
 import Item from "./Item";
-
-const cssTableCell = css`
-  label: tableCell;
-  height: 1px;
-  width: 1px;
-  padding: 4px;
-`;
-
-const cssBreakTime = css`
-  label: breakTime;
-  background-color: #ffe59f;
-`;
+import { cssBreakTime, cssTableCell } from "./style";
 
 export default memo(function Day1() {
   const intl = useIntl();

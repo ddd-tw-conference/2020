@@ -68,9 +68,25 @@
     }
   },
   "speakers": {
+    "arthur": {
+      "name": "Authur",
+      "title": " "
+    },
     "clark": {
       "name": "Clark",
       "title": "富邦人壽 經理"
+    },
+    "ean": {
+      "name": "Ean",
+      "title": " "
+    },
+    "eason": {
+      "name": "Eason Kuo",
+      "title": "Backend Engineer"
+    },
+    "fong": {
+      "name": "Fong Liou",
+      "title": "Backend Engineer"
     },
     "gelis": {
       "name": "Gelis",
@@ -88,6 +104,10 @@
       "name": "João Rosa",
       "title": "Strategic Software Delivery Consultant at Xebia"
     },
+    "juggernaut": {
+      "name": "Juggernaut",
+      "title": " "
+    },
     "kacper-gunia": {
       "name": "Kacper Gunia",
       "title": "Trainer, Consultant & DDD London Organiser."
@@ -95,6 +115,10 @@
     "kenny-baas-schwegler": {
       "name": "Kenny Baas-Schwegler",
       "title": "Socio-technical organisation designer and software architect. Facilitating change using Domain-Driven Design, Deep Democracy and visual collaboration"
+    },
+    "kim": {
+      "name": "Kim Kao",
+      "title": "Senior Solutions Architect"
     },
     "lee-meng-xuan": {
       "name": "李孟萱",
@@ -107,6 +131,10 @@
     "lin-shi-pong": {
       "name": "林世鵬",
       "title": "街口電子支付技術團隊負責人"
+    },
+    "michael": {
+      "name": "Michael",
+      "title": " "
     },
     "michael-suen": {
       "name": "孫翊軒(Michael Suen)",
@@ -131,6 +159,10 @@
     "richard": {
       "name": "蘇立群 Richard",
       "title": " "
+    },
+    "river": {
+      "name": "River Lin",
+      "title": "Dept. Lead"
     },
     "sam-huang": {
       "name": "Sam Huang 黃世銘",
@@ -274,6 +306,20 @@
     },
     "soft-leader": {
       "name": "SoftLeader"
+    }
+  },
+  "workshops": {
+    "a0900": {
+      "title": "Product design with system modeling by DDD"
+    },
+    "b0900": {
+      "title": "DDD 深度歷險：從戰略到戰術"
+    },
+    "c0900": {
+      "title": "Scrum 問題解決遊戲 (Problem Solving Game) 工作坊"
+    },
+    "c1300": {
+      "title": "Problem Solving Sprint - 解決方案團隊共創工作坊"
     }
   }
 }

@@ -68,9 +68,25 @@
     }
   },
   "speakers": {
+    "arthur": {
+      "name": "Authur",
+      "title": " "
+    },
     "clark": {
       "name": "Clark",
       "title": "富邦人壽 經理"
+    },
+    "ean": {
+      "name": "Ean",
+      "title": " "
+    },
+    "eason": {
+      "name": "郭奕成",
+      "title": "後端工程師"
+    },
+    "fong": {
+      "name": "劉鳯軒",
+      "title": "後端工程師"
     },
     "gelis": {
       "name": "Gelis (吳俊毅)",
@@ -88,6 +104,10 @@
       "name": "若昂 羅沙",
       "title": "策略軟體交付顧問"
     },
+    "juggernaut": {
+      "name": "Juggernaut",
+      "title": " "
+    },
     "kacper-gunia": {
       "name": "卡珀・古尼亞",
       "title": "講師, 顧問以及DDD倫敦組織者"
@@ -95,6 +115,10 @@
     "kenny-baas-schwegler": {
       "name": "肯尼 巴斯-斯威格勒",
       "title": "社會技術組織設計師和軟體架構師。促進變革，使用領域驅動設計，深度民主和視覺化協作"
+    },
+    "kim": {
+      "name": "高翊凱",
+      "title": "資深解決方案架構師"
     },
     "lee-meng-xuan": {
       "name": "李孟萱",
@@ -107,6 +131,10 @@
     "lin-shi-pong": {
       "name": "林世鵬",
       "title": "街口電子支付技術團隊負責人"
+    },
+    "michael": {
+      "name": "Michael",
+      "title": " "
     },
     "michael-suen": {
       "name": "孫翊軒(Michael Suen)",
@@ -131,6 +159,10 @@
     "richard": {
       "name": "蘇立群 Richard",
       "title": " "
+    },
+    "river": {
+      "name": "林鴻皓",
+      "title": "Dept. Lead"
     },
     "sam-huang": {
       "name": "Sam Huang 黃世銘",
@@ -274,6 +306,20 @@
     },
     "soft-leader": {
       "name": "松凌科技"
+    }
+  },
+  "workshops": {
+    "a0900": {
+      "title": "Product design with system modeling by DDD"
+    },
+    "b0900": {
+      "title": "DDD 深度歷險：從戰略到戰術"
+    },
+    "c0900": {
+      "title": "Scrum 問題解決遊戲 (Problem Solving Game) 工作坊"
+    },
+    "c1300": {
+      "title": "Problem Solving Sprint - 解決方案團隊共創工作坊"
     }
   }
 }
