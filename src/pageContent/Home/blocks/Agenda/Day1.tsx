@@ -6,7 +6,7 @@ import {
   TableCell,
   TableHead,
   TableRow,
-  Tabs
+  Tabs,
 } from "@material-ui/core";
 import { useIntl } from "gatsby-plugin-intl";
 import React, { Fragment, memo, useState } from "react";
@@ -250,7 +250,7 @@ export default memo(function Day1() {
                   15:30 ~ 17:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
-                  <Item id="b1530" />
+                  <Item id="b1530" href="/speaks/b1530" />
                 </TableCell>
               </TableRow>
               <TableRow className={cssBreakTime}>
@@ -535,7 +535,7 @@ export default memo(function Day1() {
                 <Item id="a1530" href="/speaks/a1530" />
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
-                <Item id="b1530" />
+                <Item id="b1530" href="/speaks/b1530" />
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
                 <Item id="c1530" href="/speaks/c1530" />
