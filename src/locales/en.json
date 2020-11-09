@@ -17,9 +17,9 @@
       },
       "title": "Agenda",
       "tracks": {
-        "a": "Track A",
-        "b": "Track B",
-        "c": "Track C"
+        "a": "產品軌",
+        "b": "技術軌",
+        "c": "流程軌"
       }
     },
     "dddConf": {
