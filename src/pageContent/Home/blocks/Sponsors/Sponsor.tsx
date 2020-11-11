@@ -11,6 +11,12 @@ import { css } from "emotion";
 import { useIntl } from "gatsby-plugin-intl";
 import React, { memo, useCallback, useMemo, useState } from "react";
 
+const cssBtnImg = css`
+  label: btnImg;
+  max-width: 200px;
+  max-height: 150px;
+`;
+
 const cssImgInInfo = css`
   label: imgInInfo;
   max-height: 200px;
@@ -36,20 +42,6 @@ const Sponsor = ({ id }: { id: string }) => {
     () => require(`./${id}/info.${intl.locale}.mdx`).default,
     [id, intl.locale]
   );
-  const cssSponsor = useMemo(
-    () =>
-      css({
-        label: "sponsor",
-        width: "200px",
-        height: "150px",
-        backgroundSize: "contain",
-        backgroundPosition: "center",
-        backgroundImage: `url(${imgSrc})`,
-        backgroundRepeat: "no-repeat",
-        margin: "auto",
-      }),
-    [imgSrc]
-  );
   const [tooltipOpened, setTooltipOpened] = useState(false);
   const tooltipOpen = useCallback(() => {
     setTooltipOpened(true);
@@ -68,11 +60,9 @@ const Sponsor = ({ id }: { id: string }) => {
         onClick={tooltipClose}
       >
         <div>
-          <Button
-            className={cssSponsor}
-            onClick={infoOpen}
-            disabled={infoOpened}
-          />
+          <Button onClick={infoOpen} disabled={infoOpened}>
+            <img src={imgSrc} alt={name} className={cssBtnImg} />
+          </Button>
         </div>
       </Tooltip>
       <Dialog open={infoOpened} onClose={infoClose}>

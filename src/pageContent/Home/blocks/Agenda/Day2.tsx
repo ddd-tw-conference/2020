@@ -51,7 +51,7 @@ export default memo(function Day1() {
                   09:00 ~ 12:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
-                  <Item type="workshops" id="a0900" />
+                  <Item type="workshops" id="a0900" href="/workshops/a0900" />
                 </TableCell>
               </TableRow>
               <TableRow className={cssBreakTime}>
@@ -67,7 +67,7 @@ export default memo(function Day1() {
                   13:00 ~ 16:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
-                  <Item type="workshops" id="a0900" />
+                  <Item type="workshops" id="a0900" href="/workshops/a0900" />
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -176,7 +176,7 @@ export default memo(function Day1() {
                 09:00 ~ 12:00
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
-                <Item type="workshops" id="a0900" />
+                <Item type="workshops" id="a0900" href="/workshops/a0900" />
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
                 <Item type="workshops" id="b0900" href="/workshops/b0900" />
@@ -198,7 +198,7 @@ export default memo(function Day1() {
                 13:00 ~ 16:00
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
-                <Item type="workshops" id="a0900" />
+                <Item type="workshops" id="a0900" href="/workshops/a0900" />
               </TableCell>
               <TableCell align="center" className={cssTableCell}>
                 <Item type="workshops" id="b0900" href="/workshops/b0900" />
