@@ -69,16 +69,16 @@
   },
   "speakers": {
     "arthur": {
-      "name": "Authur",
-      "title": " "
+      "name": "Arthur Chang",
+      "title": "Developer"
     },
     "clark": {
       "name": "Clark 周忠慶",
-      "title": "富邦人壽 經理"
+      "title": "K.NET志工講師/台北聯絡人、部落格「昏睡領域」版主"
     },
     "ean": {
-      "name": "Ean",
-      "title": " "
+      "name": "Ean Lee",
+      "title": "Developer"
     },
     "eason": {
       "name": "Eason Kuo",
@@ -94,7 +94,7 @@
     },
     "guo-de-xiang": {
       "name": "郭德祥",
-      "title": " "
+      "title": "國泰世華中台發展部應用規劃科"
     },
     "huang-guan-rong": {
       "name": "Kevin 黃冠融",
@@ -133,8 +133,8 @@
       "title": "街口電子支付技術團隊負責人"
     },
     "michael": {
-      "name": "Michael",
-      "title": " "
+      "name": "Michael Chen",
+      "title": "Vice President"
     },
     "michael-suen": {
       "name": "孫翊軒(Michael Suen)",
@@ -158,7 +158,7 @@
     },
     "richard": {
       "name": "Richard 蘇立群",
-      "title": " "
+      "title": "芝加哥大學 - 學生"
     },
     "river": {
       "name": "River Lin",
@@ -182,7 +182,7 @@
     },
     "zeng-qi-da": {
       "name": "曾棨達",
-      "title": " "
+      "title": "國泰世華中台發展部中台開發科"
     },
     "zhang-yi": {
       "name": "張逸",
@@ -194,7 +194,7 @@
     },
     "zheng-qi-wen": {
       "name": "Steven 鄭棋文",
-      "title": "愛碼市智能科技股份有限公司 專案經理"
+      "title": "專案經理"
     }
   },
   "speakersInterviews": {

@@ -42,6 +42,7 @@ const Speaker = ({ id }: { id: string }) => {
         [theme.breakpoints.down("xs")]: {
           marginRight: "auto",
           marginLeft: "auto",
+          marginBottom: "2rem",
         },
       }),
     [theme.breakpoints]

@@ -41,12 +41,7 @@ const SponsorClassBlock = ({
         </Typography>
         {titleIcon || null}
       </div>
-      <Grid
-        container
-        spacing={3}
-        alignItems="flex-start"
-        justifyContent="center"
-      >
+      <Grid container spacing={3} alignItems="center" justifyContent="center">
         {children}
       </Grid>
     </div>
