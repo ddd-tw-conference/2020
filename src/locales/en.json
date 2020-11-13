@@ -5,6 +5,10 @@
       "title": "About DDD TW"
     },
     "agenda": {
+      "session": {
+        "a": "{title} (A)",
+        "b": "{title} (B)"
+      },
       "table": {
         "breakTime": "Break Time",
         "lunchBreak": " Lunch Break + 贊助 Talk",

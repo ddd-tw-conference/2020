@@ -39,16 +39,22 @@ export default memo(function Item({
   type = "speaks",
   id,
   href,
+  session,
 }: {
   type?: "speaks" | "workshops";
   id: string;
   href?: string;
+  session?: "a" | "b";
 }) {
   const intl = useIntl();
-  const title = useMemo(
-    () => intl.formatMessage({ id: `${type}.${id}.title` }),
-    [id, intl, type]
-  );
+  const title = useMemo(() => {
+    const title = intl.formatMessage({ id: `${type}.${id}.title` });
+    return session === "a"
+      ? intl.formatMessage({ id: "blocks.agenda.session.a" }, { title })
+      : session === "b"
+      ? intl.formatMessage({ id: "blocks.agenda.session.b" }, { title })
+      : title;
+  }, [id, intl, session, type]);
   const speakers = useMemo(
     () =>
       type === "speaks"

@@ -5,6 +5,10 @@
       "title": "關於我們"
     },
     "agenda": {
+      "session": {
+        "a": "{title} (上)",
+        "b": "{title} (下)"
+      },
       "table": {
         "breakTime": "中場休息",
         "lunchBreak": " Lunch Break + 贊助 Talk",
