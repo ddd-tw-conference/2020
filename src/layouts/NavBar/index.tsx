@@ -7,7 +7,7 @@ import {
   List,
   ListItem,
   Toolbar,
-  useTheme,
+  useTheme
 } from "@material-ui/core";
 import { Menu as MenuIcon } from "@material-ui/icons";
 import A from "components/A";
@@ -134,7 +134,7 @@ function NavBar() {
                 >
                   <List>
                     <ListItem>
-                      <LngSelector />
+                      <LngSelector closeDrawer={close} />
                     </ListItem>
                     <MyListItem href="https://dddtaiwan.kktix.cc/events/dddtw-conf-2020">
                       {intl.formatMessage({ id: "layout.navbar.join" })}

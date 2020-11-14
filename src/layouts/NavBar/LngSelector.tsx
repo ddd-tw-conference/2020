@@ -11,7 +11,7 @@ const languages: {
   "zh-TW": "中文",
 };
 
-const LngSelector = () => {
+const LngSelector = ({ closeDrawer }: { closeDrawer?: () => void }) => {
   const theme = useTheme();
   const cssColor = useMemo(
     () =>
@@ -30,9 +30,13 @@ const LngSelector = () => {
   );
   const intl = useIntl();
   const value = useMemo(() => intl.locale, [intl.locale]);
-  const changeHandler = useCallback((e: ChangeEvent<{ value: unknown }>) => {
-    changeLocale(String(e.target.value));
-  }, []);
+  const changeHandler = useCallback(
+    (e: ChangeEvent<{ value: unknown }>) => {
+      if (closeDrawer) closeDrawer();
+      changeLocale(String(e.target.value));
+    },
+    [closeDrawer]
+  );
   return (
     <Select
       classes={classesSelect}

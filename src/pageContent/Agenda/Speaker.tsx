@@ -31,6 +31,8 @@ const cssTitle = css`
   label: title;
   font-size: 0.89rem;
   width: var(--width);
+  height: 4em;
+  overflow: hidden;
 `;
 
 export default memo(function Speaker({ id }: { id: string }) {
