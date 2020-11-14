@@ -10,29 +10,14 @@ import {
   useTheme,
 } from "@material-ui/core";
 import { Menu as MenuIcon } from "@material-ui/icons";
-import usePrevious from "@react-hook/previous";
-import useScrollPosition from "@react-hook/window-scroll";
 import A from "components/A";
 import Button from "components/Button";
-import { css, cx } from "emotion";
+import { css } from "emotion";
 import { useIntl } from "gatsby-plugin-intl";
-import { navBarHeight } from "layouts/Theme";
 import logo from "logo.png";
-import React, {
-  Fragment,
-  memo,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
+import React, { Fragment, memo, useCallback, useMemo, useState } from "react";
 import LngSelector from "./LngSelector";
 import MyListItem from "./MyListItem";
-
-const cssHide = css`
-  label: hide;
-  transform: translateY(-100%);
-`;
 
 function NavBar() {
   const theme = useTheme();
@@ -44,18 +29,7 @@ function NavBar() {
   const close = useCallback(() => {
     setOpened(false);
   }, []);
-  const [hide, setHide] = useState(false);
-  const scrollY = useScrollPosition();
-  const previousScrollY = usePrevious(scrollY, scrollY);
-  useEffect(() => {
-    if (scrollY > previousScrollY && scrollY > navBarHeight) {
-      if (!hide) setHide(true);
-      return;
-    } else if (scrollY < previousScrollY) {
-      if (hide) setHide(false);
-    }
-  }, [hide, previousScrollY, scrollY]);
-  const cssAppBarBase = useMemo(
+  const cssAppBar = useMemo(
     () =>
       css({
         label: "appBarBase",
@@ -65,10 +39,6 @@ function NavBar() {
       }),
     [theme.transitions.duration.standard, theme.transitions.easing.easeOut]
   );
-  const cssAppBar = useMemo(() => cx(cssAppBarBase, hide && cssHide), [
-    cssAppBarBase,
-    hide,
-  ]);
   return (
     <Fragment>
       <AppBar position="fixed" color="default" className={cssAppBar}>
