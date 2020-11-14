@@ -6,18 +6,38 @@ import {
   IconButton,
   List,
   ListItem,
+  Menu,
+  MenuItem,
   Toolbar,
-  useTheme
+  useTheme,
 } from "@material-ui/core";
 import { Menu as MenuIcon } from "@material-ui/icons";
 import A from "components/A";
 import Button from "components/Button";
 import { css } from "emotion";
-import { useIntl } from "gatsby-plugin-intl";
+import { Link, useIntl } from "gatsby-plugin-intl";
 import logo from "logo.png";
 import React, { Fragment, memo, useCallback, useMemo, useState } from "react";
 import LngSelector from "./LngSelector";
 import MyListItem from "./MyListItem";
+
+const cssAgendaDay = css`
+  label: agendaDay;
+  margin-left: 2em;
+`;
+
+const cssAgendaTrack = css`
+  label: agendaTrack;
+  margin-left: 4em;
+`;
+
+const classesDrawer = {
+  paper: css`
+    label: paper;
+    max-height: 80vh;
+    overflow: auto;
+  `,
+};
 
 function NavBar() {
   const theme = useTheme();
@@ -28,6 +48,13 @@ function NavBar() {
   }, []);
   const close = useCallback(() => {
     setOpened(false);
+  }, []);
+  const [agendaMenuAnchorEl, setAgendaMenuAnchorEl] = useState(null);
+  const openAgendaMenu = useCallback((e) => {
+    setAgendaMenuAnchorEl(e.target);
+  }, []);
+  const closeAgendaMenu = useCallback(() => {
+    setAgendaMenuAnchorEl(null);
   }, []);
   const cssAppBar = useMemo(
     () =>
@@ -57,6 +84,26 @@ function NavBar() {
             </Grid>
             <Grid item>
               <Hidden smDown>
+                <Menu
+                  anchorEl={agendaMenuAnchorEl}
+                  open={Boolean(agendaMenuAnchorEl)}
+                  onClose={closeAgendaMenu}
+                >
+                  <MenuItem
+                    onClick={closeAgendaMenu}
+                    component={Link}
+                    to="/#agenda_d1"
+                  >
+                    {intl.formatMessage({ id: "blocks.agenda.day.day1" })}
+                  </MenuItem>
+                  <MenuItem
+                    onClick={closeAgendaMenu}
+                    component={Link}
+                    to="/#agenda_d2"
+                  >
+                    {intl.formatMessage({ id: "blocks.agenda.day.day2" })}
+                  </MenuItem>
+                </Menu>
                 <Grid
                   container
                   spacing={1}
@@ -91,7 +138,7 @@ function NavBar() {
                     </Button>
                   </Grid>
                   <Grid item>
-                    <Button component={A} href="/#agenda">
+                    <Button onClick={openAgendaMenu}>
                       {intl.formatMessage({ id: "layout.navbar.agenda" })}
                     </Button>
                   </Grid>
@@ -131,6 +178,7 @@ function NavBar() {
                   open={opened}
                   onClose={close}
                   color="transparent"
+                  classes={classesDrawer}
                 >
                   <List>
                     <ListItem>
@@ -150,8 +198,56 @@ function NavBar() {
                     <MyListItem onClick={close} href="/#speakers">
                       {intl.formatMessage({ id: "layout.navbar.speakers" })}
                     </MyListItem>
-                    <MyListItem onClick={close} href="/#agenda">
+                    <ListItem>
                       {intl.formatMessage({ id: "layout.navbar.agenda" })}
+                    </ListItem>
+                    <ListItem className={cssAgendaDay}>
+                      {intl.formatMessage({ id: "blocks.agenda.day.day1" })}
+                    </ListItem>
+                    <MyListItem
+                      className={cssAgendaTrack}
+                      onClick={close}
+                      href="/#agenda_d1a"
+                    >
+                      {intl.formatMessage({ id: "blocks.agenda.tracks.a" })}
+                    </MyListItem>
+                    <MyListItem
+                      className={cssAgendaTrack}
+                      onClick={close}
+                      href="/#agenda_d1b"
+                    >
+                      {intl.formatMessage({ id: "blocks.agenda.tracks.b" })}
+                    </MyListItem>
+                    <MyListItem
+                      className={cssAgendaTrack}
+                      onClick={close}
+                      href="/#agenda_d1c"
+                    >
+                      {intl.formatMessage({ id: "blocks.agenda.tracks.c" })}
+                    </MyListItem>
+                    <ListItem className={cssAgendaDay}>
+                      {intl.formatMessage({ id: "blocks.agenda.day.day2" })}
+                    </ListItem>
+                    <MyListItem
+                      className={cssAgendaTrack}
+                      onClick={close}
+                      href="/#agenda_d2a"
+                    >
+                      {intl.formatMessage({ id: "blocks.agenda.tracks.a" })}
+                    </MyListItem>
+                    <MyListItem
+                      className={cssAgendaTrack}
+                      onClick={close}
+                      href="/#agenda_d2b"
+                    >
+                      {intl.formatMessage({ id: "blocks.agenda.tracks.b" })}
+                    </MyListItem>
+                    <MyListItem
+                      className={cssAgendaTrack}
+                      onClick={close}
+                      href="/#agenda_d2c"
+                    >
+                      {intl.formatMessage({ id: "blocks.agenda.tracks.c" })}
                     </MyListItem>
                     <MyListItem onClick={close} href="/#topics">
                       {intl.formatMessage({ id: "layout.navbar.topics" })}

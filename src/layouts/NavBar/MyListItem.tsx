@@ -25,8 +25,11 @@ const MyListItem = (<D extends React.ElementType<any> = "li", P = {}>() => {
           ),
         [className, theme.palette.primary.main]
       );
-      return (
+
+      return props.href ? (
         <ListItem button component={A} className={cls} ref={ref} {...props} />
+      ) : (
+        <ListItem button className={cls} ref={ref} {...props} />
       );
     }
   );

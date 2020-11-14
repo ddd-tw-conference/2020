@@ -5,6 +5,10 @@
       "title": "About DDD TW"
     },
     "agenda": {
+      "day": {
+        "day1": "11/27(五) 第一天演講",
+        "day2": "11/28(六) 第二天工作坊"
+      },
       "session": {
         "a": "{title} (A)",
         "b": "{title} (B)"
@@ -14,10 +18,6 @@
         "lunchBreak": " Lunch Break + 贊助 Talk",
         "teaTime": "Break Time(Tea Time)",
         "time": "Time"
-      },
-      "tabs": {
-        "day1": "11/27(五) 第一天演講",
-        "day2": "11/28(六) 第二天工作坊"
       },
       "title": "Agenda",
       "tracks": {
