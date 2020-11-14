@@ -1,7 +1,6 @@
 import { GridProps, Typography } from "@material-ui/core";
 import {
   Email as EmailIcon,
-  Facebook as FacebookIcon,
   LocationOn as LocationOnIcon,
   WatchLater as WatchLaterIcon,
 } from "@material-ui/icons";
@@ -13,6 +12,7 @@ import { css } from "emotion";
 import { useIntl } from "gatsby-plugin-intl";
 import whiteLogo from "img/white_DDD_logo.jpg";
 import React, { ElementType, memo } from "react";
+import FacebookIcon from "./icons/FacebookIcon";
 import FacebookSocialIcon from "./icons/FacebookSocialIcon";
 import InstagramIcon from "./icons/InstagramIcon";
 import MessengerIcon from "./icons/MessengerIcon";
