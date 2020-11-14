@@ -27,6 +27,22 @@ const Speakers = () => {
             "zhang-yun-wei",
             "paul-shih",
             "lin-de-zheng",
+            "sylvia",
+            "lee-meng-xuan",
+            "rex-wang",
+            "otto",
+            "guo-de-xiang",
+            "zeng-qi-da",
+            "michael-suen",
+            "richard",
+            "michael",
+            "arthur",
+            "ean",
+            "river",
+            "eason",
+            "fong",
+            "kim",
+            "juggernaut",
           ].map((id) => (
             <Speaker
               key={id}
