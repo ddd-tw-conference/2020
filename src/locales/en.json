@@ -206,11 +206,17 @@
       "bryan": {
         "title": "專人訪談 - Bryan"
       },
+      "kacperGunia": {
+        "title": "Conf Interview - Kacper Gunia (DDD London Organiser)"
+      },
       "rex": {
         "title": "專人訪談 - Rex(Red Hat 資深架構師)"
       },
       "sam": {
         "title": "專人訪談 - Sam (國泰金控開發組組長)"
+      },
+      "stevenMak": {
+        "title": "專人訪談 - Steven Mak (敏捷教練、IT 顧問)"
       }
     },
     "title": "Speaker Interviews"

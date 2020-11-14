@@ -23,8 +23,18 @@ const App = () => {
     () => intl.formatMessage({ id: "speakersInterviews.items.rex.title" }),
     [intl]
   );
+  const stevenMakTitle = useMemo(
+    () =>
+      intl.formatMessage({ id: "speakersInterviews.items.stevenMak.title" }),
+    [intl]
+  );
   const samTitle = useMemo(
     () => intl.formatMessage({ id: "speakersInterviews.items.sam.title" }),
+    [intl]
+  );
+  const kacperGuniaTitle = useMemo(
+    () =>
+      intl.formatMessage({ id: "speakersInterviews.items.kacperGunia.title" }),
     [intl]
   );
   return (
@@ -50,11 +60,31 @@ const App = () => {
           allowFullScreen
         />
       </Block>
+      <Block title={stevenMakTitle}>
+        <FixRatioIframe
+          ratio="56.25%"
+          title={stevenMakTitle}
+          src="https://www.youtube.com/embed/8VVVZsxbNdk"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </Block>
       <Block title={samTitle}>
         <FixRatioIframe
           ratio="56.25%"
           title={samTitle}
           src="https://www.youtube.com/embed/jcMAt-bfEso"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </Block>
+      <Block title={kacperGuniaTitle}>
+        <FixRatioIframe
+          ratio="56.25%"
+          title={kacperGuniaTitle}
+          src="https://www.youtube.com/embed/LJ8SIa7pYOg"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
