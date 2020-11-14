@@ -17,6 +17,7 @@ import FacebookSocialIcon from "./icons/FacebookSocialIcon";
 import InstagramIcon from "./icons/InstagramIcon";
 import MessengerIcon from "./icons/MessengerIcon";
 import TwitterIcon from "./icons/TwitterIcon";
+import YouTubeIcon from "./icons/YouTubeIcon";
 import Item from "./Item";
 
 const cssContainer = css`
@@ -114,6 +115,13 @@ const Footer = () => {
               <RwdGrid item>
                 <A href="https://www.facebook.com/groups/dddtaiwan">
                   <Item icon={<FacebookSocialIcon />}>dddtaiwan</Item>
+                </A>
+              </RwdGrid>
+              <RwdGrid item>
+                <A href="https://www.youtube.com/channel/UCydw7dbEksG3axEMjHy4BxQ">
+                  <Item icon={<YouTubeIcon />}>
+                    Domain-Driven Design Taiwan
+                  </Item>
                 </A>
               </RwdGrid>
             </RwdGrid>
