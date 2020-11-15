@@ -1,6 +1,7 @@
-import { Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import { css } from "emotion";
-import React, { memo, ReactNode } from "react";
+import { Link } from "gatsby-plugin-intl";
+import React, { Fragment, memo, ReactNode, useMemo } from "react";
 
 const cssItem = css`
   label: item;
@@ -17,13 +18,40 @@ const cssIcon = css`
   justify-content: center;
 `;
 
-const Item = ({ icon, title }: { icon: ReactNode; title: ReactNode }) => {
-  return (
-    <div className={cssItem}>
-      <div className={cssIcon}>{icon}</div>
-      <Typography>{title}</Typography>
-    </div>
-  );
+const classesBtn = {
+  root: css`
+    label: root;
+    padding: 0;
+  `,
+  label: css`
+    label: label;
+  `,
 };
 
-export default memo(Item);
+export default memo(function Item({
+  icon,
+  title,
+  to,
+}: {
+  icon: ReactNode;
+  title: ReactNode;
+  to?: string;
+}) {
+  const children = useMemo(
+    () => (
+      <Fragment>
+        <div className={cssIcon}>{icon}</div>
+        <Typography>{title}</Typography>
+      </Fragment>
+    ),
+    [icon, title]
+  );
+  if (to) {
+    return (
+      <Button classes={classesBtn} component={Link} to={to}>
+        {children}
+      </Button>
+    );
+  }
+  return <div className={cssItem}>{children}</div>;
+});
