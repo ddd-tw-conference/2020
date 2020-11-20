@@ -15,7 +15,9 @@
       },
       "table": {
         "breakTime": "Break Time",
+        "checkIn": "報到",
         "lunchBreak": " Lunch Break + 贊助 Talk",
+        "opening": "Opening",
         "teaTime": "Break Time(Tea Time)",
         "time": "Time"
       },

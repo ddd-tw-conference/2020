@@ -29,6 +29,22 @@ export default memo(function Day1() {
               </TableRow>
             </TableHead>
             <TableBody>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  08:15 ~ 08:45
+                </TableCell>
+                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
+                </TableCell>
+              </TableRow>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  08:45 ~ 09:00
+                </TableCell>
+                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.opening" })}
+                </TableCell>
+              </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
                   09:00 ~ 09:50
@@ -139,6 +155,22 @@ export default memo(function Day1() {
               </TableRow>
             </TableHead>
             <TableBody>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  08:15 ~ 08:45
+                </TableCell>
+                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
+                </TableCell>
+              </TableRow>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  08:45 ~ 09:00
+                </TableCell>
+                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.opening" })}
+                </TableCell>
+              </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
                   09:00 ~ 09:50
@@ -265,6 +297,22 @@ export default memo(function Day1() {
               </TableRow>
             </TableHead>
             <TableBody>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  08:15 ~ 08:45
+                </TableCell>
+                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
+                </TableCell>
+              </TableRow>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  08:45 ~ 09:00
+                </TableCell>
+                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.opening" })}
+                </TableCell>
+              </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
                   09:00 ~ 09:50
@@ -385,6 +433,22 @@ export default memo(function Day1() {
               </TableRow>
             </TableHead>
             <TableBody>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  08:15 ~ 08:45
+                </TableCell>
+                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
+                </TableCell>
+              </TableRow>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  08:45 ~ 09:00
+                </TableCell>
+                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.opening" })}
+                </TableCell>
+              </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
                   09:00 ~ 09:50
