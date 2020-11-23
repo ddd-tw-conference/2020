@@ -117,9 +117,17 @@ export default memo(function Day1() {
                   <Item id="a1400" href="/speaks/a1400" />
                 </TableCell>
               </TableRow>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  14:50 ~ 15:00
+                </TableCell>
+                <TableCell align="center" className={cssTableCell}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.breakTime" })}
+                </TableCell>
+              </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
-                  14:50 ~ 15:10
+                  15:00 ~ 15:20
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item id="a1450" href="/speaks/a1450" />
@@ -127,7 +135,7 @@ export default memo(function Day1() {
               </TableRow>
               <TableRow className={cssBreakTime}>
                 <TableCell align="center" className={cssTableCell}>
-                  15:10 ~ 15:30
+                  15:20 ~ 15:40
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   {intl.formatMessage({ id: "blocks.agenda.table.teaTime" })}
@@ -135,7 +143,7 @@ export default memo(function Day1() {
               </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
-                  15:30 ~ 17:00
+                  15:40 ~ 17:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item id="a1530" href="/speaks/a1530" />
@@ -243,9 +251,17 @@ export default memo(function Day1() {
                   <Item id="b1400" href="/speaks/b1400" />
                 </TableCell>
               </TableRow>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  14:50 ~ 15:00
+                </TableCell>
+                <TableCell align="center" className={cssTableCell}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.breakTime" })}
+                </TableCell>
+              </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
-                  14:50 ~ 15:10
+                  15:00 ~ 15:20
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item id="b1450" href="/speaks/b1450" />
@@ -253,7 +269,7 @@ export default memo(function Day1() {
               </TableRow>
               <TableRow className={cssBreakTime}>
                 <TableCell align="center" className={cssTableCell}>
-                  15:10 ~ 15:30
+                  15:20 ~ 15:40
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   {intl.formatMessage({ id: "blocks.agenda.table.teaTime" })}
@@ -261,7 +277,7 @@ export default memo(function Day1() {
               </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
-                  15:30 ~ 17:00
+                  15:40 ~ 17:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item id="b1530" href="/speaks/b1530" />
@@ -385,9 +401,17 @@ export default memo(function Day1() {
                   <Item id="c1400" href="/speaks/c1400" />
                 </TableCell>
               </TableRow>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  14:50 ~ 15:00
+                </TableCell>
+                <TableCell align="center" className={cssTableCell}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.breakTime" })}
+                </TableCell>
+              </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
-                  14:50 ~ 15:10
+                  15:00 ~ 15:20
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item id="c1450" href="/speaks/c1450" />
@@ -395,7 +419,7 @@ export default memo(function Day1() {
               </TableRow>
               <TableRow className={cssBreakTime}>
                 <TableCell align="center" className={cssTableCell}>
-                  15:10 ~ 15:30
+                  15:20 ~ 15:40
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   {intl.formatMessage({ id: "blocks.agenda.table.teaTime" })}
@@ -403,7 +427,7 @@ export default memo(function Day1() {
               </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
-                  15:30 ~ 17:00
+                  15:40 ~ 17:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item id="c1530" href="/speaks/c1530" />
@@ -551,9 +575,17 @@ export default memo(function Day1() {
                   <Item id="c1400" href="/speaks/c1400" />
                 </TableCell>
               </TableRow>
+              <TableRow className={cssBreakTime}>
+                <TableCell align="center" className={cssTableCell}>
+                  14:50 ~ 15:00
+                </TableCell>
+                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                  {intl.formatMessage({ id: "blocks.agenda.table.breakTime" })}
+                </TableCell>
+              </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
-                  14:50 ~ 15:10
+                  15:00 ~ 15:20
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item id="a1450" href="/speaks/a1450" />
@@ -567,7 +599,7 @@ export default memo(function Day1() {
               </TableRow>
               <TableRow className={cssBreakTime}>
                 <TableCell align="center" className={cssTableCell}>
-                  15:10 ~ 15:30
+                  15:20 ~ 15:40
                 </TableCell>
                 <TableCell align="center" className={cssTableCell} colSpan={3}>
                   {intl.formatMessage({ id: "blocks.agenda.table.teaTime" })}
@@ -575,7 +607,7 @@ export default memo(function Day1() {
               </TableRow>
               <TableRow>
                 <TableCell align="center" className={cssTableCell}>
-                  15:30 ~ 17:00
+                  15:40 ~ 17:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item id="a1530" href="/speaks/a1530" />
