@@ -33,6 +33,9 @@
       "title": "About DDD Conf"
     },
     "landing": {
+      "countDown": {
+        "goToAgenda": "前往議程"
+      },
       "join": "Get Tickets",
       "title": "領域驅動設計年會"
     },

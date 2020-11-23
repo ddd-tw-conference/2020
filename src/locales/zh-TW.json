@@ -33,6 +33,9 @@
       "title": "關於DDD年會"
     },
     "landing": {
+      "countDown": {
+        "goToAgenda": "前往議程"
+      },
       "join": "我要參加",
       "title": "領域驅動設計年會"
     },
