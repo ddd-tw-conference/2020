@@ -5,10 +5,11 @@ import {
   TableCell,
   TableHead,
   TableRow,
+  Typography,
 } from "@material-ui/core";
 import { useIntl } from "gatsby-plugin-intl";
 import React, { Fragment, memo } from "react";
-import Item from "./Item";
+import Item, { cssContainer } from "./Item";
 import { cssBreakTime, cssDay, cssTableCell } from "./style";
 
 export default memo(function Day1() {
@@ -33,16 +34,22 @@ export default memo(function Day1() {
                 <TableCell align="center" className={cssTableCell}>
                   08:00 ~ 08:30
                 </TableCell>
-                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                <TableCell align="center" className={cssTableCell}>
                   {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
                 </TableCell>
               </TableRow>
-              <TableRow className={cssBreakTime}>
+              <TableRow>
                 <TableCell align="center" className={cssTableCell}>
                   08:30 ~ 09:00
                 </TableCell>
-                <TableCell align="center" className={cssTableCell} colSpan={3}>
-                  {intl.formatMessage({ id: "blocks.agenda.table.opening" })}
+                <TableCell align="center" className={cssTableCell}>
+                  <div className={cssContainer}>
+                    <Typography variant="h5" color="textPrimary">
+                      {intl.formatMessage({
+                        id: "blocks.agenda.table.opening",
+                      })}
+                    </Typography>
+                  </div>
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -167,16 +174,22 @@ export default memo(function Day1() {
                 <TableCell align="center" className={cssTableCell}>
                   08:00 ~ 08:30
                 </TableCell>
-                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                <TableCell align="center" className={cssTableCell}>
                   {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
                 </TableCell>
               </TableRow>
-              <TableRow className={cssBreakTime}>
+              <TableRow>
                 <TableCell align="center" className={cssTableCell}>
                   08:30 ~ 09:00
                 </TableCell>
-                <TableCell align="center" className={cssTableCell} colSpan={3}>
-                  {intl.formatMessage({ id: "blocks.agenda.table.opening" })}
+                <TableCell align="center" className={cssTableCell}>
+                  <div className={cssContainer}>
+                    <Typography variant="h5" color="textPrimary">
+                      {intl.formatMessage({
+                        id: "blocks.agenda.table.opening",
+                      })}
+                    </Typography>
+                  </div>
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -317,16 +330,22 @@ export default memo(function Day1() {
                 <TableCell align="center" className={cssTableCell}>
                   08:00 ~ 08:30
                 </TableCell>
-                <TableCell align="center" className={cssTableCell} colSpan={3}>
+                <TableCell align="center" className={cssTableCell}>
                   {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
                 </TableCell>
               </TableRow>
-              <TableRow className={cssBreakTime}>
+              <TableRow>
                 <TableCell align="center" className={cssTableCell}>
                   08:30 ~ 09:00
                 </TableCell>
-                <TableCell align="center" className={cssTableCell} colSpan={3}>
-                  {intl.formatMessage({ id: "blocks.agenda.table.opening" })}
+                <TableCell align="center" className={cssTableCell}>
+                  <div className={cssContainer}>
+                    <Typography variant="h5" color="textPrimary">
+                      {intl.formatMessage({
+                        id: "blocks.agenda.table.opening",
+                      })}
+                    </Typography>
+                  </div>
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -465,12 +484,18 @@ export default memo(function Day1() {
                   {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
                 </TableCell>
               </TableRow>
-              <TableRow className={cssBreakTime}>
+              <TableRow>
                 <TableCell align="center" className={cssTableCell}>
                   08:30 ~ 09:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell} colSpan={3}>
-                  {intl.formatMessage({ id: "blocks.agenda.table.opening" })}
+                  <div className={cssContainer}>
+                    <Typography variant="h5" color="textPrimary">
+                      {intl.formatMessage({
+                        id: "blocks.agenda.table.opening",
+                      })}
+                    </Typography>
+                  </div>
                 </TableCell>
               </TableRow>
               <TableRow>

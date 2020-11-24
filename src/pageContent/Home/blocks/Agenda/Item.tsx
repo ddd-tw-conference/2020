@@ -6,8 +6,8 @@ import { useIntl } from "gatsby-plugin-intl";
 import React, { Fragment, memo, useMemo } from "react";
 import Speaker from "./Speaker";
 
-const cssContainer = css`
-  label: btn;
+export const cssContainer = css`
+  label: container;
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 16px;
