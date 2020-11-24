@@ -1,1 +1,1 @@
-export const eventTime = new Date("2020-11-27T08:45:00+08:00");
+export const eventTime = new Date("2020-11-27T08:30:00+08:00");
