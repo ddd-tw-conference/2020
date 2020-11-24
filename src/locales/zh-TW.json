@@ -212,7 +212,10 @@
         "title": "專人訪談 - Bryan"
       },
       "kacperGunia": {
-        "title": "Conf Interview - Kacper Gunia (DDD London Organiser)"
+        "title": "Interview - Kacper Gunia (DDD London Organiser)"
+      },
+      "kennyBaasSchwegler": {
+        "title": "Interview - Kenny Baas-Schwegler"
       },
       "rex": {
         "title": "專人訪談 - Rex(Red Hat 資深架構師)"
@@ -222,6 +225,9 @@
       },
       "stevenMak": {
         "title": "專人訪談 - Steven Mak (敏捷教練、IT 顧問)"
+      },
+      "zhangYi": {
+        "title": "專人訪談 - 張逸 (民航 (成都) 信息技術有限公司 技術總監)"
       }
     },
     "title": "講師專訪"

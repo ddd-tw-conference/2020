@@ -37,6 +37,17 @@ const App = () => {
       intl.formatMessage({ id: "speakersInterviews.items.kacperGunia.title" }),
     [intl]
   );
+  const kennyBaasSchweglerTitle = useMemo(
+    () =>
+      intl.formatMessage({
+        id: "speakersInterviews.items.kennyBaasSchwegler.title",
+      }),
+    [intl]
+  );
+  const zhangYiTitle = useMemo(
+    () => intl.formatMessage({ id: "speakersInterviews.items.zhangYi.title" }),
+    [intl]
+  );
   return (
     <Container className={cls}>
       <Seo title={intl.formatMessage({ id: "speakersInterviews.title" })} />
@@ -85,6 +96,26 @@ const App = () => {
           ratio="56.25%"
           title={kacperGuniaTitle}
           src="https://www.youtube.com/embed/LJ8SIa7pYOg"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </Block>
+      <Block title={kennyBaasSchweglerTitle}>
+        <FixRatioIframe
+          ratio="56.25%"
+          title={kennyBaasSchweglerTitle}
+          src="https://www.youtube.com/embed/aYkUMWsGG6Y"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </Block>
+      <Block title={zhangYiTitle}>
+        <FixRatioIframe
+          ratio="56.25%"
+          title={zhangYiTitle}
+          src="https://www.youtube.com/embed/VSssPtopnag"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
