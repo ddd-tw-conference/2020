@@ -9,7 +9,7 @@ import {
 import { useIntl } from "gatsby-plugin-intl";
 import React, { Fragment, memo } from "react";
 import Item from "./Item";
-import { cssBreakTime, cssDay, cssTableCell } from "./style";
+import { cssBreakTime, cssDay, cssTableCell, cssTimeCell } from "./style";
 
 export default memo(function Day1() {
   const intl = useIntl();
@@ -30,16 +30,20 @@ export default memo(function Day1() {
             </TableHead>
             <TableBody>
               <TableRow className={cssBreakTime}>
-                <TableCell align="center" className={cssTableCell}>
-                  08:15 ~ 09:00
+                <TableCell align="center" className={cssTimeCell}>
+                  08:15
+                  <br />|<br />
+                  09:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell} colSpan={3}>
                   {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell align="center" className={cssTableCell}>
-                  09:00 ~ 12:00
+                <TableCell align="center" className={cssTimeCell}>
+                  09:00
+                  <br />|<br />
+                  12:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item
@@ -51,16 +55,20 @@ export default memo(function Day1() {
                 </TableCell>
               </TableRow>
               <TableRow className={cssBreakTime}>
-                <TableCell align="center" className={cssTableCell}>
-                  12:00 ~ 13:00
+                <TableCell align="center" className={cssTimeCell}>
+                  12:00
+                  <br />|<br />
+                  13:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   {intl.formatMessage({ id: "blocks.agenda.table.lunchBreak" })}
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell align="center" className={cssTableCell}>
-                  13:00 ~ 16:00
+                <TableCell align="center" className={cssTimeCell}>
+                  13:00
+                  <br />|<br />
+                  16:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item
@@ -86,16 +94,20 @@ export default memo(function Day1() {
             </TableHead>
             <TableBody>
               <TableRow className={cssBreakTime}>
-                <TableCell align="center" className={cssTableCell}>
-                  08:15 ~ 09:00
+                <TableCell align="center" className={cssTimeCell}>
+                  08:15
+                  <br />|<br />
+                  09:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell} colSpan={3}>
                   {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell align="center" className={cssTableCell}>
-                  09:00 ~ 12:00
+                <TableCell align="center" className={cssTimeCell}>
+                  09:00
+                  <br />|<br />
+                  12:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item
@@ -107,16 +119,20 @@ export default memo(function Day1() {
                 </TableCell>
               </TableRow>
               <TableRow className={cssBreakTime}>
-                <TableCell align="center" className={cssTableCell}>
-                  12:00 ~ 13:00
+                <TableCell align="center" className={cssTimeCell}>
+                  12:00
+                  <br />|<br />
+                  13:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   {intl.formatMessage({ id: "blocks.agenda.table.lunchBreak" })}
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell align="center" className={cssTableCell}>
-                  13:00 ~ 16:00
+                <TableCell align="center" className={cssTimeCell}>
+                  13:00
+                  <br />|<br />
+                  16:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item
@@ -142,32 +158,40 @@ export default memo(function Day1() {
             </TableHead>
             <TableBody>
               <TableRow className={cssBreakTime}>
-                <TableCell align="center" className={cssTableCell}>
-                  08:15 ~ 09:00
+                <TableCell align="center" className={cssTimeCell}>
+                  08:15
+                  <br />|<br />
+                  09:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell} colSpan={3}>
                   {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell align="center" className={cssTableCell}>
-                  09:00 ~ 12:00
+                <TableCell align="center" className={cssTimeCell}>
+                  09:00
+                  <br />|<br />
+                  12:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item type="workshops" id="c0900" href="/workshops/c0900" />
                 </TableCell>
               </TableRow>
               <TableRow className={cssBreakTime}>
-                <TableCell align="center" className={cssTableCell}>
-                  12:00 ~ 13:00
+                <TableCell align="center" className={cssTimeCell}>
+                  12:00
+                  <br />|<br />
+                  13:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   {intl.formatMessage({ id: "blocks.agenda.table.lunchBreak" })}
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell align="center" className={cssTableCell}>
-                  13:00 ~ 16:00
+                <TableCell align="center" className={cssTimeCell}>
+                  13:00
+                  <br />|<br />
+                  16:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item type="workshops" id="c1300" href="/workshops/c1300" />
@@ -198,16 +222,20 @@ export default memo(function Day1() {
             </TableHead>
             <TableBody>
               <TableRow className={cssBreakTime}>
-                <TableCell align="center" className={cssTableCell}>
-                  08:15 ~ 09:00
+                <TableCell align="center" className={cssTimeCell}>
+                  08:15
+                  <br />|<br />
+                  09:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell} colSpan={3}>
                   {intl.formatMessage({ id: "blocks.agenda.table.checkIn" })}
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell align="center" className={cssTableCell}>
-                  09:00 ~ 12:00
+                <TableCell align="center" className={cssTimeCell}>
+                  09:00
+                  <br />|<br />
+                  12:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item
@@ -230,16 +258,20 @@ export default memo(function Day1() {
                 </TableCell>
               </TableRow>
               <TableRow className={cssBreakTime}>
-                <TableCell align="center" className={cssTableCell}>
-                  12:00 ~ 13:00
+                <TableCell align="center" className={cssTimeCell}>
+                  12:00
+                  <br />|<br />
+                  13:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell} colSpan={3}>
                   {intl.formatMessage({ id: "blocks.agenda.table.lunchBreak" })}
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell align="center" className={cssTableCell}>
-                  13:00 ~ 16:00
+                <TableCell align="center" className={cssTimeCell}>
+                  13:00
+                  <br />|<br />
+                  16:00
                 </TableCell>
                 <TableCell align="center" className={cssTableCell}>
                   <Item

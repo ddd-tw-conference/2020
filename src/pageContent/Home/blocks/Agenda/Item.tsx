@@ -9,13 +9,13 @@ import Speaker from "./Speaker";
 export const cssContainer = css`
   label: container;
   display: grid;
+  position: relative;
   grid-template-rows: auto 1fr;
   gap: 16px;
   height: 100%;
   width: 100%;
   border-radius: 8px;
   padding: 8px;
-  background-color: #6cb9ea;
 `;
 
 const classesBtn = {
@@ -29,6 +29,18 @@ const classesBtn = {
   `,
   label: cssContainer,
 };
+
+export const cssBackground = css`
+  label: background;
+  position: absolute;
+  --margin: 4px;
+  top: var(--margin);
+  right: var(--margin);
+  bottom: var(--margin);
+  left: var(--margin);
+  border-radius: 8px;
+  background-color: #6cb9ea;
+`;
 
 const cssSpeakers = css`
   label: speakers;
@@ -81,11 +93,16 @@ export default memo(function Item({
     [speakers, title]
   );
 
-  return href ? (
-    <Button classes={classesBtn} component={A} href={href}>
-      {content}
-    </Button>
-  ) : (
-    <div className={cssContainer}>{content}</div>
+  return (
+    <Fragment>
+      <div className={cssBackground} />
+      {href ? (
+        <Button classes={classesBtn} component={A} href={href}>
+          {content}
+        </Button>
+      ) : (
+        <div className={cssContainer}>{content}</div>
+      )}
+    </Fragment>
   );
 });
