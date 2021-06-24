@@ -11,22 +11,28 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Cache pnpm modules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-pnpm-modules
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-
+      # - name: Cache pnpm modules
+      #   uses: actions/cache@v2
+      #   env:
+      #     cache-name: cache-pnpm-modules
+      #   with:
+      #     path: ~/.pnpm-store
+      #     key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package.json') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.7.1
-          run_install: true
+      # - uses: pnpm/action-setup@v2.0.1
+      #   with:
+      #     version: 6.7.1
+      #     run_install: true
+
+      - uses: c-hive/gha-yarn-cache@v2
+
+      - name: Install JS dependencies
+        run: yarn install
+
       - name: Set BASE URL
         run: echo "BASE_URL="/${GITHUB_REPOSITORY##*/}/"" >> $GITHUB_ENV
       - name: Build
