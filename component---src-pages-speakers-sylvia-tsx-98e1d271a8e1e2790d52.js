@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[32],{EtQa:function(t,n,c){"use strict";c.r(n);var e=c("sZwz"),a=c("q1tI"),i=c("qKvR");function o(){return Object(i.c)(e.a,{id:"sylvia"})}n.default=Object(a.memo)(o)}}]);
+//# sourceMappingURL=component---src-pages-speakers-sylvia-tsx-98e1d271a8e1e2790d52.js.map

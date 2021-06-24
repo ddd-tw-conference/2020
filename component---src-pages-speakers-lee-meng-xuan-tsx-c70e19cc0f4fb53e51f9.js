@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{HtG6:function(e,n,t){"use strict";t.r(n);var c=t("sZwz"),o=t("q1tI"),u=t("qKvR");function w(){return Object(u.c)(c.a,{id:"lee-meng-xuan"})}n.default=Object(o.memo)(w)}}]);
+//# sourceMappingURL=component---src-pages-speakers-lee-meng-xuan-tsx-c70e19cc0f4fb53e51f9.js.map

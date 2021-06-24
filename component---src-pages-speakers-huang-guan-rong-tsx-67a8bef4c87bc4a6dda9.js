@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{WyUP:function(n,t,c){"use strict";c.r(t);var e=c("sZwz"),o=c("q1tI"),u=c("qKvR");function a(){return Object(u.c)(e.a,{id:"huang-guan-rong"})}t.default=Object(o.memo)(a)}}]);
+//# sourceMappingURL=component---src-pages-speakers-huang-guan-rong-tsx-67a8bef4c87bc4a6dda9.js.map

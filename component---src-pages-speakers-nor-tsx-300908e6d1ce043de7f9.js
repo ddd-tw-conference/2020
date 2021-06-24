@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{"6oGZ":function(n,o,t){"use strict";t.r(o);var c=t("sZwz"),e=t("q1tI"),w=t("qKvR");function i(){return Object(w.c)(c.a,{id:"nor"})}o.default=Object(e.memo)(i)}}]);
+//# sourceMappingURL=component---src-pages-speakers-nor-tsx-300908e6d1ce043de7f9.js.map

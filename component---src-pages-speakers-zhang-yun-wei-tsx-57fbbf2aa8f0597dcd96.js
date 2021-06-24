@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[37],{aGD6:function(n,e,t){"use strict";t.r(e);var c=t("sZwz"),w=t("q1tI"),a=t("qKvR");function i(){return Object(a.c)(c.a,{id:"zhang-yun-wei"})}e.default=Object(w.memo)(i)}}]);
+//# sourceMappingURL=component---src-pages-speakers-zhang-yun-wei-tsx-57fbbf2aa8f0597dcd96.js.map

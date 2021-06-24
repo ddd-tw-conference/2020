@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[39],{"8xgC":function(n,t,c){"use strict";c.r(t);var e=c("8Y9a"),a=c("q1tI"),o=c("qKvR");t.default=Object(a.memo)((function(){return Object(o.c)(e.a,{id:"a0900"})}))}}]);
+//# sourceMappingURL=component---src-pages-speaks-a-0900-tsx-32e007a06f8fe0765d06.js.map

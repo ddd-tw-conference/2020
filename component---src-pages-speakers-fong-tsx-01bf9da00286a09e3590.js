@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{"441/":function(n,t,c){"use strict";c.r(t);var e=c("sZwz"),o=c("q1tI"),w=c("qKvR");function i(){return Object(w.c)(e.a,{id:"fong"})}t.default=Object(o.memo)(i)}}]);
+//# sourceMappingURL=component---src-pages-speakers-fong-tsx-01bf9da00286a09e3590.js.map

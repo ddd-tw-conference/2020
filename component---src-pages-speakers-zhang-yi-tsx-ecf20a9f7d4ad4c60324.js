@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[36],{sFHZ:function(n,t,c){"use strict";c.r(t);var e=c("sZwz"),i=c("q1tI"),o=c("qKvR");function s(){return Object(o.c)(e.a,{id:"zhang-yi"})}t.default=Object(i.memo)(s)}}]);
+//# sourceMappingURL=component---src-pages-speakers-zhang-yi-tsx-ecf20a9f7d4ad4c60324.js.map

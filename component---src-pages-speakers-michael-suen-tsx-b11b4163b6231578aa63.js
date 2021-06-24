@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{z2uN:function(e,n,c){"use strict";c.r(n);var t=c("sZwz"),u=c("q1tI"),i=c("qKvR");function o(){return Object(i.c)(t.a,{id:"michael-suen"})}n.default=Object(u.memo)(o)}}]);
+//# sourceMappingURL=component---src-pages-speakers-michael-suen-tsx-b11b4163b6231578aa63.js.map

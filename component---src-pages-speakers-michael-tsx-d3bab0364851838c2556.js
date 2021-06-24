@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[24],{Yxbq:function(c,e,n){"use strict";n.r(e);var t=n("sZwz"),i=n("q1tI"),o=n("qKvR");function w(){return Object(o.c)(t.a,{id:"michael"})}e.default=Object(i.memo)(w)}}]);
+//# sourceMappingURL=component---src-pages-speakers-michael-tsx-d3bab0364851838c2556.js.map

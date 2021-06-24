@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[26],{okMF:function(t,o,n){"use strict";n.r(o);var c=n("sZwz"),e=n("q1tI"),w=n("qKvR");function i(){return Object(w.c)(c.a,{id:"otto"})}o.default=Object(e.memo)(i)}}]);
+//# sourceMappingURL=component---src-pages-speakers-otto-tsx-fbee5b1a6ccbb94cfccb.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[28],{bsLV:function(n,e,t){"use strict";t.r(e);var c=t("sZwz"),w=t("q1tI"),o=t("qKvR");function s(){return Object(o.c)(c.a,{id:"rex-wang"})}e.default=Object(w.memo)(s)}}]);
+//# sourceMappingURL=component---src-pages-speakers-rex-wang-tsx-93a961f7765db4b2e139.js.map

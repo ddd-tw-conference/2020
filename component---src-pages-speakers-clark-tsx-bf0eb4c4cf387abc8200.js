@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{zx9X:function(c,n,t){"use strict";t.r(n);var e=t("sZwz"),o=t("q1tI"),w=t("qKvR");function a(){return Object(w.c)(e.a,{id:"clark"})}n.default=Object(o.memo)(a)}}]);
+//# sourceMappingURL=component---src-pages-speakers-clark-tsx-bf0eb4c4cf387abc8200.js.map

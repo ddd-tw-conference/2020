@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{"D+Fn":function(n,e,t){"use strict";t.r(e);var c=t("sZwz"),i=t("q1tI"),o=t("qKvR");function r(){return Object(o.c)(c.a,{id:"river"})}e.default=Object(i.memo)(r)}}]);
+//# sourceMappingURL=component---src-pages-speakers-river-tsx-5ddac67112b2912c8e41.js.map

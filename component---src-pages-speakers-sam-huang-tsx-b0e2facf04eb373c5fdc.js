@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[31],{e6ry:function(n,e,t){"use strict";t.r(e);var c=t("sZwz"),a=t("q1tI"),o=t("qKvR");function s(){return Object(o.c)(c.a,{id:"sam-huang"})}e.default=Object(a.memo)(s)}}]);
+//# sourceMappingURL=component---src-pages-speakers-sam-huang-tsx-b0e2facf04eb373c5fdc.js.map

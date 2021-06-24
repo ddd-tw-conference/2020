@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"/N/v":function(t,n,c){"use strict";c.r(n);var e=c("sZwz"),o=c("q1tI"),r=c("qKvR");function u(){return Object(r.c)(e.a,{id:"arthur"})}n.default=Object(o.memo)(u)}}]);
+//# sourceMappingURL=component---src-pages-speakers-arthur-tsx-368dda65edae1293f183.js.map

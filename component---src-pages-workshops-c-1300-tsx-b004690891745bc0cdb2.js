@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[66],{vyeT:function(e,t,c){"use strict";c.r(t);var n=c("8Y9a"),o=c("q1tI"),p=c("qKvR");t.default=Object(o.memo)((function(){return Object(p.c)(n.a,{type:"workshops",id:"c1300"})}))}}]);
+//# sourceMappingURL=component---src-pages-workshops-c-1300-tsx-b004690891745bc0cdb2.js.map

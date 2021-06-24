@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[35],{ZD75:function(n,e,t){"use strict";t.r(e);var c=t("sZwz"),i=t("q1tI"),o=t("qKvR");function w(){return Object(o.c)(c.a,{id:"zeng-qi-da"})}e.default=Object(i.memo)(w)}}]);
+//# sourceMappingURL=component---src-pages-speakers-zeng-qi-da-tsx-7be32ffb8003155a4aa7.js.map

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://conference.ddd-tw.com/2020/sitemap.xml
+Host: https://conference.ddd-tw.com

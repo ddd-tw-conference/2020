@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[33],{Wj0z:function(e,n,t){"use strict";t.r(n);var c=t("sZwz"),o=t("q1tI"),w=t("qKvR");function d(){return Object(w.c)(c.a,{id:"teddy-chen"})}n.default=Object(o.memo)(d)}}]);
+//# sourceMappingURL=component---src-pages-speakers-teddy-chen-tsx-1a831c5ab8d409708e54.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{ukzY:function(n,t,c){"use strict";c.r(t);var e=c("sZwz"),u=c("q1tI"),i=c("qKvR");function o(){return Object(i.c)(e.a,{id:"paul-shih"})}t.default=Object(u.memo)(o)}}]);
+//# sourceMappingURL=component---src-pages-speakers-paul-shih-tsx-45876303edf0b0dc6f35.js.map

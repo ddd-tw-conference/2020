@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[19],{RgAs:function(n,t,c){"use strict";c.r(t);var e=c("sZwz"),i=c("q1tI"),o=c("qKvR");function s(){return Object(o.c)(e.a,{id:"kim"})}t.default=Object(i.memo)(s)}}]);
+//# sourceMappingURL=component---src-pages-speakers-kim-tsx-5d9c765df8e8422fa6cc.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{"5kGU":function(n,t,e){"use strict";e.r(t);var c=e("sZwz"),u=e("q1tI"),o=e("qKvR");function w(){return Object(o.c)(c.a,{id:"juggernaut"})}t.default=Object(u.memo)(w)}}]);
+//# sourceMappingURL=component---src-pages-speakers-juggernaut-tsx-d496afb961deacf79863.js.map

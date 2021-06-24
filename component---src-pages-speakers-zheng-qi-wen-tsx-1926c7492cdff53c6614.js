@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[38],{Lrpp:function(n,e,t){"use strict";t.r(e);var c=t("sZwz"),w=t("q1tI"),i=t("qKvR");function o(){return Object(i.c)(c.a,{id:"zheng-qi-wen"})}e.default=Object(w.memo)(o)}}]);
+//# sourceMappingURL=component---src-pages-speakers-zheng-qi-wen-tsx-1926c7492cdff53c6614.js.map

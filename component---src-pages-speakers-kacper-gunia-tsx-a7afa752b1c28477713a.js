@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{"o+WI":function(n,c,e){"use strict";e.r(c);var t=e("sZwz"),o=e("q1tI"),a=e("qKvR");function i(){return Object(a.c)(t.a,{id:"kacper-gunia"})}c.default=Object(o.memo)(i)}}]);
+//# sourceMappingURL=component---src-pages-speakers-kacper-gunia-tsx-a7afa752b1c28477713a.js.map

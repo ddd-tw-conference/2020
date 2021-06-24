@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{wwBk:function(n,e,t){"use strict";t.r(e);var w=t("sZwz"),c=t("q1tI"),o=t("qKvR");function a(){return Object(o.c)(w.a,{id:"ean"})}e.default=Object(c.memo)(a)}}]);
+//# sourceMappingURL=component---src-pages-speakers-ean-tsx-952497cfa041bf49f94e.js.map

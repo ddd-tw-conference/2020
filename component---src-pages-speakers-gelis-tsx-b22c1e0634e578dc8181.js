@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{hb52:function(e,n,t){"use strict";t.r(n);var c=t("sZwz"),i=t("q1tI"),o=t("qKvR");function s(){return Object(o.c)(c.a,{id:"gelis"})}n.default=Object(i.memo)(s)}}]);
+//# sourceMappingURL=component---src-pages-speakers-gelis-tsx-b22c1e0634e578dc8181.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{CJAu:function(e,n,c){"use strict";c.r(n);var t=c("sZwz"),s=c("q1tI"),w=c("qKvR");function a(){return Object(w.c)(t.a,{id:"kenny-baas-schwegler"})}n.default=Object(s.memo)(a)}}]);
+//# sourceMappingURL=component---src-pages-speakers-kenny-baas-schwegler-tsx-66763c5a4a25730f9782.js.map
