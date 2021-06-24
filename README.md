@@ -41,17 +41,3 @@ You can build the distribution with:
 ```sh
 yarn build
 ```
-
-## Environment Variables
-
-### ALLOW_ROBOTS
-
-- Default: `undefined`
-
-Set to `'true'` to allow web crawler crawl the site.
-
-### SITE_URL
-
-- Default: `pkg.homepage`(`'https://ddd-tw.com'`)
-
-Depends on where to deploy. This is required.

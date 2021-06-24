@@ -1,11 +1,16 @@
 const pkg = require("./package.json");
 
-const allowRobots = process.env.ALLOW_ROBOTS === "true";
-const siteUrl = process.env.SITE_URL || pkg.homepage;
+const siteUrl = pkg.homepage;
+const baseUrl = process.env.BASE_URL || "";
 
 const exists = (a) => Boolean(a);
 
 module.exports = {
+  ...(baseUrl
+    ? {
+        pathPrefix: baseUrl.substring(0, baseUrl.length - 1),
+      }
+    : null),
   siteMetadata: {
     siteUrl,
   },
@@ -55,11 +60,7 @@ module.exports = {
       options: {
         host: siteUrl,
         sitemap: `${siteUrl}/sitemap.xml`,
-        policy: [
-          allowRobots
-            ? { userAgent: "*", allow: "/" }
-            : { userAgent: "*", disallow: ["/"] },
-        ],
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     "gatsby-plugin-react-helmet",
