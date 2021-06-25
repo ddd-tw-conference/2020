@@ -77,10 +77,8 @@ const Footer = () => {
                 </Typography>
               </RwdGrid>
               <RwdGrid item>
-                <A href="mailto:dddtwconference2020@gmail.com">
-                  <Item icon={<EmailIcon />}>
-                    dddtwconference2020@gmail.com
-                  </Item>
+                <A href="mailto:conference@ddd-tw.com">
+                  <Item icon={<EmailIcon />}>conference@ddd-tw.com</Item>
                 </A>
               </RwdGrid>
               <RwdGrid item>
